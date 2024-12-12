@@ -1,0 +1,14 @@
+C:\Users\hougj\source\repos\sinav\sinav\bin\Debug\sinav.exe.config
+C:\Users\hougj\source\repos\sinav\sinav\bin\Debug\sinav.exe
+C:\Users\hougj\source\repos\sinav\sinav\bin\Debug\sinav.pdb
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.csproj.AssemblyReference.cache
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Properties.Resources.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.csproj.GenerateResource.cache
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.csproj.CoreCompileInputs.cache
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.exe
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.pdb
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Student_Menu.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Teacher_Login.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Exams.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Result.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Student_Login.resources
