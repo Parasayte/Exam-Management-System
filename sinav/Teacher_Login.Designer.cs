@@ -55,7 +55,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(199, 245);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 21;
             this.label4.Text = "Password";
             // 
@@ -65,7 +65,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(218, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 16);
+            this.label3.Size = new System.Drawing.Size(21, 16);
             this.label3.TabIndex = 20;
             this.label3.Text = "ID";
             // 
@@ -85,7 +85,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(367, 332);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(48, 16);
             this.label1.TabIndex = 18;
             this.label1.Text = "Sign in";
             // 
@@ -98,6 +98,7 @@
             this.Login_Button.TabIndex = 17;
             this.Login_Button.Text = "Log in";
             this.Login_Button.UseVisualStyleBackColor = true;
+            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
             // Password_Textbox
             // 
@@ -138,7 +139,6 @@
             this.Text = "Teacher";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

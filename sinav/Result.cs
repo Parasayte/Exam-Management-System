@@ -35,5 +35,10 @@ namespace sinav
             a.Show();
             Hide();
         }
+
+        private void Result_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

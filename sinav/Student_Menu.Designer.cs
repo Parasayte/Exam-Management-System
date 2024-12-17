@@ -56,7 +56,7 @@
             this.panel2.AutoScrollMinSize = new System.Drawing.Size(0, 2590);
             this.panel2.AutoSize = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.richTextBox5);
             this.panel2.Controls.Add(this.label5);
@@ -77,16 +77,20 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(783, 2550);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 28);
             this.button1.TabIndex = 10;
             this.button1.Text = "Finish";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // richTextBox5
             // 
+            this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.richTextBox5.Location = new System.Drawing.Point(374, 2021);
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.Size = new System.Drawing.Size(467, 436);
@@ -104,6 +108,7 @@
             // 
             // richTextBox4
             // 
+            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.richTextBox4.Location = new System.Drawing.Point(374, 1520);
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.Size = new System.Drawing.Size(467, 436);
@@ -121,6 +126,7 @@
             // 
             // richTextBox3
             // 
+            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.richTextBox3.Location = new System.Drawing.Point(374, 1026);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(467, 436);
@@ -138,6 +144,7 @@
             // 
             // richTextBox2
             // 
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.richTextBox2.Location = new System.Drawing.Point(374, 523);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(467, 436);
@@ -155,6 +162,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.richTextBox1.Location = new System.Drawing.Point(374, 25);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(467, 436);
@@ -172,7 +180,9 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.operatToolStripMenuItem });
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.operatToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(896, 24);
@@ -181,7 +191,11 @@
             // 
             // operatToolStripMenuItem
             // 
-            this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.examsToolStripMenuItem, this.reuslutsToolStripMenuItem, this.logOutToolStripMenuItem });
+            this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.examsToolStripMenuItem,
+            this.reuslutsToolStripMenuItem,
+            this.logOutToolStripMenuItem});
+            this.operatToolStripMenuItem.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
             this.operatToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.operatToolStripMenuItem.Text = "Operat";
@@ -189,21 +203,21 @@
             // examsToolStripMenuItem
             // 
             this.examsToolStripMenuItem.Name = "examsToolStripMenuItem";
-            this.examsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.examsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.examsToolStripMenuItem.Text = "Exams";
             this.examsToolStripMenuItem.Click += new System.EventHandler(this.examsToolStripMenuItem_Click);
             // 
             // reuslutsToolStripMenuItem
             // 
             this.reuslutsToolStripMenuItem.Name = "reuslutsToolStripMenuItem";
-            this.reuslutsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reuslutsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reuslutsToolStripMenuItem.Text = "Reusluts";
             this.reuslutsToolStripMenuItem.Click += new System.EventHandler(this.reuslutsToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -223,6 +237,7 @@
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
