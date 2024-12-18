@@ -51,6 +51,7 @@ namespace sinav
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.operatToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -67,32 +68,32 @@ namespace sinav
             this.addStudentToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
-            this.operatToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.operatToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.operatToolStripMenuItem.Text = "Operat";
             this.operatToolStripMenuItem.Click += new System.EventHandler(this.operatToolStripMenuItem_Click);
             // 
             // addExamToolStripMenuItem
             // 
             this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
-            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.addExamToolStripMenuItem.Text = "Add Exam";
             // 
             // readNotesToolStripMenuItem
             // 
             this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
-            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.readNotesToolStripMenuItem.Text = "Read Notes";
             // 
             // addStudentToolStripMenuItem
             // 
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             // 
             // panel2

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,30 @@ namespace sinav
 {
     public partial class Exams : Form
     {
+        SqlConnection con;
+        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
         public Exams()
         {
             InitializeComponent();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void reuslutsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -29,6 +50,30 @@ namespace sinav
             Student_Login a = new Student_Login();
             a.Show();
             Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void Exams_Load(object sender, EventArgs e)
+        {
+           con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT a1,exam_id FROM exam ", con);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            dataGridView1.DataSource=dt;
+            con.Close();
+        }
+
+       
+
+        private void Exams_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

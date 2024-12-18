@@ -45,7 +45,7 @@ namespace sinav
             // 
             this.button1.BackColor = System.Drawing.Color.Brown;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(696, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 35);
@@ -57,22 +57,22 @@ namespace sinav
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(295, 213);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.Size = new System.Drawing.Size(72, 17);
             this.label4.TabIndex = 21;
             this.label4.Text = "Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(295, 156);
+            this.label3.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(295, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 16);
+            this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 20;
-            this.label3.Text = "ID";
+            this.label3.Text = "Name";
             // 
             // label2
             // 
@@ -88,18 +88,19 @@ namespace sinav
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(375, 336);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(64, 17);
             this.label1.TabIndex = 18;
             this.label1.Text = "Sign in";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Login_Button
             // 
             this.Login_Button.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_Button.Location = new System.Drawing.Point(298, 287);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(208, 35);
@@ -111,11 +112,11 @@ namespace sinav
             // Password_Textbox
             // 
             this.Password_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Password_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_Textbox.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password_Textbox.Location = new System.Drawing.Point(298, 232);
             this.Password_Textbox.Name = "Password_Textbox";
             this.Password_Textbox.PasswordChar = '*';
-            this.Password_Textbox.Size = new System.Drawing.Size(208, 35);
+            this.Password_Textbox.Size = new System.Drawing.Size(208, 32);
             this.Password_Textbox.TabIndex = 16;
             this.Password_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Password_Textbox.TextChanged += new System.EventHandler(this.Password_Textbox_TextChanged);
@@ -123,10 +124,10 @@ namespace sinav
             // ID_Textbox
             // 
             this.ID_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ID_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Textbox.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ID_Textbox.Location = new System.Drawing.Point(298, 175);
             this.ID_Textbox.Name = "ID_Textbox";
-            this.ID_Textbox.Size = new System.Drawing.Size(208, 35);
+            this.ID_Textbox.Size = new System.Drawing.Size(208, 32);
             this.ID_Textbox.TabIndex = 15;
             this.ID_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -146,6 +147,7 @@ namespace sinav
             this.Name = "Student_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student_Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Student_Login_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

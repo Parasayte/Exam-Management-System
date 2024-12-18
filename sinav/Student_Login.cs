@@ -14,22 +14,7 @@ namespace sinav
             InitializeComponent(); 
         
         }
-                private void InitializeSqlConnection()
-        {
-            try
-            {
-
-                string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
-                con = new SqlConnection(connectionString);
-                con.Open();
                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Database Connection Failed: " + ex.Message);
-            }
-        }
-
         
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,33 +26,33 @@ namespace sinav
 
         private void Login_Button_Click(object sender, EventArgs e)
         {
-            string id = ID_Textbox.Text; // Assuming txtUsername is your username input TextBox
-            string password = Password_Textbox.Text; // Assuming txtPassword is your password input TextBox
+            string name = ID_Textbox.Text; 
+            string password = Password_Textbox.Text; 
 
             try
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
                     con.Open();
-                    // SQL query to check for matching username and password
-                    string query = "SELECT COUNT(1) FROM Student WHERE id = @id AND password = @password";
+                   
+                    string query = "SELECT COUNT(1) FROM Students WHERE name = @name AND password = @password";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        // Use parameters to prevent SQL Injection
-                        cmd.Parameters.AddWithValue("@id", id);
+                        
+                        cmd.Parameters.AddWithValue("@name", name);
                         cmd.Parameters.AddWithValue("@password", password);
 
-                        // Execute the query and check for matching records
+                      
                         int count = Convert.ToInt32(cmd.ExecuteScalar());
 
                         if (count == 1)
                         {
                             MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            // Navigate to the next form or perform desired action here
                             Student_Menu a = new Student_Menu();
                             a.Show();
                              Hide();
+                            con.Close();
                         }
                         else
                         {
@@ -85,6 +70,18 @@ namespace sinav
         private void Password_Textbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Teacher_AddSt t=new Teacher_AddSt();
+            t.Show();
+            Hide();
+        }
+
+        private void Student_Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
