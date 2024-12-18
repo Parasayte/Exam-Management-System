@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddExam.Designer.cs">
+      <DependentUpon>AddExam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Exams.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +78,6 @@
     <Compile Include="Student_Menu.Designer.cs">
       <DependentUpon>Student_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teacher_AddQ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Teacher_AddQ.Designer.cs">
-      <DependentUpon>Teacher_AddQ.cs</DependentUpon>
-    </Compile>
     <Compile Include="Teacher_AddSt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +90,9 @@
     <Compile Include="Teacher_Login.Designer.cs">
       <DependentUpon>Teacher_Login.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddExam.resx">
+      <DependentUpon>AddExam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Exams.resx">
       <DependentUpon>Exams.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,9 +113,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student_Menu.resx">
       <DependentUpon>Student_Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Teacher_AddQ.resx">
-      <DependentUpon>Teacher_AddQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher_AddSt.resx">
       <DependentUpon>Teacher_AddSt.cs</DependentUpon>

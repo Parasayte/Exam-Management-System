@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace sinav
 {
     public partial class Result : Form
     {
+        SqlConnection con;
+        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
         public Result()
         {
             InitializeComponent();
@@ -37,6 +40,23 @@ namespace sinav
         }
 
         private void Result_Load(object sender, EventArgs e)
+        {
+            con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,finished,q1,a1,q2,a2,q3,a3,q4,a4,q5,a5,result FROM Exams  ", con);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
+
+        private void Result_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dataGridView1_AllowUserToAddRowsChanged(object sender, EventArgs e)
         {
 
         }

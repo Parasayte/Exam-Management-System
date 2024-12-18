@@ -28,7 +28,7 @@ namespace sinav
 
         private void Login_Button_Click(object sender, EventArgs e)
         {
-            Teacher_AddQ a=new Teacher_AddQ();
+            AddExam a=new AddExam();
             a.Show();
             Hide();
         }

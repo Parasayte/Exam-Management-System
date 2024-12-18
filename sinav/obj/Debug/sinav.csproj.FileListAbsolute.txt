@@ -12,5 +12,5 @@ C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Teacher_Login.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Exams.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Result.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Student_Login.resources
-C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Teacher_AddQ.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Teacher_AddSt.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.addquestions.resources

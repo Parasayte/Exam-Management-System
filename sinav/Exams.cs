@@ -61,7 +61,7 @@ namespace sinav
         {
            con = new SqlConnection(connectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT a1,exam_id FROM exam ", con);
+            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,finished FROM Exams  ", con);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sqlDataAdapter.Fill(dt);
@@ -74,6 +74,11 @@ namespace sinav
         private void Exams_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
