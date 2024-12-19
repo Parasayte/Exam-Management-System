@@ -55,7 +55,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(287, 214);
+            this.label4.Location = new System.Drawing.Point(270, 203);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 17);
             this.label4.TabIndex = 21;
@@ -65,7 +65,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(287, 161);
+            this.label3.Location = new System.Drawing.Point(270, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 17);
             this.label3.TabIndex = 20;
@@ -76,9 +76,9 @@
             this.Login_Button.BackColor = System.Drawing.Color.Brown;
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_Button.Location = new System.Drawing.Point(290, 278);
+            this.Login_Button.Location = new System.Drawing.Point(273, 272);
             this.Login_Button.Name = "Login_Button";
-            this.Login_Button.Size = new System.Drawing.Size(208, 35);
+            this.Login_Button.Size = new System.Drawing.Size(259, 36);
             this.Login_Button.TabIndex = 17;
             this.Login_Button.Text = "Log in";
             this.Login_Button.UseVisualStyleBackColor = false;
@@ -88,10 +88,10 @@
             // 
             this.Password_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Password_Textbox.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_Textbox.Location = new System.Drawing.Point(290, 233);
+            this.Password_Textbox.Location = new System.Drawing.Point(273, 222);
             this.Password_Textbox.Name = "Password_Textbox";
             this.Password_Textbox.PasswordChar = '*';
-            this.Password_Textbox.Size = new System.Drawing.Size(208, 30);
+            this.Password_Textbox.Size = new System.Drawing.Size(259, 30);
             this.Password_Textbox.TabIndex = 16;
             this.Password_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -99,9 +99,9 @@
             // 
             this.ID_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ID_Textbox.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_Textbox.Location = new System.Drawing.Point(290, 181);
+            this.ID_Textbox.Location = new System.Drawing.Point(273, 170);
             this.ID_Textbox.Name = "ID_Textbox";
-            this.ID_Textbox.Size = new System.Drawing.Size(208, 30);
+            this.ID_Textbox.Size = new System.Drawing.Size(259, 30);
             this.ID_Textbox.TabIndex = 15;
             this.ID_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -120,7 +120,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(368, 331);
+            this.label2.Location = new System.Drawing.Point(359, 319);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 24;

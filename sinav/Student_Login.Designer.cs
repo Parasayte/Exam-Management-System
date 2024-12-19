@@ -58,7 +58,7 @@ namespace sinav
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(295, 213);
+            this.label4.Location = new System.Drawing.Point(262, 203);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 17);
             this.label4.TabIndex = 21;
@@ -68,7 +68,7 @@ namespace sinav
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(295, 155);
+            this.label3.Location = new System.Drawing.Point(262, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 20;
@@ -89,7 +89,7 @@ namespace sinav
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(375, 336);
+            this.label1.Location = new System.Drawing.Point(367, 324);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 17);
             this.label1.TabIndex = 18;
@@ -101,9 +101,9 @@ namespace sinav
             this.Login_Button.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_Button.Location = new System.Drawing.Point(298, 287);
+            this.Login_Button.Location = new System.Drawing.Point(265, 277);
             this.Login_Button.Name = "Login_Button";
-            this.Login_Button.Size = new System.Drawing.Size(208, 35);
+            this.Login_Button.Size = new System.Drawing.Size(266, 33);
             this.Login_Button.TabIndex = 17;
             this.Login_Button.Text = "Log in";
             this.Login_Button.UseVisualStyleBackColor = false;
@@ -113,10 +113,10 @@ namespace sinav
             // 
             this.Password_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Password_Textbox.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_Textbox.Location = new System.Drawing.Point(298, 232);
+            this.Password_Textbox.Location = new System.Drawing.Point(265, 222);
             this.Password_Textbox.Name = "Password_Textbox";
             this.Password_Textbox.PasswordChar = '*';
-            this.Password_Textbox.Size = new System.Drawing.Size(208, 32);
+            this.Password_Textbox.Size = new System.Drawing.Size(266, 32);
             this.Password_Textbox.TabIndex = 16;
             this.Password_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Password_Textbox.TextChanged += new System.EventHandler(this.Password_Textbox_TextChanged);
@@ -125,9 +125,9 @@ namespace sinav
             // 
             this.ID_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ID_Textbox.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_Textbox.Location = new System.Drawing.Point(298, 175);
+            this.ID_Textbox.Location = new System.Drawing.Point(265, 165);
             this.ID_Textbox.Name = "ID_Textbox";
-            this.ID_Textbox.Size = new System.Drawing.Size(208, 32);
+            this.ID_Textbox.Size = new System.Drawing.Size(266, 32);
             this.ID_Textbox.TabIndex = 15;
             this.ID_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

@@ -74,9 +74,7 @@ namespace sinav
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Teacher_AddSt t=new Teacher_AddSt();
-            t.Show();
-            Hide();
+            MessageBox.Show("You have to connect with this Admin SELAM\n05411100000\nhougjgrxkj@gmail.com", "STOP",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
         }
 
         private void Student_Login_FormClosing(object sender, FormClosingEventArgs e)

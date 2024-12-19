@@ -114,7 +114,7 @@ namespace sinav
 
 
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show($"{rowsAffected} row(s) inserted successfully.");
+                    MessageBox.Show("inserted successfully.");
                 }
                 con.Close();
                 ClearTextbox();
