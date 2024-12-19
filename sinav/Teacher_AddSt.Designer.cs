@@ -58,10 +58,10 @@ namespace sinav
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(12, 67);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 25);
+            this.textBox1.Size = new System.Drawing.Size(156, 21);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -85,10 +85,10 @@ namespace sinav
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(12, 126);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 25);
+            this.textBox2.Size = new System.Drawing.Size(156, 21);
             this.textBox2.TabIndex = 2;
             // 
             // label4
@@ -102,10 +102,10 @@ namespace sinav
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(14, 244);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(156, 25);
+            this.textBox4.Size = new System.Drawing.Size(156, 21);
             this.textBox4.TabIndex = 6;
             // 
             // label5
@@ -119,10 +119,10 @@ namespace sinav
             // 
             // textBox5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(14, 306);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(156, 25);
+            this.textBox5.Size = new System.Drawing.Size(156, 21);
             this.textBox5.TabIndex = 8;
             // 
             // label6
@@ -136,10 +136,10 @@ namespace sinav
             // 
             // textBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(13, 185);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(156, 25);
+            this.textBox6.Size = new System.Drawing.Size(156, 21);
             this.textBox6.TabIndex = 12;
             // 
             // menuStrip1
@@ -168,26 +168,26 @@ namespace sinav
             // addExamToolStripMenuItem
             // 
             this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
-            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.addExamToolStripMenuItem.Text = "Add Exam";
             this.addExamToolStripMenuItem.Click += new System.EventHandler(this.addExamToolStripMenuItem_Click);
             // 
             // readNotesToolStripMenuItem
             // 
             this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
-            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.readNotesToolStripMenuItem.Text = "Read Notes";
             // 
             // addStudentToolStripMenuItem
             // 
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
             // 
@@ -237,10 +237,10 @@ namespace sinav
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(199, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(176, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(588, 349);
+            this.dataGridView1.Size = new System.Drawing.Size(611, 349);
             this.dataGridView1.TabIndex = 43;
             // 
             // textBox3
