@@ -41,13 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.operatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.examsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reuslutsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -69,9 +63,9 @@
             this.panel2.Controls.Add(this.richTextBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 25);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 472);
+            this.panel2.Size = new System.Drawing.Size(896, 497);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -183,64 +177,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.menuStrip1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.operatToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(896, 25);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // operatToolStripMenuItem
-            // 
-            this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.examsToolStripMenuItem,
-            this.reuslutsToolStripMenuItem,
-            this.logOutToolStripMenuItem});
-            this.operatToolStripMenuItem.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
-            this.operatToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.operatToolStripMenuItem.Text = "Operat";
-            // 
-            // examsToolStripMenuItem
-            // 
-            this.examsToolStripMenuItem.Name = "examsToolStripMenuItem";
-            this.examsToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.examsToolStripMenuItem.Text = "Exams";
-            this.examsToolStripMenuItem.Click += new System.EventHandler(this.examsToolStripMenuItem_Click);
-            // 
-            // reuslutsToolStripMenuItem
-            // 
-            this.reuslutsToolStripMenuItem.Name = "reuslutsToolStripMenuItem";
-            this.reuslutsToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.reuslutsToolStripMenuItem.Text = "Reusluts";
-            this.reuslutsToolStripMenuItem.Click += new System.EventHandler(this.reuslutsToolStripMenuItem_Click);
-            // 
-            // logOutToolStripMenuItem
-            // 
-            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.logOutToolStripMenuItem.Text = "Log Out";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
-            // 
             // Student_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 497);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Student_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exam";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Student_Menu_FormClosing);
             this.panel2.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,11 +195,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem operatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem examsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reuslutsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;

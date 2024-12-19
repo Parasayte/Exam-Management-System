@@ -42,5 +42,10 @@ namespace sinav
             a.Show();
             Hide();
         }
+
+        private void Student_Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

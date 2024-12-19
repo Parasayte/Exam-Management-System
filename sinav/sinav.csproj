@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadStudentsNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadStudentsNotes.Designer.cs">
+      <DependentUpon>ReadStudentsNotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Result.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReadStudentsNotes.resx">
+      <DependentUpon>ReadStudentsNotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Result.resx">
       <DependentUpon>Result.cs</DependentUpon>
     </EmbeddedResource>

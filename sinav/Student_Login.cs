@@ -49,7 +49,7 @@ namespace sinav
                         if (count == 1)
                         {
                             MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Student_Menu a = new Student_Menu();
+                            Exams a = new Exams();
                             a.Show();
                              Hide();
                             con.Close();

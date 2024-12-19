@@ -80,5 +80,12 @@ namespace sinav
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Student_Login a = new Student_Login();
+            a.Show();
+            Hide();
+        }
     }
 }

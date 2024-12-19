@@ -28,9 +28,14 @@ namespace sinav
 
         private void Login_Button_Click(object sender, EventArgs e)
         {
-            AddExam a=new AddExam();
+            ReadStudentsNotes a=new ReadStudentsNotes();
             a.Show();
             Hide();
+        }
+
+        private void Teacher_Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
