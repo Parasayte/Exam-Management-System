@@ -66,14 +66,61 @@ namespace sinav
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+                int examid = Int32.Parse(textBox4.Text);
+
+
+                char finished = 'F';
+
+               
+                string cmd = "SELECT COUNT(1) FROM Exam1 WHERE finished = @finished AND exam_id = @exam_id";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlCommand com = new SqlCommand(cmd, connection))
+                {
+                 
+                    com.Parameters.AddWithValue("@finished", finished);
+                    com.Parameters.AddWithValue("@exam_id", examid);
+
+                    connection.Open();
+                    int count = Convert.ToInt32(com.ExecuteScalar());
+                    connection.Close();
+                    if (count > 0)
+                    {
+                        
+                        Student_Menu student_Menu = new Student_Menu(examid, student_id);
+                        student_Menu.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                
+                        MessageBox.Show("No Exams for you right no", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+              
+                MessageBox.Show(ex.Message);
+            }
         }
+
+
+
 
         private void button2_Click(object sender, EventArgs e)
         {
             Student_Login a = new Student_Login();
             a.Show();
             Hide();
+        }
+
+        private void operatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

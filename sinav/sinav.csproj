@@ -52,6 +52,24 @@
     <Compile Include="AddExam.Designer.cs">
       <DependentUpon>AddExam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Teacher.Designer.cs">
+      <DependentUpon>Add_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Exams.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +110,15 @@
     </Compile>
     <EmbeddedResource Include="AddExam.resx">
       <DependentUpon>AddExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Teacher.resx">
+      <DependentUpon>Add_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exams.resx">
       <DependentUpon>Exams.cs</DependentUpon>

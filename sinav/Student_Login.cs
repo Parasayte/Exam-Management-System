@@ -7,7 +7,7 @@ namespace sinav
 {
     public partial class Student_Login : Form
     {
-        SqlConnection con;
+        
         string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
         public Student_Login()
         {
@@ -26,7 +26,7 @@ namespace sinav
 
         private void Login_Button_Click(object sender, EventArgs e)
         {
-            string name = ID_Textbox.Text; 
+            string id = ID_Textbox.Text; 
             string password = Password_Textbox.Text; 
 
             try
@@ -35,12 +35,12 @@ namespace sinav
                 {
                     con.Open();
                    
-                    string query = "SELECT COUNT(1) FROM Students WHERE name = @name AND password = @password";
-
+                    string query = "SELECT COUNT(1) FROM Students WHERE id = @id AND password = @password";
+                    
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         
-                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@id", id);
                         cmd.Parameters.AddWithValue("@password", password);
 
                       
@@ -49,7 +49,8 @@ namespace sinav
                         if (count == 1)
                         {
                             MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Exams a = new Exams();
+                            Exams a = new Exams(Int32.Parse(id));
+                        
                             a.Show();
                              Hide();
                             con.Close();

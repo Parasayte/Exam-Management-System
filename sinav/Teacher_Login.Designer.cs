@@ -67,9 +67,9 @@
             this.label3.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(270, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 17);
+            this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 20;
-            this.label3.Text = "ID";
+            this.label3.Text = "Name";
             // 
             // Login_Button
             // 
@@ -120,11 +120,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(369, 311);
+            this.label2.Location = new System.Drawing.Point(369, 322);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 24;
             this.label2.Text = "Sign in";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Teacher_Login
             // 
