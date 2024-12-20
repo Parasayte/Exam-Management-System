@@ -152,5 +152,12 @@ namespace sinav
             teacher_Login.Show();
             Hide();
         }
+
+        private void readNotesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            ReadStudentsNotes readStudentsNotes = new ReadStudentsNotes();
+            readStudentsNotes.Show();
+            Hide();
+        }
     }
 }

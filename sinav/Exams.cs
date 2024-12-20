@@ -15,34 +15,17 @@ namespace sinav
     {
         SqlConnection con;
         string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
-        public Exams()
+        int student_id;
+        public Exams(int id)
         {
             InitializeComponent();
+            student_id = id;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         private void reuslutsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Result a=new Result();
-            a.Show();
-            Hide();
+           
+           
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -61,11 +44,16 @@ namespace sinav
         {
            con = new SqlConnection(connectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,finished FROM Exams  ", con);
+            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,finished FROM Exam1 Where finished='F' and Student_id= "+student_id, con);
+            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Exam1 Where finished='T' and Student_id=  "+student_id , con);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            sqlDataAdapter.Fill(dt);
-            dataGridView1.DataSource=dt;
+            SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(cmd1);
+            DataTable notfinishedexams = new DataTable();
+            DataTable finishedexamstable = new DataTable();
+            sqlDataAdapter.Fill(notfinishedexams);
+            sqlDataAdapter1.Fill(finishedexamstable);
+            dataGridView1.DataSource=notfinishedexams;
+            dataGridView2.DataSource=finishedexamstable;
             con.Close();
         }
 

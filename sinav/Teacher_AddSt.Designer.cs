@@ -168,26 +168,27 @@ namespace sinav
             // addExamToolStripMenuItem
             // 
             this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
-            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addExamToolStripMenuItem.Text = "Add Exam";
             this.addExamToolStripMenuItem.Click += new System.EventHandler(this.addExamToolStripMenuItem_Click);
             // 
             // readNotesToolStripMenuItem
             // 
             this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
-            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.readNotesToolStripMenuItem.Text = "Read Notes";
+            this.readNotesToolStripMenuItem.Click += new System.EventHandler(this.readNotesToolStripMenuItem_Click_1);
             // 
             // addStudentToolStripMenuItem
             // 
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
             // 

@@ -12,7 +12,7 @@ namespace sinav
 {
     public partial class Student_Menu : Form
     {
-        public Student_Menu()
+        public Student_Menu(int id)
         {
             InitializeComponent();
         }
@@ -24,16 +24,14 @@ namespace sinav
 
         private void examsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Exams a =new Exams();
+            Exams a =new Exams(0);
             a.Show();
             Hide();
         }
 
         private void reuslutsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Result a =new Result();
-            a.Show();
-            Hide();
+           
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,6 +44,11 @@ namespace sinav
         private void Student_Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
