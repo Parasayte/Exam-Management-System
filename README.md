@@ -1,9 +1,9 @@
-[![Top Language](https://img.shields.io/github/languages/top/Parasayte/Otomasyon?style=plastic&color=teal)](https://github.com/Parasayte/Otomasyon)
-[![Repo Size](https://img.shields.io/github/repo-size/Parasayte/Otomasyon?style=plastic&color=yellowgreen)](https://github.com/Parasayte/Otomasyon)
-[![Last Commit](https://img.shields.io/github/last-commit/Parasayte/Otomasyon?style=plastic&color=crimson)](https://github.com/Parasayte/Otomasyon/commits)
-[![Community](https://img.shields.io/badge/Community-Active-gold?style=plastic)](https://github.com/Parasayte/Otomasyon)
-[![Stars](https://img.shields.io/github/stars/Parasayte/Otomasyon?style=plastic&color=darkblue)](https://github.com/Parasayte/Otomasyon/stargazers)
-[![Forks](https://img.shields.io/github/forks/Parasayte/Otomasyon?style=plastic&color=purple)](https://github.com/Parasayte/Otomasyon/network/members)
+[![Top Language](https://img.shields.io/github/languages/top/Parasayte/Exam-Management-System?style=plastic&color=teal)](https://github.com/Parasayte/Exam-Management-System)
+[![Repo Size](https://img.shields.io/github/repo-size/Parasayte/Exam-Management-System?style=plastic&color=yellowgreen)](https://github.com/Parasayte/Exam-Management-System)
+[![Last Commit](https://img.shields.io/github/last-commit/Parasayte/Exam-Management-System?style=plastic&color=crimson)](https://github.com/Parasayte/Exam-Management-System/commits)
+[![Community](https://img.shields.io/badge/Community-Active-gold?style=plastic)](https://github.com/Parasayte/Exam-Management-System)
+[![Stars](https://img.shields.io/github/stars/Parasayte/Exam-Management-System?style=plastic&color=darkblue)](https://github.com/Parasayte/Exam-Management-System/stargazers)
+[![Forks](https://img.shields.io/github/forks/Parasayte/Exam-Management-System?style=plastic&color=purple)](https://github.com/Parasayte/Exam-Management-System/network/members)
 
 
 # Exam Management System  ![C# Project](https://img.shields.io/badge/Csharp-Project-%23200020?style=plastic)
