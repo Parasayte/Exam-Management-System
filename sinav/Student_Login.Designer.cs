@@ -31,7 +31,6 @@ namespace sinav
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,20 +38,8 @@ namespace sinav
             this.Login_Button = new System.Windows.Forms.Button();
             this.Password_Textbox = new System.Windows.Forms.TextBox();
             this.ID_Textbox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Brown;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(696, 408);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 35);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Teacher";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -101,6 +88,8 @@ namespace sinav
             this.Login_Button.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_Button.Image = global::sinav.Properties.Resources.enter;
+            this.Login_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Login_Button.Location = new System.Drawing.Point(265, 277);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(266, 33);
@@ -130,6 +119,22 @@ namespace sinav
             this.ID_Textbox.Size = new System.Drawing.Size(266, 32);
             this.ID_Textbox.TabIndex = 15;
             this.ID_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Brown;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::sinav.Properties.Resources.chalkboard_user;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(688, 408);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 35);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Teacher";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Student_Login
             // 

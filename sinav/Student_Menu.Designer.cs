@@ -42,11 +42,11 @@
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -69,21 +69,24 @@
             this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.examsToolStripMenuItem,
             this.logOutToolStripMenuItem});
+            this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.menu_burger;
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
-            this.operatToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.operatToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
             this.operatToolStripMenuItem.Text = "Operat";
             this.operatToolStripMenuItem.Click += new System.EventHandler(this.operatToolStripMenuItem_Click);
             // 
             // examsToolStripMenuItem
             // 
+            this.examsToolStripMenuItem.Image = global::sinav.Properties.Resources.copy;
             this.examsToolStripMenuItem.Name = "examsToolStripMenuItem";
-            this.examsToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.examsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.examsToolStripMenuItem.Text = "Exams";
             // 
             // logOutToolStripMenuItem
             // 
+            this.logOutToolStripMenuItem.Image = global::sinav.Properties.Resources.power;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -130,20 +133,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(295, 25);
             this.textBox4.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(501, 145);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(295, 31);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Enter exam";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -208,7 +197,23 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "Finished  Exams";
             // 
-            // Exams
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = global::sinav.Properties.Resources.enter;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(501, 145);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(295, 31);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Enter exam";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Student_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

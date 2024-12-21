@@ -159,5 +159,10 @@ namespace sinav
             readStudentsNotes.Show();
             Hide();
         }
+
+        private void operatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

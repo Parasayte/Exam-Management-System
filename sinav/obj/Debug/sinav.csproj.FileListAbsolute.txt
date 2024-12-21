@@ -9,11 +9,11 @@ C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.exe
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.pdb
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Student_Menu.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Teacher_Login.resources
-C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Exams.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Student_Login.resources
-C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Teacher_AddSt.resources
-C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.AddExam.resources
-C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.ReadStudentsNotes.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Add_Teacher.resources
-C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Admin.resources
-C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.AdminMenu.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Add_Exam.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Admin_Login.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Admin_Menu.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Read_Answers.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Student_Exam.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Add_Student.resources

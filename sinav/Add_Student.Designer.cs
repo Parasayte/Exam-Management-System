@@ -42,15 +42,15 @@ namespace sinav
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.operatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addExamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -153,50 +153,14 @@ namespace sinav
             this.menuStrip1.TabIndex = 30;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // operatToolStripMenuItem
-            // 
-            this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addExamToolStripMenuItem,
-            this.readNotesToolStripMenuItem,
-            this.addStudentToolStripMenuItem,
-            this.logOutToolStripMenuItem});
-            this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
-            this.operatToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.operatToolStripMenuItem.Text = "Operat";
-            // 
-            // addExamToolStripMenuItem
-            // 
-            this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
-            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.addExamToolStripMenuItem.Text = "Add Exam";
-            this.addExamToolStripMenuItem.Click += new System.EventHandler(this.addExamToolStripMenuItem_Click);
-            // 
-            // readNotesToolStripMenuItem
-            // 
-            this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
-            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.readNotesToolStripMenuItem.Text = "Read Notes";
-            this.readNotesToolStripMenuItem.Click += new System.EventHandler(this.readNotesToolStripMenuItem_Click_1);
-            // 
-            // addStudentToolStripMenuItem
-            // 
-            this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.addStudentToolStripMenuItem.Text = "Add Student";
-            // 
-            // logOutToolStripMenuItem
-            // 
-            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.logOutToolStripMenuItem.Text = "Log out";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Brown;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Image = global::sinav.Properties.Resources.trash;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.Location = new System.Drawing.Point(9, 415);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(216, 27);
@@ -211,6 +175,8 @@ namespace sinav
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.Image = global::sinav.Properties.Resources.user_add;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.Location = new System.Drawing.Point(9, 382);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(216, 27);
@@ -237,7 +203,51 @@ namespace sinav
             this.textBox3.TabIndex = 44;
             this.textBox3.Text = "ID";
             // 
-            // Teacher_AddSt
+            // operatToolStripMenuItem
+            // 
+            this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addExamToolStripMenuItem,
+            this.readNotesToolStripMenuItem,
+            this.addStudentToolStripMenuItem,
+            this.logOutToolStripMenuItem});
+            this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.menu_burger;
+            this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
+            this.operatToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.operatToolStripMenuItem.Text = "Operat";
+            this.operatToolStripMenuItem.Click += new System.EventHandler(this.operatToolStripMenuItem_Click);
+            // 
+            // addExamToolStripMenuItem
+            // 
+            this.addExamToolStripMenuItem.Image = global::sinav.Properties.Resources.add_document;
+            this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
+            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addExamToolStripMenuItem.Text = "Add Exam";
+            this.addExamToolStripMenuItem.Click += new System.EventHandler(this.addExamToolStripMenuItem_Click);
+            // 
+            // readNotesToolStripMenuItem
+            // 
+            this.readNotesToolStripMenuItem.Image = global::sinav.Properties.Resources.edit;
+            this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
+            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.readNotesToolStripMenuItem.Text = "Read Notes";
+            this.readNotesToolStripMenuItem.Click += new System.EventHandler(this.readNotesToolStripMenuItem_Click_1);
+            // 
+            // addStudentToolStripMenuItem
+            // 
+            this.addStudentToolStripMenuItem.Image = global::sinav.Properties.Resources.user_add;
+            this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addStudentToolStripMenuItem.Text = "Add Student";
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Image = global::sinav.Properties.Resources.power;
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Text = "Log out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
+            // 
+            // Add_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
