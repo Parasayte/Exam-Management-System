@@ -4,12 +4,12 @@ using System;
 using System.Data;
 namespace sinav
 {
-    public partial class Teacher_AddSt : Form
+    public partial class Add_Student : Form
     {
 
         string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
 
-        public Teacher_AddSt()
+        public Add_Student()
         {
             InitializeComponent();
         }
@@ -53,20 +53,20 @@ namespace sinav
 
         private void addExamToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            AddExam addExam = new AddExam();
+            Add_Exam addExam = new Add_Exam();
             addExam.Show();
             Hide();
         }
         private void readNotesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ReadStudentsNotes readStudentsNotes = new ReadStudentsNotes();
+            Read_Answers readStudentsNotes = new Read_Answers();
             readStudentsNotes.Show();
             Hide();
         }
 
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Teacher_AddSt addSt = new Teacher_AddSt();
+            Add_Student addSt = new Add_Student();
             addSt.Show();
             Hide();
         }
@@ -155,7 +155,7 @@ namespace sinav
 
         private void readNotesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            ReadStudentsNotes readStudentsNotes = new ReadStudentsNotes();
+            Read_Answers readStudentsNotes = new Read_Answers();
             readStudentsNotes.Show();
             Hide();
         }

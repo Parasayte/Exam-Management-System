@@ -3,60 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hougj\\source\\repos\\sinav\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\adminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\adminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\addexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\addexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\add_teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\add_teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\adminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\adminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\add_teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\add_teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\teacher_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\teacher_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\teacher_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\teacher_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\addexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\addexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\exams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\exams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\student_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\student_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\student_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\student_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\exams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\exams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|c:\\users\\hougj\\source\\repos\\sinav\\sinav\\teacher_addst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|sinav\\sinav.csproj|solutionrelative:sinav\\teacher_addst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,183 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminMenu.cs",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AdminMenu.cs",
-              "RelativeDocumentMoniker": "sinav\\AdminMenu.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AdminMenu.cs",
-              "RelativeToolTip": "sinav\\AdminMenu.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAIAwwB4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:17:05.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AdminMenu.cs",
-              "RelativeDocumentMoniker": "sinav\\AdminMenu.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AdminMenu.cs [Design]",
-              "RelativeToolTip": "sinav\\AdminMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:14:44.177Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Add_Teacher.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Add_Teacher.cs",
-              "RelativeDocumentMoniker": "sinav\\Add_Teacher.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Add_Teacher.cs [Design]",
-              "RelativeToolTip": "sinav\\Add_Teacher.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:14:07.194Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Teacher_Login.cs",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_Login.cs",
-              "RelativeDocumentMoniker": "sinav\\Teacher_Login.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_Login.cs",
-              "RelativeToolTip": "sinav\\Teacher_Login.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAIAwwFQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:12:48.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Teacher_Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_Login.cs",
-              "RelativeDocumentMoniker": "sinav\\Teacher_Login.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_Login.cs [Design]",
-              "RelativeToolTip": "sinav\\Teacher_Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:12:47.141Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Admin.cs",
-              "RelativeDocumentMoniker": "sinav\\Admin.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Admin.cs",
-              "RelativeToolTip": "sinav\\Admin.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAIAwwBgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:10:11.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Admin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Admin.cs",
-              "RelativeDocumentMoniker": "sinav\\Admin.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Admin.cs [Design]",
-              "RelativeToolTip": "sinav\\Admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:04:30.47Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Exams.cs",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Exams.cs",
-              "RelativeDocumentMoniker": "sinav\\Exams.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Exams.cs",
-              "RelativeToolTip": "sinav\\Exams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:16:01.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddExam.cs",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AddExam.cs",
-              "RelativeDocumentMoniker": "sinav\\AddExam.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AddExam.cs",
-              "RelativeToolTip": "sinav\\AddExam.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAQwHgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:06:58.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddExam.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AddExam.cs",
-              "RelativeDocumentMoniker": "sinav\\AddExam.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\AddExam.cs [Design]",
-              "RelativeToolTip": "sinav\\AddExam.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:06:55.704Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Add_Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Add_Teacher.cs",
-              "RelativeDocumentMoniker": "sinav\\Add_Teacher.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Add_Teacher.cs",
-              "RelativeToolTip": "sinav\\Add_Teacher.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAhwFkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T17:18:35.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Student_Menu.cs",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Student_Menu.cs",
-              "RelativeDocumentMoniker": "sinav\\Student_Menu.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Student_Menu.cs",
-              "RelativeToolTip": "sinav\\Student_Menu.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwC4AAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T16:35:28.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Student_Menu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Student_Menu.cs",
-              "RelativeDocumentMoniker": "sinav\\Student_Menu.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Student_Menu.cs [Design]",
-              "RelativeToolTip": "sinav\\Student_Menu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T16:35:23.695Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Exams.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Exams.cs",
-              "RelativeDocumentMoniker": "sinav\\Exams.cs",
-              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Exams.cs [Design]",
-              "RelativeToolTip": "sinav\\Exams.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T16:34:25.626Z",
-              "EditorCaption": " [Design]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -266,6 +43,30 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Teacher_Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_Login.cs",
+              "RelativeDocumentMoniker": "sinav\\Teacher_Login.cs",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_Login.cs [Design]",
+              "RelativeToolTip": "sinav\\Teacher_Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T05:04:48.929Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Teacher_AddSt.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_AddSt.cs",
+              "RelativeDocumentMoniker": "sinav\\Teacher_AddSt.cs",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\sinav\\Teacher_AddSt.cs [Design]",
+              "RelativeToolTip": "sinav\\Teacher_AddSt.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T05:04:30.777Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

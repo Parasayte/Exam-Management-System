@@ -54,7 +54,7 @@ namespace sinav
                         {
                             MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            ReadStudentsNotes a = new ReadStudentsNotes();
+                            Read_Answers a = new Read_Answers();
                             a.Show();
                             Hide();
                           
@@ -80,7 +80,7 @@ namespace sinav
 
         private void label2_Click(object sender, EventArgs e)
         {
-          Admin a = new Admin();
+          Admin_Login a = new Admin_Login();
             a.Show();
             Hide();
         }

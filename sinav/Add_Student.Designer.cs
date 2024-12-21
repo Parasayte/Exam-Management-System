@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 namespace sinav
 {
-    partial class Teacher_AddSt
+    partial class Add_Student
     {
         /// <summary>
         /// Required designer variable.
@@ -221,11 +221,10 @@ namespace sinav
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(176, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(611, 349);
             this.dataGridView1.TabIndex = 43;
             // 
@@ -260,7 +259,9 @@ namespace sinav
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "Teacher_AddSt";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.Name = "Add_Student";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teacher_AddSt";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Teacher_AddSt_FormClosing);

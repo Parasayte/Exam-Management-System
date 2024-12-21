@@ -117,97 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label5.Text" xml:space="preserve">
-    <value>If the analog button on your controller is missing or no longer works, you can try the following solutions to switch between analog and digital modes or work around the issue:
-
-1. Use the Controller's Software
-Many modern controllers have companion software (e.g., DS4Windows for DualShock, or Xbox Accessories app for Xbox controllers) that allow you to configure modes and button assignments. Check if your controller has such software and use it to switch modes.
-2. Remap Buttons
-Use third-party remapping tools like:
-JoyToKey
-Xpadder
-InputMapper These tools let you remap controller buttons or emulate keyboard inputs for missing or non-functional buttons.
-3. Inspect the Controller’s Firmware Settings
-Some controllers have a built-in firmware mode accessible by pressing a combination of buttons. Refer to your controller's manual or search for the specific button combination for switching modes.
-4. Manually Repair the Button
-If you're comfortable with DIY repairs:
-Open the controller and inspect the analog button's contacts.
-Replace the missing button with a similar-sized one.
-If contacts are damaged, soldering may be required to restore functionality.</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>If the analog button on your controller is missing or no longer works, you can try the following solutions to switch between analog and digital modes or work around the issue:
-
-1. Use the Controller's Software
-Many modern controllers have companion software (e.g., DS4Windows for DualShock, or Xbox Accessories app for Xbox controllers) that allow you to configure modes and button assignments. Check if your controller has such software and use it to switch modes.
-2. Remap Buttons
-Use third-party remapping tools like:
-JoyToKey
-Xpadder
-InputMapper These tools let you remap controller buttons or emulate keyboard inputs for missing or non-functional buttons.
-3. Inspect the Controller’s Firmware Settings
-Some controllers have a built-in firmware mode accessible by pressing a combination of buttons. Refer to your controller's manual or search for the specific button combination for switching modes.
-4. Manually Repair the Button
-If you're comfortable with DIY repairs:
-Open the controller and inspect the analog button's contacts.
-Replace the missing button with a similar-sized one.
-If contacts are damaged, soldering may be required to restore functionality.</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>If the analog button on your controller is missing or no longer works, you can try the following solutions to switch between analog and digital modes or work around the issue:
-
-1. Use the Controller's Software
-Many modern controllers have companion software (e.g., DS4Windows for DualShock, or Xbox Accessories app for Xbox controllers) that allow you to configure modes and button assignments. Check if your controller has such software and use it to switch modes.
-2. Remap Buttons
-Use third-party remapping tools like:
-JoyToKey
-Xpadder
-InputMapper These tools let you remap controller buttons or emulate keyboard inputs for missing or non-functional buttons.
-3. Inspect the Controller’s Firmware Settings
-Some controllers have a built-in firmware mode accessible by pressing a combination of buttons. Refer to your controller's manual or search for the specific button combination for switching modes.
-4. Manually Repair the Button
-If you're comfortable with DIY repairs:
-Open the controller and inspect the analog button's contacts.
-Replace the missing button with a similar-sized one.
-If contacts are damaged, soldering may be required to restore functionality.</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>If the analog button on your controller is missing or no longer works, you can try the following solutions to switch between analog and digital modes or work around the issue:
-
-1. Use the Controller's Software
-Many modern controllers have companion software (e.g., DS4Windows for DualShock, or Xbox Accessories app for Xbox controllers) that allow you to configure modes and button assignments. Check if your controller has such software and use it to switch modes.
-2. Remap Buttons
-Use third-party remapping tools like:
-JoyToKey
-Xpadder
-InputMapper These tools let you remap controller buttons or emulate keyboard inputs for missing or non-functional buttons.
-3. Inspect the Controller’s Firmware Settings
-Some controllers have a built-in firmware mode accessible by pressing a combination of buttons. Refer to your controller's manual or search for the specific button combination for switching modes.
-4. Manually Repair the Button
-If you're comfortable with DIY repairs:
-Open the controller and inspect the analog button's contacts.
-Replace the missing button with a similar-sized one.
-If contacts are damaged, soldering may be required to restore functionality.</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>If the analog button on your controller is missing or no longer works, you can try the following solutions to switch between analog and digital modes or work around the issue:
-
-1. Use the Controller's Software
-Many modern controllers have companion software (e.g., DS4Windows for DualShock, or Xbox Accessories app for Xbox controllers) that allow you to configure modes and button assignments. Check if your controller has such software and use it to switch modes.
-2. Remap Buttons
-Use third-party remapping tools like:
-JoyToKey
-Xpadder
-InputMapper These tools let you remap controller buttons or emulate keyboard inputs for missing or non-functional buttons.
-3. Inspect the Controller’s Firmware Settings
-Some controllers have a built-in firmware mode accessible by pressing a combination of buttons. Refer to your controller's manual or search for the specific button combination for switching modes.
-4. Manually Repair the Button
-If you're comfortable with DIY repairs:
-Open the controller and inspect the analog button's contacts.
-Replace the missing button with a similar-sized one.
-If contacts are damaged, soldering may be required to restore functionality.</value>
-  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>43</value>
   </metadata>
 </root>

@@ -144,6 +144,8 @@ namespace sinav
             this.Controls.Add(this.Login_Button);
             this.Controls.Add(this.Password_Textbox);
             this.Controls.Add(this.ID_Textbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Student_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student_Login";
