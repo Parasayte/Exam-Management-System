@@ -114,7 +114,7 @@ namespace sinav
 
 
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show("inserted successfully.");
+                    MessageBox.Show("Student added");
                 }
                 con.Close();
                 ClearTextbox();

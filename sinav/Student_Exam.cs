@@ -103,7 +103,7 @@ namespace sinav
                     cmd.Parameters.AddWithValue("@f", "T");
 
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show("inserted successfully.");
+                    MessageBox.Show("Exam finished , wait for the result ","Succeful",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
                 con.Close();
                 Student_Menu exams = new Student_Menu(Studenid);

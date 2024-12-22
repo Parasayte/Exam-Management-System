@@ -149,7 +149,7 @@
             this.MaximizeBox = false;
             this.Name = "Teacher_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Teacher";
+            this.Text = "Teacher log in";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Teacher_Login_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -4,10 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
 
 namespace sinav
 {
@@ -122,5 +125,147 @@ namespace sinav
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            SaveExamResultAsPDF();
+        }
+        private void SaveExamResultAsPDF()
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(textBox4.Text))
+                {
+                    MessageBox.Show("Please enter an Exam ID in the textbox.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!int.TryParse(textBox4.Text, out int examId))
+                {
+                    MessageBox.Show("Invalid Exam ID. Please enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "PDF Files (*.pdf)|*.pdf",
+                    Title = "Save Exam Result as PDF",
+                    FileName = "ExamResult.pdf"
+                };
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog.FileName;
+
+                    iTextSharp.text.Document document = new iTextSharp.text.Document();
+                    PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
+                    document.Open();
+
+                    // Define custom fonts
+                    iTextSharp.text.Font resultFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 32f, iTextSharp.text.BaseColor.GREEN);
+                    iTextSharp.text.Font boldFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 12f);
+                    iTextSharp.text.Font blackBoldFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 12f, iTextSharp.text.BaseColor.BLACK);
+                    iTextSharp.text.Font normalFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 12f, iTextSharp.text.BaseColor.RED);
+
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        SqlCommand resultCmd = new SqlCommand(
+                            "SELECT result, finished FROM Exam1 WHERE exam_id = @exam_id",
+                            connection
+                        );
+                        resultCmd.Parameters.AddWithValue("@exam_id", examId);
+
+                        SqlDataReader resultReader = resultCmd.ExecuteReader();
+                        float resultValue = 0;
+                        bool isFinished = false;
+
+                        if (resultReader.Read())
+                        {
+                            isFinished = resultReader["finished"]?.ToString() == "T";
+
+                            if (!isFinished)
+                            {
+                                var resultObj = resultReader["result"];
+                                if (resultObj != DBNull.Value && float.TryParse(resultObj.ToString(), out resultValue))
+                                {
+                                    document.Add(new iTextSharp.text.Paragraph($"                     Result: {resultValue}", resultFont));
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Result not available or invalid for this exam.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    resultReader.Close();
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("The exam is not finished yet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                resultReader.Close();
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No exam found with the provided Exam ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            resultReader.Close();
+                            return;
+                        }
+
+                        resultReader.Close();
+
+                        SqlCommand examDetailsCmd = new SqlCommand(
+                            "SELECT s.name, s.nick_name, e.exam_name, e.q1, e.a1, e.q2, e.a2, e.q3, e.a3, e.q4, e.a4, e.q5, e.a5 " +
+                            "FROM Exam1 e " +
+                            "INNER JOIN Students s ON e.student_id = s.id " +
+                            "WHERE e.exam_id = @exam_id", connection);
+                        examDetailsCmd.Parameters.AddWithValue("@exam_id", examId);
+
+                        SqlDataReader examDetailsReader = examDetailsCmd.ExecuteReader();
+
+                        if (examDetailsReader.Read())
+                        {
+                            string studentName = examDetailsReader["name"].ToString();
+                            string studentNickname = examDetailsReader["nick_name"].ToString();
+                            string examName = examDetailsReader["exam_name"].ToString();
+
+                            document.Add(new iTextSharp.text.Paragraph($"Student: {studentName} ({studentNickname})", blackBoldFont));
+                            document.Add(new iTextSharp.text.Paragraph($"Exam Name: {examName}", blackBoldFont));
+                            document.Add(new iTextSharp.text.Paragraph("\n"));
+
+                            for (int i = 1; i <= 5; i++)
+                            {
+                                string question = examDetailsReader[$"q{i}"].ToString();
+                                string answer = examDetailsReader[$"a{i}"].ToString();
+
+                                document.Add(new iTextSharp.text.Paragraph($"Question {i}: {question}", boldFont));
+                                document.Add(new iTextSharp.text.Paragraph($"Answer {i}: {answer}", normalFont));
+                                document.Add(new iTextSharp.text.Paragraph("\n"));
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No details found for the exam with the provided Exam ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            examDetailsReader.Close();
+                            return;
+                        }
+
+                        examDetailsReader.Close();
+                    }
+
+                    document.Close();
+                    MessageBox.Show("PDF with exam result and details has been saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
     }
 }

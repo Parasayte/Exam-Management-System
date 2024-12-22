@@ -52,8 +52,9 @@ namespace sinav
 
                         if (count == 1)
                         {
-                         
 
+
+                            MessageBox.Show("Welcome to the system", "succeful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Read_Answers a = new Read_Answers();
                             a.Show();
                             Hide();

@@ -153,7 +153,7 @@ namespace sinav
             this.MaximizeBox = false;
             this.Name = "Student_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Student_Login";
+            this.Text = "Student login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Student_Login_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
