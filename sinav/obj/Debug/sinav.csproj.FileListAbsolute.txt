@@ -22,3 +22,4 @@ C:\Users\hougj\source\repos\sinav\sinav\bin\Debug\itextsharp.dll
 C:\Users\hougj\source\repos\sinav\sinav\bin\Debug\BouncyCastle.Cryptography.xml
 C:\Users\hougj\source\repos\sinav\sinav\bin\Debug\itextsharp.xml
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.csproj.Up2Date
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.loading_page.resources
