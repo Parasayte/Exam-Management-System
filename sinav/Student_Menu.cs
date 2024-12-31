@@ -25,11 +25,7 @@ namespace sinav
             student_id = id;
         }
 
-        private void reuslutsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-           
-        }
+     
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -38,16 +34,13 @@ namespace sinav
             Hide();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+     
 
         private void Exams_Load(object sender, EventArgs e)
         {
            con = new SqlConnection(connectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,finished FROM Exam1 Where finished='F' and Student_id= "+student_id, con);
+            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,finished,Time,lastdate FROM Exam1 Where finished='F' and Student_id= "+student_id, con);
             SqlCommand cmd1 = new SqlCommand("SELECT * FROM Exam1 Where finished='T' and Student_id=  "+student_id , con);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
             SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(cmd1);
@@ -71,45 +64,50 @@ namespace sinav
         {
             try
             {
-
                 int examid = Int32.Parse(textBox4.Text);
 
-
                 char finished = 'F';
+                DateTime currentDate = DateTime.Now;
 
-               
-                string cmd = "SELECT COUNT(1) FROM Exam1 WHERE finished = @finished AND exam_id = @exam_id";
+                string cmd = @"
+            SELECT COUNT(1) 
+            FROM Exam1 
+            WHERE finished = @finished 
+              AND exam_id = @exam_id 
+              AND lastDate > @currentDate";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 using (SqlCommand com = new SqlCommand(cmd, connection))
                 {
-                 
                     com.Parameters.AddWithValue("@finished", finished);
                     com.Parameters.AddWithValue("@exam_id", examid);
+                    com.Parameters.AddWithValue("@currentDate", currentDate);
 
                     connection.Open();
                     int count = Convert.ToInt32(com.ExecuteScalar());
                     connection.Close();
+
                     if (count > 0)
                     {
-                        
                         Student_Exam student_Menu = new Student_Exam(examid, student_id);
                         student_Menu.Show();
                         Hide();
                     }
                     else
                     {
-                
-                        MessageBox.Show("No Exams for you right no", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("No exams available for you right now or the date has passed.",
+                                        "Empty",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Exclamation);
                     }
                 }
             }
             catch (Exception ex)
             {
-              
-                MessageBox.Show(ex.Message);
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
 
@@ -121,10 +119,6 @@ namespace sinav
             Hide();
         }
 
-        private void operatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -160,31 +154,33 @@ namespace sinav
                     using (StreamWriter writer = new StreamWriter(filePath))
                     {
                         string currentDate = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
-                        writer.WriteLine("<!DOCTYPE html>");
-                        writer.WriteLine("<html>");
-                        writer.WriteLine("<head>");
-                        writer.WriteLine("<style>");
-                        writer.WriteLine("body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: #dcdcdc; margin: 0; padding: 20px; line-height: 1.6; }");
-                        writer.WriteLine("h1 { color: #ffffff; text-align: center; font-size: 2.5em; margin: 30px 0; font-weight: 700; text-shadow: 0 0 10px white; }");
-                        writer.WriteLine(".container { max-width: 800px; margin: 0 auto; padding: 20px; }");
-                        writer.WriteLine(".section { margin: 20px 0; padding: 25px; border: 1px solid #2e2e2e; border-radius: 12px; background-color: #252525; box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); }");
-                        writer.WriteLine(".section h2 { font-size: 1.5em; color: #f0f0f0; margin-bottom: 15px; }");
-                        writer.WriteLine(".question { font-size: 1.1em; font-family: 'Cascadia Code', monospace; color: #bbbbbb; margin-bottom: 10px; }");
-                        writer.WriteLine(".answer { font-size: 1em; font-family: 'Cascadia Code', monospace; color: #ffffff; margin-left: 20px; }");
-                        writer.WriteLine(".result { font-family: 'Roboto Mono', monospace; font-weight: bold; color: #2ecc71; font-size: 1.25em; margin-top: 20px; text-shadow: 0 0 10px white; }");
-                        writer.WriteLine(".anti-forgery { font-size: 0.9em; color: #888888; text-align: center; margin-top: 40px; }");
-                        writer.WriteLine(".footer { text-align: center; font-size: 0.85em; color: #888888; margin-top: 60px; }");
-                        writer.WriteLine("button { background-color: #3b3b3b; color: #ffffff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }");
-                        writer.WriteLine("button:hover { background-color: #4c4c4c; }");
-                        writer.WriteLine("a { color: #00aaff; text-decoration: none; transition: color 0.3s ease; }");
-                        writer.WriteLine("a:hover { color: #66cfff; }");
-                        writer.WriteLine("</style>");
-                        writer.WriteLine("</head>");
-                        writer.WriteLine("<body>");
+                        string htmlContent = $@"
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {{ font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: #dcdcdc; margin: 0; padding: 20px; line-height: 1.6; }}
+        h1 {{ color: #ffffff; text-align: center; font-size: 2.5em; margin: 30px 0; font-weight: 700; text-shadow: 0 0 10px white; }}
+        .container {{ max-width: 800px; margin: 0 auto; padding: 20px; }}
+        .section {{ margin: 20px 0; padding: 25px; border: 1px solid #2e2e2e; border-radius: 12px; background-color: #252525; box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); }}
+        .section h2 {{ font-size: 1.5em; color: #f0f0f0; margin-bottom: 15px; }}
+        .question {{ font-size: 1.1em; font-family: 'Cascadia Code', monospace; color: #bbbbbb; margin-bottom: 10px; }}
+        .answer {{ font-size: 1em; font-family: 'Cascadia Code', monospace; color: #ffffff; margin-left: 20px; }}
+        .result {{ font-family: 'Roboto Mono', monospace; font-weight: bold; color: #2ecc71; font-size: 1.25em; margin-top: 20px; text-shadow: 0 0 10px white; }}
+        .anti-forgery {{ font-size: 0.9em; color: #888888; text-align: center; margin-top: 40px; }}
+        .footer {{ text-align: center; font-size: 0.85em; color: #888888; margin-top: 60px; }}
+        button {{ background-color: #3b3b3b; color: #ffffff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }}
+        button:hover {{ background-color: #4c4c4c; }}
+        a {{ color: #00aaff; text-decoration: none; transition: color 0.3s ease; }}
+        a:hover {{ color: #66cfff; }}
+    </style>
+</head>
 
-                        writer.WriteLine("<h1>Exam Result</h1>");
-                        writer.WriteLine("<div class='section'>");
-                        writer.WriteLine($"<p><strong>Date:</strong> {currentDate}</p>");
+</html>
+";
+
+                        writer.WriteLine(htmlContent);
+
 
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
@@ -209,7 +205,7 @@ namespace sinav
                                     var resultObj = resultReader["result"];
                                     if (resultObj != DBNull.Value && float.TryParse(resultObj.ToString(), out resultValue))
                                     {
-                                        writer.WriteLine($"<p><strong>Result:</strong> <span class='result'>{resultValue}</span></p>");
+                          
                                     }
                                     else
                                     {
@@ -248,11 +244,9 @@ namespace sinav
                                 string studentName = examDetailsReader["name"].ToString();
                                 string studentNickname = examDetailsReader["nick_name"].ToString();
                                 string examName = examDetailsReader["exam_name"].ToString();
-
-                                writer.WriteLine($"<p><strong>Student Name:</strong> {studentName} {studentNickname}</p>");
-                               
-                                writer.WriteLine($"<p><strong>Exam Name:</strong> {examName}</p>");
-                                writer.WriteLine("</div>");
+                                string tex = $" <h1>Exam Result</h1>\r\n    <div class='section'>\r\n        <p><strong>Date:</strong> {currentDate}</p>\r\n        <p><strong>Result:</strong> <span class='result'>{resultValue}</span></p>\r\n        <p><strong>Student Name:</strong> {studentName} {studentNickname}</p>\r\n        <p><strong>Exam Name:</strong> {examName}</p>\r\n    </div>";
+                                writer.WriteLine(tex);
+                              
 
                                 writer.WriteLine("<div class='section'>");
                                 writer.WriteLine("<h2>Questions & Answers</h2>");
@@ -299,15 +293,7 @@ namespace sinav
             }
         }
 
-        private void examsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void yourNotesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
+     
 
         private void notesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -315,19 +301,21 @@ namespace sinav
             directories a = new directories($"D:\\Program Files\\{student_id}");
 
             a.Show();
-           
+            Hide();
         }
 
         private void pomodoroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Pomodoro pomodoro = new Pomodoro();
+            Pomodoro pomodoro = new Pomodoro(student_id);
             pomodoro.Show();
+            Hide();
         }
 
         private void messagesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Announcements a = new Announcements(student_id);
             a.Show();
+            Hide();
         }
     }
 }

@@ -124,6 +124,12 @@
     <Compile Include="menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="miniGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miniGame.Designer.cs">
+      <DependentUpon>miniGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pomodoro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miniGame.resx">
+      <DependentUpon>miniGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pomodoro.resx">
       <DependentUpon>Pomodoro.cs</DependentUpon>
@@ -590,6 +599,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hopstarter-Soft-Scraps-Book.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RTS_Crate_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Gaming-Nintendo-SNES-Alternate.16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

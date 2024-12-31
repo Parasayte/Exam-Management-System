@@ -82,7 +82,6 @@ namespace sinav
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
             this.operatToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
             this.operatToolStripMenuItem.Text = "Operat";
-            this.operatToolStripMenuItem.Click += new System.EventHandler(this.operatToolStripMenuItem_Click);
             // 
             // examsToolStripMenuItem
             // 
@@ -90,7 +89,6 @@ namespace sinav
             this.examsToolStripMenuItem.Name = "examsToolStripMenuItem";
             this.examsToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.examsToolStripMenuItem.Text = "Exams";
-            this.examsToolStripMenuItem.Click += new System.EventHandler(this.examsToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -186,7 +184,6 @@ namespace sinav
             this.dataGridView1.TabIndex = 4;
 
             // Event handler
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 
             // 
             // textBox4

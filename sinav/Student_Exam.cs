@@ -17,7 +17,8 @@ namespace sinav
         int Studenid;
         int examid;
         string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
-
+         int totalTime ; 
+         int timeRemaining;
         public Student_Exam(int examId,int studentId)
         {
             InitializeComponent();
@@ -56,18 +57,18 @@ namespace sinav
                     connection.Open();
                     using (SqlDataReader reader = sqlCommand.ExecuteReader())
                     {
-                        if (reader.Read()) // Reading the first row
+                        if (reader.Read()) 
                         {
                             for (int i = 0; i < labels.Length; i++)
                             {
-                                labels[i].Text = reader[i].ToString(); // Assign each question to the corresponding label
+                                labels[i].Text = reader[i].ToString(); 
                             }
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Handle exceptions (e.g., log the error or show a message to the user)
+                  
                     MessageBox.Show($"Error: {ex.Message}");
                 }
             }
@@ -75,43 +76,41 @@ namespace sinav
 
         private void FillAnswers()
         {
+            string a1 = richTextBox1.Text,
+                   a2 = richTextBox2.Text,
+                   a3 = richTextBox3.Text,
+                   a4 = richTextBox4.Text,
+                   a5 = richTextBox5.Text;
 
-            string a1 = richTextBox1.Text
-            , a2 = richTextBox2.Text
-            , a3 = richTextBox3.Text
-            , a4 = richTextBox4.Text
-            , a5 = richTextBox5.Text;
-
-
+            string query = "UPDATE Exam1 SET finished = @finished, a1 = @a1, a2 = @a2, a3 = @a3, a4 = @a4, a5 = @a5 WHERE student_id = @student_id AND exam_id = @exam_id";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@a1", a1);
+                cmd.Parameters.AddWithValue("@a2", a2);
+                cmd.Parameters.AddWithValue("@a3", a3);
+                cmd.Parameters.AddWithValue("@a4", a4);
+                cmd.Parameters.AddWithValue("@a5", a5);
+                cmd.Parameters.AddWithValue("@finished", "T");
+                cmd.Parameters.AddWithValue("@student_id", Studenid);
+                cmd.Parameters.AddWithValue("@exam_id", examid);
 
-                con.Open();
-
-
-               
-                string comnd = "UPDATE Exam1 SET finished=@f, a1 = @a1, a2 = @a2, a3 = @a3, a4 = @a4, a5 = @a5 WHERE student_id = "+Studenid+" AND exam_id = "+examid+";";
-                using (SqlCommand cmd = new SqlCommand(comnd, con))
+                try
                 {
-
-                    cmd.Parameters.AddWithValue("@a1", a1);
-                    cmd.Parameters.AddWithValue("@a2", a2);
-                    cmd.Parameters.AddWithValue("@a3", a3);
-                    cmd.Parameters.AddWithValue("@a4", a4);
-                    cmd.Parameters.AddWithValue("@a5", a5);
-                    cmd.Parameters.AddWithValue("@f", "T");
-
+                    con.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show("Exam finished , wait for the result ","Succeful",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Exam finished! Please wait for the result.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Student_Menu exams = new Student_Menu(Studenid);
+                    exams.Show();
+                    Hide();
                 }
-                con.Close();
-                Student_Menu exams = new Student_Menu(Studenid);
-                exams.Show();
-                Hide();
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
-
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Student_Login a =new Student_Login();
@@ -128,5 +127,70 @@ namespace sinav
         {
             FillAnswers();
         }
+
+        private void Student_Exam_Load(object sender, EventArgs e)
+        {
+            string query = "SELECT Time FROM Exam1 WHERE exam_id = @examid";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@examid", examid);
+
+                try
+                {
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+
+                    if (result != DBNull.Value)
+                    {
+                        totalTime = Convert.ToInt32(result);
+                        timeRemaining = totalTime * 60; 
+                        MessageBox.Show($"Total Exam Time: {totalTime} minutes");
+                        timer1.Start(); 
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: No time found for the exam", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                label18.Text += $" {totalTime} minutes";
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (timeRemaining <= 0)
+            {
+                timer1.Stop();
+                MessageBox.Show("Time is up! The exam will now be submitted.", "Time Up", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FillAnswers();
+                return;
+            }
+
+            int minutes = timeRemaining / 60;
+            int seconds = timeRemaining % 60;
+
+            // Save current scroll position
+            Point scrollPosition = panel2.AutoScrollPosition;
+
+            // Prevent layout changes during update
+            panel2.SuspendLayout();
+            label16.Text = string.Format("{0:D2}:{1:D2}", minutes, seconds);
+            panel2.ResumeLayout();
+
+            // Restore scroll position
+            panel2.AutoScrollPosition = new Point(-scrollPosition.X, -scrollPosition.Y);
+
+            timeRemaining--;
+        }
+
+
+
     }
 }

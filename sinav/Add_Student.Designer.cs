@@ -286,26 +286,9 @@ namespace sinav
             this.dataGridView1.DefaultCellStyle.Padding = new Padding(8); // Padding for spacing around text
 
             // Smooth row animation on hover (optional)
-            this.dataGridView1.CellMouseEnter += (sender, e) =>
-            {
-                // Ensure the row index and column index are valid before accessing the cell
-                if (e.RowIndex >= 0 && e.RowIndex < this.dataGridView1.RowCount && e.ColumnIndex >= 0 && e.ColumnIndex < this.dataGridView1.ColumnCount)
-                {
-                    DataGridViewCell cell = this.dataGridView1[e.ColumnIndex, e.RowIndex];
-                    cell.Style.BackColor = System.Drawing.Color.FromArgb(189, 195, 199); // Hover effect
-                }
-            };
+            
 
-            this.dataGridView1.CellMouseLeave += (sender, e) =>
-            {
-                // Ensure the row index and column index are valid before accessing the cell
-                if (e.RowIndex >= 0 && e.RowIndex < this.dataGridView1.RowCount && e.ColumnIndex >= 0 && e.ColumnIndex < this.dataGridView1.ColumnCount)
-                {
-                    DataGridViewCell cell = this.dataGridView1[e.ColumnIndex, e.RowIndex];
-                    cell.Style.BackColor = System.Drawing.Color.White; // Reset to default
-                }
-            };
-
+          
             // 
             // textBox3
             // 

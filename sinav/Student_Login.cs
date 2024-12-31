@@ -91,7 +91,7 @@ namespace sinav
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Pomodoro a = new Pomodoro();
+            Pomodoro a = new Pomodoro(-1);
             a.Show();
             Hide();
         }
