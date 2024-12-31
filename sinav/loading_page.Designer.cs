@@ -43,15 +43,15 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 5;
+            this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(88)))));
-            this.panel1.Location = new System.Drawing.Point(-7, 313);
+            this.panel1.Location = new System.Drawing.Point(-1, 304);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(27, 17);
+            this.panel1.Size = new System.Drawing.Size(21, 10);
             this.panel1.TabIndex = 0;
             // 
             // label3
@@ -82,7 +82,7 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(1, -2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 45);
+            this.label2.Size = new System.Drawing.Size(30, 43);
             this.label2.TabIndex = 26;
             this.label2.Text = "●";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -114,31 +114,31 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.label7.Location = new System.Drawing.Point(487, 148);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 17);
+            this.label7.Size = new System.Drawing.Size(63, 17);
             this.label7.TabIndex = 30;
-            this.label7.Text = "2024 v1.0";
+            this.label7.Text = "2024 v2.0";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.label6.Location = new System.Drawing.Point(58, 237);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 34);
+            this.label6.Size = new System.Drawing.Size(109, 34);
             this.label6.TabIndex = 31;
-            this.label6.Text = "University project\r\n2024-12-23\r\n";
+            this.label6.Text = "University project\r\n2024-12-31\r\n";
             // 
             // loading_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(0)))), ((int)(((byte)(44)))));
-            this.ClientSize = new System.Drawing.Size(619, 324);
+            this.ClientSize = new System.Drawing.Size(629, 311);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);

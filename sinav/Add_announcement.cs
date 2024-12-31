@@ -13,7 +13,7 @@ namespace sinav
     public partial class Add_announcement : Form
     {
         string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
-
+        DateTime date ;
         public Add_announcement()
         {
             InitializeComponent();
@@ -231,6 +231,19 @@ namespace sinav
         private void Add_announcement_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            date = DateTime.Now;
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            SqlCommand sqlCommand = new SqlCommand($"Delete  FROM announcements1 WHERE Date <'{date}';", sqlConnection);
+            sqlConnection.Open();
+            sqlCommand.ExecuteNonQuery();
+            MessageBox.Show("If there are Old announcements, will be deleteded.");
+            sqlConnection.Close();
+            ShowDataTable();
+
         }
     }
 }

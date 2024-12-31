@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -52,9 +54,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label18 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +93,32 @@
             this.panel2.Size = new System.Drawing.Size(903, 497);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Gray;
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label18.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.LightGray;
+            this.label18.Location = new System.Drawing.Point(1, 157);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(64, 17);
+            this.label18.TabIndex = 39;
+            this.label18.Text = "Time : ";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Gray;
+            this.label17.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(108, 2612);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(111, 25);
+            this.label17.TabIndex = 38;
+            this.label17.Text = "Time Left";
             // 
             // label16
             // 
@@ -331,36 +357,10 @@
     "nctionality.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Gray;
-            this.label17.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(108, 2612);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 25);
-            this.label17.TabIndex = 38;
-            this.label17.Text = "Time Left";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Gray;
-            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label18.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.LightGray;
-            this.label18.Location = new System.Drawing.Point(1, 157);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 17);
-            this.label18.TabIndex = 39;
-            this.label18.Text = "Time : ";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Student_Exam
             // 

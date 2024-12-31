@@ -36,6 +36,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label4
@@ -138,12 +140,36 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.Image = global::sinav.Properties.Resources.Hopstarter_Soft_Scraps_Book_32;
+            this.label6.Location = new System.Drawing.Point(1, 412);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 35);
+            this.label6.TabIndex = 26;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Image = global::sinav.Properties.Resources.Hopstarter_Soft_Scraps_Clock_32;
+            this.label1.Location = new System.Drawing.Point(47, 414);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 33);
+            this.label1.TabIndex = 25;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Teacher_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
@@ -174,5 +200,7 @@
         private System.Windows.Forms.TextBox ID_Textbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
     }
 }

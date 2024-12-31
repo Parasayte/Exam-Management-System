@@ -15,6 +15,7 @@ namespace sinav
     public partial class Add_Exam : Form
     {
         string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
+        DateTime date;
         public Add_Exam()
         {
             InitializeComponent();
@@ -180,6 +181,18 @@ namespace sinav
             Add_announcement addAnnouncements = new Add_announcement();
             addAnnouncements.Show();
             Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            date = DateTime.Now;
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            SqlCommand sqlCommand = new SqlCommand($"Delete  FROM Exam1 WHERE lastDate <'{date}';", sqlConnection);
+            sqlConnection.Open();
+            sqlCommand.ExecuteNonQuery();
+            MessageBox.Show("If there are Old exams, will be deleteded.");
+            sqlConnection.Close();
+            BrigExamsData();
         }
     }
 };

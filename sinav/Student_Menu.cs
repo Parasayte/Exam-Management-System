@@ -19,6 +19,7 @@ namespace sinav
         SqlConnection con;
         string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
         int student_id;
+        DateTime nowtime;
         public Student_Menu(int id)
         {
             InitializeComponent();
@@ -38,9 +39,10 @@ namespace sinav
 
         private void Exams_Load(object sender, EventArgs e)
         {
-           con = new SqlConnection(connectionString);
+            nowtime = DateTime.Now;
+            con = new SqlConnection(connectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,finished,Time,lastdate FROM Exam1 Where finished='F' and Student_id= "+student_id, con);
+            SqlCommand cmd = new SqlCommand($"SELECT exam_name,exam_id,finished,Time,lastdate FROM Exam1 Where finished='F' and Student_id={ student_id } AND lastDate > '{nowtime}'", con);
             SqlCommand cmd1 = new SqlCommand("SELECT * FROM Exam1 Where finished='T' and Student_id=  "+student_id , con);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
             SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(cmd1);
