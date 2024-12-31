@@ -81,5 +81,19 @@ namespace sinav
         {
             Application.Exit();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            directories a = new directories("D:\\Program Files\\-1");
+            a.Show();
+          
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Pomodoro a = new Pomodoro();
+            a.Show();
+            Hide();
+        }
     }
 }

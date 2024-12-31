@@ -63,6 +63,7 @@
             this.Login_Button.BackColor = System.Drawing.Color.Brown;
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_Button.ForeColor = System.Drawing.Color.Black;
             this.Login_Button.Image = global::sinav.Properties.Resources.enter;
             this.Login_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Login_Button.Location = new System.Drawing.Point(273, 272);
@@ -75,8 +76,10 @@
             // 
             // Password_Textbox
             // 
+            this.Password_Textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Password_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Password_Textbox.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_Textbox.ForeColor = System.Drawing.Color.Silver;
             this.Password_Textbox.Location = new System.Drawing.Point(273, 222);
             this.Password_Textbox.Name = "Password_Textbox";
             this.Password_Textbox.PasswordChar = '*';
@@ -86,8 +89,10 @@
             // 
             // ID_Textbox
             // 
+            this.ID_Textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ID_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ID_Textbox.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Textbox.ForeColor = System.Drawing.Color.Silver;
             this.ID_Textbox.Location = new System.Drawing.Point(273, 170);
             this.ID_Textbox.Name = "ID_Textbox";
             this.ID_Textbox.Size = new System.Drawing.Size(259, 30);
@@ -98,7 +103,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cascadia Code", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(30)))), ((int)(((byte)(50)))));
             this.label5.Location = new System.Drawing.Point(191, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(419, 63);
@@ -121,6 +126,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::sinav.Properties.Resources.student;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(679, 402);
@@ -136,6 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
@@ -145,6 +152,7 @@
             this.Controls.Add(this.Login_Button);
             this.Controls.Add(this.Password_Textbox);
             this.Controls.Add(this.ID_Textbox);
+            this.ForeColor = System.Drawing.Color.Silver;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Teacher_Login";

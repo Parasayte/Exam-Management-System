@@ -164,5 +164,12 @@ namespace sinav
         {
 
         }
+
+        private void addAnnouncementsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_announcement addAnnouncements = new Add_announcement();
+            addAnnouncements.Show();
+            Hide();
+        }
     }
 }

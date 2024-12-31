@@ -73,9 +73,49 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Aha_Soft_Hardware_Light_off_16 {
+            get {
+                object obj = ResourceManager.GetObject("Aha-Soft-Hardware-Light-off.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap assept_document__1_ {
             get {
                 object obj = ResourceManager.GetObject("assept-document (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bogo_D_Project_Panel_Colors_16 {
+            get {
+                object obj = ResourceManager.GetObject("Bogo-D-Project-Panel-Colors.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bogo_D_Project_Panel_Colors_32 {
+            get {
+                object obj = ResourceManager.GetObject("Bogo-D-Project-Panel-Colors.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap C {
+            get {
+                object obj = ResourceManager.GetObject("C", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +143,56 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap crate_1554455 {
+            get {
+                object obj = ResourceManager.GetObject("crate_1554455", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Custom_Icon_Design_Pretty_Office_8_Comment_add_16 {
+            get {
+                object obj = ResourceManager.GetObject("Custom-Icon-Design-Pretty-Office-8-Comment-add.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap D {
+            get {
+                object obj = ResourceManager.GetObject("D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eddede {
+            get {
+                object obj = ResourceManager.GetObject("eddede", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit {
             get {
                 object obj = ResourceManager.GetObject("edit", resourceCulture);
@@ -123,9 +213,809 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fatcow_Farm_Fresh_Folder_link_16 {
+            get {
+                object obj = ResourceManager.GetObject("Fatcow-Farm-Fresh-Folder-link.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fatcow_Farm_Fresh_Font_colors_32 {
+            get {
+                object obj = ResourceManager.GetObject("Fatcow-Farm-Fresh-Font-colors.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_download {
             get {
                 object obj = ResourceManager.GetObject("file-download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Adobe_Cs4_File_Adobe_Dreamweaver_HTML_01_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-HTML-01.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Adobe_Cs4_File_Adobe_Dreamweaver_HTML_01_256 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-HTML-01.256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Adobe_Cs4_File_Adobe_Dreamweaver_HTML_01_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-HTML-01.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Cancel_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Cancel.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Pause_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Pause.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Pause_72__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Pause.72 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Play_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Play.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Reload_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Reload.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Reload_72__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Reload.72 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Stop_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Stop.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Plastic_Mini_Button_Blank_Green_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Plastic-Mini-Button-Blank-Green.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Plastic_Mini_Calendar_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Plastic-Mini-Calendar.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Plastic_Mini_Coffee_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Plastic-Mini-Coffee.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Plastic_Mini_File_Code_HTML_24 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Plastic-Mini-File-Code-HTML.24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Plastic_Mini_Tool_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Plastic-Mini-Tool.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Scrap_Clock_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Scrap-Clock.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Scrap_Folder_Closed_Red_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Scrap-Folder-Closed-Red.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Add_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Add.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Administrator_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Administrator.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Applications_Cascade_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Applications-Cascade.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Bank_Check_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Bank-Check.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Cancel_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Cancel.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Cancel_256 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Cancel.256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Close_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Close.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Close_24 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Close.24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Close_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Close.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Contract_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Contract.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Contract_256 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Contract.256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Contract_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Contract.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Copy_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Copy.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Document_Blank_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Document-Blank.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Document_Write_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Document-Write.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Download_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Download.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Favorite_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Favorite.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Files_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Files.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Files_256 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Files.256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Files_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Files.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Folder_Open_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Folder-Open.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Folder_Open_24 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Folder-Open.24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Font_Open_Type_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Font-Open-Type.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Home_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Home.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Lamp_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Lamp.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Lamp_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Lamp.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Monitor_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Monitor.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Ok_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Ok.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Pen_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Pen.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Preview_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Preview.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Text_Bubble_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Text-Bubble.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Text_Bubble1 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Text-Bubble1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_World_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-World.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Zoom_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Zoom.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Book_32 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Book.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Blank_Blue_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Blank-Blue.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Blank_Green_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Blank-Green.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Blank_Green_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Blank-Green.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Blank_Red_256 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Blank-Red.256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Blank_Red_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Blank-Red.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Blank_Yellow_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Blank-Yellow.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Reload_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Reload.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Turn_Off_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Turn-Off.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Clock_32 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Clock.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Coin_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Coin.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Coin_16__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Coin.16 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Coin_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Coin.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Document_Gant_Chart_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Document-Gant-Chart.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_File_Delete_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-File-Delete.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_File_Delete_64 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-File-Delete.64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_File_New_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-File-New.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_File_New_64 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-File-New.64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_File_New_72 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-File-New.72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Folder_Add_48 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Folder-Add.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Games_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Games.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Image_BMP_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Image-BMP.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Save_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Save.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Zoom_In_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Zoom-In.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Zoom_Out_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Zoom-Out.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Led24_de_Led_Application_view_xp_terminal_16 {
+            get {
+                object obj = ResourceManager.GetObject("Led24.de-Led-Application-view-xp-terminal.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Led24_de_Led_Color_swatch_2_16 {
+            get {
+                object obj = ResourceManager.GetObject("Led24.de-Led-Color-swatch-2.16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +1033,26 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ok {
+            get {
+                object obj = ResourceManager.GetObject("ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap P {
+            get {
+                object obj = ResourceManager.GetObject("P", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap power {
             get {
                 object obj = ResourceManager.GetObject("power", resourceCulture);
@@ -153,9 +1063,49 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Saki_NuoveXT_2_Actions_appointment_new_16 {
+            get {
+                object obj = ResourceManager.GetObject("Saki-NuoveXT-2-Actions-appointment-new.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Semlabs_Web_Blog_Users_add_16 {
+            get {
+                object obj = ResourceManager.GetObject("Semlabs-Web-Blog-Users-add.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap student {
             get {
                 object obj = ResourceManager.GetObject("student", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap T {
+            get {
+                object obj = ResourceManager.GetObject("T", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap top_view_highway_city_with_houses_70347_3514 {
+            get {
+                object obj = ResourceManager.GetObject("top-view-highway-city-with-houses_70347-3514", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +1126,46 @@ namespace sinav.Properties {
         internal static System.Drawing.Bitmap user_add {
             get {
                 object obj = ResourceManager.GetObject("user-add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Yusuke_Kamiyamane_Fugue_Animal_16 {
+            get {
+                object obj = ResourceManager.GetObject("Yusuke-Kamiyamane-Fugue-Animal.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Yusuke_Kamiyamane_Fugue_Animal_16_export {
+            get {
+                object obj = ResourceManager.GetObject("Yusuke-Kamiyamane-Fugue-Animal.16-export", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Yusuke_Kamiyamane_Fugue_Flag_black_16 {
+            get {
+                object obj = ResourceManager.GetObject("Yusuke-Kamiyamane-Fugue-Flag-black.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Yusuke_Kamiyamane_Fugue_Leaf_16 {
+            get {
+                object obj = ResourceManager.GetObject("Yusuke-Kamiyamane-Fugue-Leaf.16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

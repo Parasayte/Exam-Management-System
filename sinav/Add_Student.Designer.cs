@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace sinav
 {
@@ -51,6 +52,7 @@ namespace sinav
             this.button6 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.addAnnouncementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -159,8 +161,9 @@ namespace sinav
             this.addExamToolStripMenuItem,
             this.readNotesToolStripMenuItem,
             this.addStudentToolStripMenuItem,
+            this.addAnnouncementsToolStripMenuItem,
             this.logOutToolStripMenuItem});
-            this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.menu_burger;
+            this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Applications_Cascade_16;
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
             this.operatToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.operatToolStripMenuItem.Text = "Operat";
@@ -168,32 +171,32 @@ namespace sinav
             // 
             // addExamToolStripMenuItem
             // 
-            this.addExamToolStripMenuItem.Image = global::sinav.Properties.Resources.add_document;
+            this.addExamToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Soft_Scraps_File_New_16;
             this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
-            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.addExamToolStripMenuItem.Text = "Add Exam";
             this.addExamToolStripMenuItem.Click += new System.EventHandler(this.addExamToolStripMenuItem_Click);
             // 
             // readNotesToolStripMenuItem
             // 
-            this.readNotesToolStripMenuItem.Image = global::sinav.Properties.Resources.edit;
+            this.readNotesToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Contract_16;
             this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
-            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.readNotesToolStripMenuItem.Text = "Read Notes";
             this.readNotesToolStripMenuItem.Click += new System.EventHandler(this.readNotesToolStripMenuItem_Click_1);
             // 
             // addStudentToolStripMenuItem
             // 
-            this.addStudentToolStripMenuItem.Image = global::sinav.Properties.Resources.user_add;
+            this.addStudentToolStripMenuItem.Image = global::sinav.Properties.Resources.Semlabs_Web_Blog_Users_add_16;
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             // 
             // logOutToolStripMenuItem
             // 
-            this.logOutToolStripMenuItem.Image = global::sinav.Properties.Resources.power;
+            this.logOutToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Close_16;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
             // 
@@ -230,13 +233,79 @@ namespace sinav
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // dataGridView1
-            // 
+            // General DataGridView settings
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None; // No border for a clean look
             this.dataGridView1.Location = new System.Drawing.Point(176, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(611, 349);
             this.dataGridView1.TabIndex = 43;
+
+            // Header Style
+            DataGridViewCellStyle headerStyle = new DataGridViewCellStyle();
+            headerStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            headerStyle.BackColor = System.Drawing.Color.FromArgb(41, 128, 185); // Soft blue for modern feel
+            headerStyle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            headerStyle.ForeColor = System.Drawing.Color.White; // White text for contrast
+            headerStyle.SelectionBackColor = System.Drawing.Color.FromArgb(52, 152, 219); // Lighter blue when header is selected
+            headerStyle.SelectionForeColor = System.Drawing.Color.White;
+            headerStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True; // Wrap text in headers
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = headerStyle;
+            this.dataGridView1.ColumnHeadersHeight = 40; // Tall header for a more modern, spacious look
+
+            // Cell Style
+            DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
+            cellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            cellStyle.BackColor = System.Drawing.Color.White; // White background for cells
+            cellStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular); // Lighter, modern font
+            cellStyle.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80); // Dark gray text for a sleek look
+            cellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(52, 152, 219); // Light blue on selection
+            cellStyle.SelectionForeColor = System.Drawing.Color.White; // White text when selected
+            cellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True; // Wrap long text
+            this.dataGridView1.DefaultCellStyle = cellStyle;
+
+            // Alternating Row Style
+            this.dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(236, 240, 241); // Light gray for alternating rows
+
+            // Row Selection & Hover Effects
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect; // Select full row
+            this.dataGridView1.ReadOnly = true; // Make cells read-only
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal; // Horizontal lines only for cleaner look
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(204, 204, 204); // Light gray grid lines
+
+            // Hover effect for rows
+            this.dataGridView1.RowsDefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(52, 152, 219); // Highlight selected row with modern blue
+            this.dataGridView1.RowsDefaultCellStyle.SelectionForeColor = System.Drawing.Color.White; // White text on hover
+
+            // Font Size & Spacing
+            this.dataGridView1.RowTemplate.Height = 35; // Slightly taller rows for better readability
+            this.dataGridView1.DefaultCellStyle.Padding = new Padding(8); // Padding for spacing around text
+
+            // Smooth row animation on hover (optional)
+            this.dataGridView1.CellMouseEnter += (sender, e) =>
+            {
+                // Ensure the row index and column index are valid before accessing the cell
+                if (e.RowIndex >= 0 && e.RowIndex < this.dataGridView1.RowCount && e.ColumnIndex >= 0 && e.ColumnIndex < this.dataGridView1.ColumnCount)
+                {
+                    DataGridViewCell cell = this.dataGridView1[e.ColumnIndex, e.RowIndex];
+                    cell.Style.BackColor = System.Drawing.Color.FromArgb(189, 195, 199); // Hover effect
+                }
+            };
+
+            this.dataGridView1.CellMouseLeave += (sender, e) =>
+            {
+                // Ensure the row index and column index are valid before accessing the cell
+                if (e.RowIndex >= 0 && e.RowIndex < this.dataGridView1.RowCount && e.ColumnIndex >= 0 && e.ColumnIndex < this.dataGridView1.ColumnCount)
+                {
+                    DataGridViewCell cell = this.dataGridView1[e.ColumnIndex, e.RowIndex];
+                    cell.Style.BackColor = System.Drawing.Color.White; // Reset to default
+                }
+            };
+
             // 
             // textBox3
             // 
@@ -246,6 +315,14 @@ namespace sinav
             this.textBox3.Size = new System.Drawing.Size(216, 25);
             this.textBox3.TabIndex = 44;
             this.textBox3.Text = "ID";
+            // 
+            // addAnnouncementsToolStripMenuItem
+            // 
+            this.addAnnouncementsToolStripMenuItem.Image = global::sinav.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Comment_add_16;
+            this.addAnnouncementsToolStripMenuItem.Name = "addAnnouncementsToolStripMenuItem";
+            this.addAnnouncementsToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.addAnnouncementsToolStripMenuItem.Text = "Add announcements";
+            this.addAnnouncementsToolStripMenuItem.Click += new System.EventHandler(this.addAnnouncementsToolStripMenuItem_Click);
             // 
             // Add_Student
             // 
@@ -307,5 +384,6 @@ namespace sinav
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ToolStripMenuItem addAnnouncementsToolStripMenuItem;
     }
 }

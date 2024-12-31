@@ -128,9 +128,9 @@ namespace sinav
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            SaveExamResultAsPDF();
+            SaveExamResultAsHtml();
         }
-        private void SaveExamResultAsPDF()
+        private void SaveExamResultAsHtml()
         {
             try
             {
@@ -148,124 +148,186 @@ namespace sinav
 
                 SaveFileDialog saveFileDialog = new SaveFileDialog
                 {
-                    Filter = "PDF Files (*.pdf)|*.pdf",
-                    Title = "Save Exam Result as PDF",
-                    FileName = "ExamResult.pdf"
+                    Filter = "HTML Files (*.html)|*.html",
+                    Title = "Save Exam Result as HTML",
+                    FileName = "ExamResult.html"
                 };
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     string filePath = saveFileDialog.FileName;
 
-                    iTextSharp.text.Document document = new iTextSharp.text.Document();
-                    PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
-                    document.Open();
-
-                    // Define custom fonts
-                    iTextSharp.text.Font resultFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 32f, iTextSharp.text.BaseColor.GREEN);
-                    iTextSharp.text.Font boldFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 12f);
-                    iTextSharp.text.Font blackBoldFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 12f, iTextSharp.text.BaseColor.BLACK);
-                    iTextSharp.text.Font normalFont = iTextSharp.text.FontFactory.GetFont("CascadiaCode", 12f, iTextSharp.text.BaseColor.RED);
-
-                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    using (StreamWriter writer = new StreamWriter(filePath))
                     {
-                        connection.Open();
+                        string currentDate = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+                        writer.WriteLine("<!DOCTYPE html>");
+                        writer.WriteLine("<html>");
+                        writer.WriteLine("<head>");
+                        writer.WriteLine("<style>");
+                        writer.WriteLine("body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: #dcdcdc; margin: 0; padding: 20px; line-height: 1.6; }");
+                        writer.WriteLine("h1 { color: #ffffff; text-align: center; font-size: 2.5em; margin: 30px 0; font-weight: 700; text-shadow: 0 0 10px white; }");
+                        writer.WriteLine(".container { max-width: 800px; margin: 0 auto; padding: 20px; }");
+                        writer.WriteLine(".section { margin: 20px 0; padding: 25px; border: 1px solid #2e2e2e; border-radius: 12px; background-color: #252525; box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); }");
+                        writer.WriteLine(".section h2 { font-size: 1.5em; color: #f0f0f0; margin-bottom: 15px; }");
+                        writer.WriteLine(".question { font-size: 1.1em; font-family: 'Cascadia Code', monospace; color: #bbbbbb; margin-bottom: 10px; }");
+                        writer.WriteLine(".answer { font-size: 1em; font-family: 'Cascadia Code', monospace; color: #ffffff; margin-left: 20px; }");
+                        writer.WriteLine(".result { font-family: 'Roboto Mono', monospace; font-weight: bold; color: #2ecc71; font-size: 1.25em; margin-top: 20px; text-shadow: 0 0 10px white; }");
+                        writer.WriteLine(".anti-forgery { font-size: 0.9em; color: #888888; text-align: center; margin-top: 40px; }");
+                        writer.WriteLine(".footer { text-align: center; font-size: 0.85em; color: #888888; margin-top: 60px; }");
+                        writer.WriteLine("button { background-color: #3b3b3b; color: #ffffff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }");
+                        writer.WriteLine("button:hover { background-color: #4c4c4c; }");
+                        writer.WriteLine("a { color: #00aaff; text-decoration: none; transition: color 0.3s ease; }");
+                        writer.WriteLine("a:hover { color: #66cfff; }");
+                        writer.WriteLine("</style>");
+                        writer.WriteLine("</head>");
+                        writer.WriteLine("<body>");
 
-                        SqlCommand resultCmd = new SqlCommand(
-                            "SELECT result, finished FROM Exam1 WHERE exam_id = @exam_id",
-                            connection
-                        );
-                        resultCmd.Parameters.AddWithValue("@exam_id", examId);
+                        writer.WriteLine("<h1>Exam Result</h1>");
+                        writer.WriteLine("<div class='section'>");
+                        writer.WriteLine($"<p><strong>Date:</strong> {currentDate}</p>");
 
-                        SqlDataReader resultReader = resultCmd.ExecuteReader();
-                        float resultValue = 0;
-                        bool isFinished = false;
-
-                        if (resultReader.Read())
+                        using (SqlConnection connection = new SqlConnection(connectionString))
                         {
-                            isFinished = resultReader["finished"]?.ToString() == "T";
+                            connection.Open();
 
-                            if (!isFinished)
+                            SqlCommand resultCmd = new SqlCommand(
+                                "SELECT result, finished FROM Exam1 WHERE exam_id = @exam_id",
+                                connection
+                            );
+                            resultCmd.Parameters.AddWithValue("@exam_id", examId);
+
+                            SqlDataReader resultReader = resultCmd.ExecuteReader();
+                            float resultValue = 0;
+                            bool isFinished = false;
+
+                            if (resultReader.Read())
                             {
-                                var resultObj = resultReader["result"];
-                                if (resultObj != DBNull.Value && float.TryParse(resultObj.ToString(), out resultValue))
+                                isFinished = resultReader["finished"]?.ToString() == "T";
+
+                                if (!isFinished)
                                 {
-                                    document.Add(new iTextSharp.text.Paragraph($"                     Result: {resultValue}", resultFont));
+                                    var resultObj = resultReader["result"];
+                                    if (resultObj != DBNull.Value && float.TryParse(resultObj.ToString(), out resultValue))
+                                    {
+                                        writer.WriteLine($"<p><strong>Result:</strong> <span class='result'>{resultValue}</span></p>");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Result not available or invalid for this exam.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        resultReader.Close();
+                                        return;
+                                    }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Result not available or invalid for this exam.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show("The exam is not finished yet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     resultReader.Close();
                                     return;
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("The exam is not finished yet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("No exam found with the provided Exam ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 resultReader.Close();
                                 return;
                             }
-                        }
-                        else
-                        {
-                            MessageBox.Show("No exam found with the provided Exam ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                             resultReader.Close();
-                            return;
-                        }
 
-                        resultReader.Close();
+                            SqlCommand examDetailsCmd = new SqlCommand(
+                                "SELECT s.name, s.nick_name, e.exam_name, e.q1, e.a1, e.q2, e.a2, e.q3, e.a3, e.q4, e.a4, e.q5, e.a5 " +
+                                "FROM Exam1 e " +
+                                "INNER JOIN Students s ON e.student_id = s.id " +
+                                "WHERE e.exam_id = @exam_id", connection);
+                            examDetailsCmd.Parameters.AddWithValue("@exam_id", examId);
 
-                        SqlCommand examDetailsCmd = new SqlCommand(
-                            "SELECT s.name, s.nick_name, e.exam_name, e.q1, e.a1, e.q2, e.a2, e.q3, e.a3, e.q4, e.a4, e.q5, e.a5 " +
-                            "FROM Exam1 e " +
-                            "INNER JOIN Students s ON e.student_id = s.id " +
-                            "WHERE e.exam_id = @exam_id", connection);
-                        examDetailsCmd.Parameters.AddWithValue("@exam_id", examId);
+                            SqlDataReader examDetailsReader = examDetailsCmd.ExecuteReader();
 
-                        SqlDataReader examDetailsReader = examDetailsCmd.ExecuteReader();
-
-                        if (examDetailsReader.Read())
-                        {
-                            string studentName = examDetailsReader["name"].ToString();
-                            string studentNickname = examDetailsReader["nick_name"].ToString();
-                            string examName = examDetailsReader["exam_name"].ToString();
-
-                            document.Add(new iTextSharp.text.Paragraph($"Student: {studentName} ({studentNickname})", blackBoldFont));
-                            document.Add(new iTextSharp.text.Paragraph($"Exam Name: {examName}", blackBoldFont));
-                            document.Add(new iTextSharp.text.Paragraph("\n"));
-
-                            for (int i = 1; i <= 5; i++)
+                            if (examDetailsReader.Read())
                             {
-                                string question = examDetailsReader[$"q{i}"].ToString();
-                                string answer = examDetailsReader[$"a{i}"].ToString();
+                                string studentName = examDetailsReader["name"].ToString();
+                                string studentNickname = examDetailsReader["nick_name"].ToString();
+                                string examName = examDetailsReader["exam_name"].ToString();
 
-                                document.Add(new iTextSharp.text.Paragraph($"Question {i}: {question}", boldFont));
-                                document.Add(new iTextSharp.text.Paragraph($"Answer {i}: {answer}", normalFont));
-                                document.Add(new iTextSharp.text.Paragraph("\n"));
+                                writer.WriteLine($"<p><strong>Student Name:</strong> {studentName} {studentNickname}</p>");
+                               
+                                writer.WriteLine($"<p><strong>Exam Name:</strong> {examName}</p>");
+                                writer.WriteLine("</div>");
+
+                                writer.WriteLine("<div class='section'>");
+                                writer.WriteLine("<h2>Questions & Answers</h2>");
+
+                                for (int i = 1; i <= 5; i++)
+                                {
+                                    string question = examDetailsReader[$"q{i}"].ToString();
+                                    string answer = examDetailsReader[$"a{i}"].ToString();
+
+                                    writer.WriteLine($"<p class='question'>Question {i}: {question}</p>");
+                                    writer.WriteLine($"<p class='answer'>Answer {i}: {answer}</p>");
+                                }
+
+                                writer.WriteLine("</div>");
                             }
-                        }
-                        else
-                        {
-                            MessageBox.Show("No details found for the exam with the provided Exam ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            else
+                            {
+                                MessageBox.Show("No details found for the exam with the provided Exam ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                examDetailsReader.Close();
+                                return;
+                            }
+
                             examDetailsReader.Close();
-                            return;
                         }
 
-                        examDetailsReader.Close();
+                        writer.WriteLine("<div class='anti-forgery'>");
+                        writer.WriteLine("<p>This document is generated and secured. Unauthorized alterations are prohibited.</p>");
+                        writer.WriteLine("</div>");
+
+                        writer.WriteLine("<div class='footer'>");
+                        writer.WriteLine("<p>End of Report</p>");
+                        writer.WriteLine("</div>");
+
+                        writer.WriteLine("</body>");
+                        writer.WriteLine("</html>");
                     }
 
-                    document.Close();
-                    MessageBox.Show("PDF with exam result and details has been saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("HTML file with exam result and details has been saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error saving PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error saving HTML file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private void examsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void yourNotesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
 
+        private void notesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            directories a = new directories($"D:\\Program Files\\{student_id}");
+
+            a.Show();
+           
+        }
+
+        private void pomodoroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pomodoro pomodoro = new Pomodoro();
+            pomodoro.Show();
+        }
+
+        private void messagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Announcements a = new Announcements(student_id);
+            a.Show();
+        }
     }
 }
