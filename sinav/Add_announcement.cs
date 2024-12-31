@@ -42,7 +42,7 @@ namespace sinav
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-
+            richTextBox1.Clear();
             ShowDataTable();
         }
 

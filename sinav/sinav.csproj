@@ -627,5 +627,8 @@
   <ItemGroup>
     <None Include="Resources\Hopstarter-Gaming-Nintendo-SNES-Alternate.16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Chat.32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
