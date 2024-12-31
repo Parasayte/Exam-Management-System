@@ -39,21 +39,22 @@ namespace sinav
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.operatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.examsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pomodoroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.messagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.operatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.examsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomodoroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.messagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupChatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -71,120 +72,41 @@ namespace sinav
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // operatToolStripMenuItem
-            // 
-            this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.examsToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.messagesToolStripMenuItem,
-            this.logOutToolStripMenuItem});
-            this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Applications_Cascade_16;
-            this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
-            this.operatToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
-            this.operatToolStripMenuItem.Text = "Operat";
-            // 
-            // examsToolStripMenuItem
-            // 
-            this.examsToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Blank_16;
-            this.examsToolStripMenuItem.Name = "examsToolStripMenuItem";
-            this.examsToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.examsToolStripMenuItem.Text = "Exams";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.notesToolStripMenuItem,
-            this.pomodoroToolStripMenuItem});
-            this.toolsToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Plastic_Mini_Tool_16;
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.toolsToolStripMenuItem.Text = "Tools";
-            // 
-            // notesToolStripMenuItem
-            // 
-            this.notesToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
-            this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.notesToolStripMenuItem.Text = "Notes";
-            this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
-            // 
-            // pomodoroToolStripMenuItem
-            // 
-            this.pomodoroToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Scrap_Clock_16;
-            this.pomodoroToolStripMenuItem.Name = "pomodoroToolStripMenuItem";
-            this.pomodoroToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.pomodoroToolStripMenuItem.Text = "Pomodoro";
-            this.pomodoroToolStripMenuItem.Click += new System.EventHandler(this.pomodoroToolStripMenuItem_Click);
-            // 
-            // messagesToolStripMenuItem
-            // 
-            this.messagesToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Text_Bubble1;
-            this.messagesToolStripMenuItem.Name = "messagesToolStripMenuItem";
-            this.messagesToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.messagesToolStripMenuItem.Text = "announcement";
-            this.messagesToolStripMenuItem.Click += new System.EventHandler(this.messagesToolStripMenuItem_Click);
-            // 
-            // logOutToolStripMenuItem
-            // 
-            this.logOutToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Close_16;
-            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.logOutToolStripMenuItem.Text = "Log Out";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
-            // 
             // dataGridView1
             // 
-            // Alternating row style
-            DataGridViewCellStyle alternatingRowStyle = new DataGridViewCellStyle();
-            alternatingRowStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            alternatingRowStyle.BackColor = System.Drawing.Color.WhiteSmoke; // Light gray for alternating rows
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = alternatingRowStyle;
-
-            // General DataGridView settings
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill; // Fill columns to use all available space
-
-            // Column headers styling
-            DataGridViewCellStyle columnHeaderStyle = new DataGridViewCellStyle();
-            columnHeaderStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            columnHeaderStyle.BackColor = System.Drawing.Color.LightGray; // Light gray header background
-            columnHeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            columnHeaderStyle.ForeColor = System.Drawing.Color.Black;
-            columnHeaderStyle.SelectionBackColor = System.Drawing.Color.MediumPurple; // Subtle purple for selection
-            columnHeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            columnHeaderStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = columnHeaderStyle;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-
-            // Default cell styling
-            DataGridViewCellStyle defaultCellStyle = new DataGridViewCellStyle();
-            defaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            defaultCellStyle.BackColor = System.Drawing.Color.White; // Clean white for default rows
-            defaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            defaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            defaultCellStyle.SelectionBackColor = System.Drawing.Color.MediumSlateBlue; // Purple for selected rows
-            defaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-            defaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = defaultCellStyle;
-
-            // Row headers styling
-            DataGridViewCellStyle rowHeaderStyle = new DataGridViewCellStyle();
-            rowHeaderStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            rowHeaderStyle.BackColor = System.Drawing.Color.LightGray; // Matches column headers
-            rowHeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            rowHeaderStyle.ForeColor = System.Drawing.Color.Black;
-            rowHeaderStyle.SelectionBackColor = System.Drawing.Color.MediumSlateBlue;
-            rowHeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            rowHeaderStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = rowHeaderStyle;
-
-            // General layout and size
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSlateBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Location = new System.Drawing.Point(12, 49);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(479, 178); // Maintains the size as requested
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MediumSlateBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.Size = new System.Drawing.Size(479, 178);
             this.dataGridView1.TabIndex = 4;
-
-            // Event handler
-
             // 
             // textBox4
             // 
@@ -257,6 +179,22 @@ namespace sinav
             this.label1.TabIndex = 29;
             this.label1.Text = "Finished  Exams";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Image = global::sinav.Properties.Resources.file_download;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(497, 148);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(295, 31);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Save as html file";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.ForestGreen;
@@ -273,21 +211,75 @@ namespace sinav
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // operatToolStripMenuItem
             // 
-            this.button2.BackColor = System.Drawing.Color.Goldenrod;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = global::sinav.Properties.Resources.file_download;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(497, 148);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(295, 31);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Save as html file";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.examsToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.messagesToolStripMenuItem,
+            this.groupChatToolStripMenuItem,
+            this.logOutToolStripMenuItem});
+            this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Applications_Cascade_16;
+            this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
+            this.operatToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
+            this.operatToolStripMenuItem.Text = "Operat";
+            // 
+            // examsToolStripMenuItem
+            // 
+            this.examsToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Blank_16;
+            this.examsToolStripMenuItem.Name = "examsToolStripMenuItem";
+            this.examsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.examsToolStripMenuItem.Text = "Exams";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.notesToolStripMenuItem,
+            this.pomodoroToolStripMenuItem});
+            this.toolsToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Plastic_Mini_Tool_16;
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // notesToolStripMenuItem
+            // 
+            this.notesToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
+            this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.notesToolStripMenuItem.Text = "Notes";
+            this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
+            // 
+            // pomodoroToolStripMenuItem
+            // 
+            this.pomodoroToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Scrap_Clock_16;
+            this.pomodoroToolStripMenuItem.Name = "pomodoroToolStripMenuItem";
+            this.pomodoroToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.pomodoroToolStripMenuItem.Text = "Pomodoro";
+            this.pomodoroToolStripMenuItem.Click += new System.EventHandler(this.pomodoroToolStripMenuItem_Click);
+            // 
+            // messagesToolStripMenuItem
+            // 
+            this.messagesToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Soft_Scraps_Button_Warning_16;
+            this.messagesToolStripMenuItem.Name = "messagesToolStripMenuItem";
+            this.messagesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.messagesToolStripMenuItem.Text = "announcement";
+            this.messagesToolStripMenuItem.Click += new System.EventHandler(this.messagesToolStripMenuItem_Click);
+            // 
+            // groupChatToolStripMenuItem
+            // 
+            this.groupChatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Text_Bubble1;
+            this.groupChatToolStripMenuItem.Name = "groupChatToolStripMenuItem";
+            this.groupChatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.groupChatToolStripMenuItem.Text = "Group Chat";
+            this.groupChatToolStripMenuItem.Click += new System.EventHandler(this.groupChatToolStripMenuItem_Click);
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Close_16;
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // Student_Menu
             // 
@@ -337,5 +329,6 @@ namespace sinav
         private System.Windows.Forms.ToolStripMenuItem notesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pomodoroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem messagesToolStripMenuItem;
+        private ToolStripMenuItem groupChatToolStripMenuItem;
     }
 }

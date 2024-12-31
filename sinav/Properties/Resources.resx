@@ -142,8 +142,8 @@
   <data name="add-document" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Custom-Icon-Design-Pretty-Office-9-Email-send.32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom-Icon-Design-Pretty-Office-9-Email-send.32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="P" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\P.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,6 +220,9 @@
   <data name="Hopstarter-Button-Button-Pause.72" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Button-Button-Pause.72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Hopstarter-Sleek-Xp-Basic-Contract.48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Contract.48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Hopstarter-Gaming-Nintendo-SNES-Alternate.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Gaming-Nintendo-SNES-Alternate.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -228,6 +231,9 @@
   </data>
   <data name="Hopstarter-Soft-Scraps-Zoom-Out.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Soft-Scraps-Zoom-Out.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fatcow-Farm-Fresh-Folder-link.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fatcow-Farm-Fresh-Folder-link.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hopstarter-Sleek-Xp-Basic-Zoom.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Zoom.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,14 +280,8 @@
   <data name="Hopstarter-Soft-Scraps-Button-Blank-Green.72" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Soft-Scraps-Button-Blank-Green.72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hopstarter-Plastic-Mini-Tool.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hopstarter-Plastic-Mini-Tool.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Hopstarter-Soft-Scraps-Games.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Soft-Scraps-Games.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top-view-highway-city-with-houses_70347-3514" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top-view-highway-city-with-houses_70347-3514.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -306,6 +306,9 @@
   </data>
   <data name="Hopstarter-Sleek-Xp-Basic-Bank-Check.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Bank-Check.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hopstarter-Soft-Scraps-Document-Gant-Chart.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hopstarter-Soft-Scraps-Document-Gant-Chart.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,6 +403,9 @@
   <data name="down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Hopstarter-Sleek-Xp-Basic-Chat.32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Chat.32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Hopstarter-Button-Button-Reload.72" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Button-Button-Reload.72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -418,8 +424,8 @@
   <data name="assept-document (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\assept-document (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu-burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Hopstarter-Plastic-Mini-Tool.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hopstarter-Plastic-Mini-Tool.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hopstarter-Sleek-Xp-Basic-Text-Bubble1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Text-Bubble.161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -439,8 +445,8 @@
   <data name="left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fatcow-Farm-Fresh-Folder-link.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fatcow-Farm-Fresh-Folder-link.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hopstarter-Plastic-Mini-Button-Blank-Green.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Plastic-Mini-Button-Blank-Green.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -460,16 +466,16 @@
   <data name="Hopstarter-Sleek-Xp-Basic-Files.256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Files.256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hopstarter-Soft-Scraps-Document-Gant-Chart.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hopstarter-Soft-Scraps-Document-Gant-Chart.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu-burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hopstarter-Sleek-Xp-Basic-Contract.48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Contract.48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hopstarter-Sleek-Xp-Basic-Chat.32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hopstarter-Sleek-Xp-Basic-Chat.32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Hopstarter-Soft-Scraps-Button-Warning.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hopstarter-Soft-Scraps-Button-Warning.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

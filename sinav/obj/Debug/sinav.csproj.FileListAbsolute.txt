@@ -34,3 +34,4 @@ C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Add_announcement.resourc
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Announcements.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.miniGame.resources
 C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Student_signUp.resources
+C:\Users\hougj\source\repos\sinav\sinav\obj\Debug\sinav.Group_chat.resources

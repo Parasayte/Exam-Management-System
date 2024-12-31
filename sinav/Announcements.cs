@@ -76,10 +76,11 @@ namespace sinav
                             Text = $"{announcement}\n\n\n\nDate: {date}",
                             AutoSize = true,
                             BackColor = Color.FromArgb(45, 45, 48), 
-                            ForeColor = Color.White,              
+                            ForeColor = Color.YellowGreen,              
                             BorderStyle = BorderStyle.FixedSingle,
                             Padding = new Padding(10),
                             Margin = new Padding(5),
+                            Font = new Font("Arial", 12, FontStyle.Bold),
                             MaximumSize = new Size(flowLayoutPanel.Width - 100, 0)
                         };
 

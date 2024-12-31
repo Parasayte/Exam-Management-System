@@ -163,6 +163,16 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Custom_Icon_Design_Pretty_Office_9_Email_send_32 {
+            get {
+                object obj = ResourceManager.GetObject("Custom-Icon-Design-Pretty-Office-9-Email-send.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap D {
             get {
                 object obj = ResourceManager.GetObject("D", resourceCulture);
@@ -866,6 +876,16 @@ namespace sinav.Properties {
         internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Turn_Off_16 {
             get {
                 object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Turn-Off.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Soft_Scraps_Button_Warning_16 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Soft-Scraps-Button-Warning.16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

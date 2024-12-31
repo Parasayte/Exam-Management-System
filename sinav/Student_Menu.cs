@@ -319,5 +319,12 @@ namespace sinav
             a.Show();
             Hide();
         }
+
+        private void groupChatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Group_chat group_Chat = new Group_chat(student_id);
+            group_Chat.Show();
+            Hide();
+        }
     }
 }
