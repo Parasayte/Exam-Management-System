@@ -107,9 +107,9 @@ namespace sinav
             flowLayoutPanel.Controls.Clear();
 
             string query = @"
-    SELECT Chat.Message, Chat.Date, Chat.Time, Chat.Student_id, Students.Name 
-    FROM Chat 
-    LEFT JOIN Students ON Chat.Student_id = Students.Id;";
+        SELECT Chat.Message, Chat.Date, Chat.Time, Chat.Student_id, Students.Name 
+        FROM Chat 
+        LEFT JOIN Students ON Chat.Student_id = Students.Id;";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -133,12 +133,17 @@ namespace sinav
                                 : "No Time";
 
                             int senderId = Convert.ToInt32(reader["Student_id"]);
-                            bool isCurrentStudent = senderId == studentId;  
-                            bool isAdmin = senderId == -1; 
+                            bool isCurrentStudent = senderId == studentId;
+                            bool isAdmin = senderId == -1;
+                            bool isTeacher = senderId == 0; // New condition for Teacher
 
                             if (isAdmin)
                             {
                                 studentName = "Admin";
+                            }
+                            else if (isTeacher)
+                            {
+                                studentName = "Teacher";
                             }
 
                             Panel messagePanel = new Panel
@@ -150,10 +155,14 @@ namespace sinav
 
                             PictureBox pictureBox = new PictureBox
                             {
-                                Image = Resources.Hopstarter_Sleek_Xp_Basic_Chat_32,
                                 Size = new Size(30, 30),
                                 SizeMode = PictureBoxSizeMode.Zoom,
-                                Location = new Point(5, 5)
+                                Location = new Point(5, 5),
+                                Image = isAdmin
+                                    ? Resources.Hopstarter_Scrap_Administrator_32
+                                    : isTeacher
+                                        ? Resources.Hopstarter_Sleek_Xp_Basic_Office_Girl_32 
+                                        : Resources.Hopstarter_Sleek_Xp_Basic_Chat_32
                             };
                             messagePanel.Controls.Add(pictureBox);
 
@@ -163,7 +172,11 @@ namespace sinav
                                 AutoSize = true,
                                 Font = new Font("Arial", 12, FontStyle.Bold),
                                 BackColor = Color.FromArgb(45, 45, 48),
-                                ForeColor = isAdmin ? Color.Red : (isCurrentStudent ? Color.LightGreen : Color.White),  // Change color for admin and current student
+                                ForeColor = isAdmin
+                                    ? Color.Firebrick
+                                    : isTeacher
+                                        ? Color.Olive 
+                                        : (isCurrentStudent ? Color.LightGreen : Color.LightGreen),
                                 BorderStyle = BorderStyle.FixedSingle,
                                 Padding = new Padding(10),
                                 MaximumSize = new Size(flowLayoutPanel.Width - 80, 0),
@@ -184,6 +197,7 @@ namespace sinav
             flowLayoutPanel.ResumeLayout();
             flowLayoutPanel.AutoScrollPosition = new Point(0, flowLayoutPanel.VerticalScroll.Maximum);
         }
+
 
 
 
@@ -240,6 +254,12 @@ namespace sinav
             {
                 Admin_Menu adminMenu = new Admin_Menu();
                 adminMenu.Show();
+                Hide();
+            }
+            else if (studentId == 0)
+            {
+                Read_Answers teacherMenu = new Read_Answers();
+                teacherMenu.Show();
                 Hide();
             }
             else
