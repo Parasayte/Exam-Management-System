@@ -263,6 +263,26 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Google_Noto_Emoji_People_Profession_10225_woman_teacher_light_skin_tone_48 {
+            get {
+                object obj = ResourceManager.GetObject("Google-Noto-Emoji-People-Profession-10225-woman-teacher-light-skin-tone.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Google_Noto_Emoji_People_Profession_10466_woman_detective_light_skin_tone_48 {
+            get {
+                object obj = ResourceManager.GetObject("Google-Noto-Emoji-People-Profession-10466-woman-detective-light-skin-tone.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hopstarter_Adobe_Cs4_File_Adobe_Dreamweaver_HTML_01_16 {
             get {
                 object obj = ResourceManager.GetObject("Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-HTML-01.16", resourceCulture);

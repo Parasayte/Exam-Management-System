@@ -275,5 +275,10 @@ namespace sinav
         {
             Application.Exit();
         }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Print_group_messages();
+        }
     }
 }

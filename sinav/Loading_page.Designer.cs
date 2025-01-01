@@ -133,7 +133,7 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "University project\r\n2024-12-31\r\n";
             // 
-            // loading_page
+            // Loading_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,6 +152,7 @@
             this.Name = "Loading_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Created by SELAM";
+            this.Load += new System.EventHandler(this.Loading_page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

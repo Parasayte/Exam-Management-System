@@ -124,6 +124,12 @@
     <Compile Include="Files_menu.Designer.cs">
       <DependentUpon>Files_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_menu.Designer.cs">
+      <DependentUpon>Login_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mini_game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Files_menu.resx">
       <DependentUpon>Files_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_menu.resx">
+      <DependentUpon>Login_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mini_game.resx">
       <DependentUpon>Mini_game.cs</DependentUpon>
@@ -646,6 +655,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hopstarter-Sleek-Xp-Software-Command-Prompt.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google-Noto-Emoji-People-Profession-10466-woman-detective-light-skin-tone.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google-Noto-Emoji-People-Profession-10225-woman-teacher-light-skin-tone.48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

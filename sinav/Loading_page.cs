@@ -31,8 +31,8 @@ namespace sinav
             {
 
                 timer1.Stop();
-                Student_login student_Login = new Student_login();
-                student_Login.Show();
+                Login_menu login_Menu = new Login_menu();
+                login_Menu.Show();
                 Hide();
             }
         }
@@ -51,6 +51,11 @@ namespace sinav
         private void label5_Click(object sender, EventArgs e)
         {
             Close_program(sender, e);
+
+        }
+
+        private void Loading_page_Load(object sender, EventArgs e)
+        {
 
         }
     }
