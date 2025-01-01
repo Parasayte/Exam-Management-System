@@ -16,7 +16,7 @@ namespace sinav
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loading_page());
+            Application.Run(new Loading_page());
         }
     }
 }

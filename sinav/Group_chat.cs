@@ -71,10 +71,10 @@ namespace sinav
                 Location = new Point(Width - 100, Height - 96),
                 TextAlign = ContentAlignment.MiddleCenter  
             };
-            sendLabel.Click += SendLabel_Click;
+            sendLabel.Click += Send_Message;
             Controls.Add(sendLabel);
 
-            sendLabel.Click += SendLabel_Click;
+            sendLabel.Click += Send_Message;
             Controls.Add(sendLabel);
         }
 
@@ -90,7 +90,7 @@ namespace sinav
                     conn.Open();
                     object result = cmd.ExecuteScalar();
 
-                    studentNameLabel.Text = result?.ToString() ?? "Unknown Student";
+                    studentNameLabel.Text = result?.ToString() ?? "";
                 }
                 catch (Exception ex)
                 {
@@ -99,7 +99,7 @@ namespace sinav
             }
         }
 
-        private void ShowAnnouncementsAsMessages()
+        private void Print_group_messages()
         {
             Point scrollPosition = flowLayoutPanel.AutoScrollPosition;
 
@@ -201,7 +201,7 @@ namespace sinav
 
 
 
-        private void SendLabel_Click(object sender, EventArgs e)
+        private void Send_Message(object sender, EventArgs e)
         {
             string message = richTextBox1.Text.Trim();
             if (!string.IsNullOrEmpty(message))
@@ -223,7 +223,7 @@ namespace sinav
                         cmd.ExecuteNonQuery();
 
                         richTextBox1.Clear();
-                        ShowAnnouncementsAsMessages();
+                        Print_group_messages();
                     }
                     catch (Exception ex)
                     {
@@ -240,31 +240,31 @@ namespace sinav
         private void Group_chat_Load(object sender, EventArgs e)
         {
             ShowStudentName();
-            ShowAnnouncementsAsMessages();
+            Print_group_messages();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            ShowAnnouncementsAsMessages();
+            Print_group_messages();
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(studentId==-1)
             {
-                Admin_Menu adminMenu = new Admin_Menu();
+                Admin_menu adminMenu = new Admin_menu();
                 adminMenu.Show();
                 Hide();
             }
             else if (studentId == 0)
             {
-                Read_Answers teacherMenu = new Read_Answers();
+                Add_results teacherMenu = new Add_results();
                 teacherMenu.Show();
                 Hide();
             }
             else
             {
-                Student_Menu studentMenu = new Student_Menu(studentId);
+                Student_menu studentMenu = new Student_menu(studentId);
                 studentMenu.Show();
                 Hide();
             }

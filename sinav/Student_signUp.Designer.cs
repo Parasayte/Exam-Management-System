@@ -145,7 +145,7 @@ namespace sinav
             this.button6.TabIndex = 55;
             this.button6.Text = "Sign Up";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Sign_up);
             // 
             // textBox4
             // 
@@ -168,7 +168,7 @@ namespace sinav
             this.button5.TabIndex = 60;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            this.button5.Click += new System.EventHandler(this.Go_back_to_loginPage);
             // 
             // label3
             // 

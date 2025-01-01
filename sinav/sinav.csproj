@@ -46,65 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewDirectory.cs">
+    <Compile Include="Add_new_directory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewDirectory.Designer.cs">
-      <DependentUpon>AddNewDirectory.cs</DependentUpon>
+    <Compile Include="Add_new_directory.Designer.cs">
+      <DependentUpon>Add_new_directory.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewFile.cs">
+    <Compile Include="Add_new_file.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewFile.Designer.cs">
-      <DependentUpon>AddNewFile.cs</DependentUpon>
+    <Compile Include="Add_new_file.Designer.cs">
+      <DependentUpon>Add_new_file.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add_announcement.cs">
+    <Compile Include="Add_announcements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add_announcement.Designer.cs">
-      <DependentUpon>Add_announcement.cs</DependentUpon>
+    <Compile Include="Add_announcements.Designer.cs">
+      <DependentUpon>Add_announcements.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add_Exam.cs">
+    <Compile Include="Add_exams.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add_Exam.Designer.cs">
-      <DependentUpon>Add_Exam.cs</DependentUpon>
+    <Compile Include="Add_exams.Designer.cs">
+      <DependentUpon>Add_exams.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add_Teacher.cs">
+    <Compile Include="Add_teachers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add_Teacher.Designer.cs">
-      <DependentUpon>Add_Teacher.cs</DependentUpon>
+    <Compile Include="Add_teachers.Designer.cs">
+      <DependentUpon>Add_teachers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Login.cs">
+    <Compile Include="Admin_login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Login.Designer.cs">
-      <DependentUpon>Admin_Login.cs</DependentUpon>
+    <Compile Include="Admin_login.Designer.cs">
+      <DependentUpon>Admin_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Menu.cs">
+    <Compile Include="Admin_menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Menu.Designer.cs">
-      <DependentUpon>Admin_Menu.cs</DependentUpon>
+    <Compile Include="Admin_menu.Designer.cs">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Announcements.cs">
+    <Compile Include="Announcements_list.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Announcements.Designer.cs">
-      <DependentUpon>Announcements.cs</DependentUpon>
+    <Compile Include="Announcements_list.Designer.cs">
+      <DependentUpon>Announcements_list.cs</DependentUpon>
     </Compile>
-    <Compile Include="directories.cs">
+    <Compile Include="Directories_menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="directories.Designer.cs">
-      <DependentUpon>directories.cs</DependentUpon>
+    <Compile Include="Directories_menu.Designer.cs">
+      <DependentUpon>Directories_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Edit_notes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Edit_notes.Designer.cs">
+      <DependentUpon>Edit_notes.cs</DependentUpon>
     </Compile>
     <Compile Include="Group_chat.cs">
       <SubType>Form</SubType>
@@ -112,72 +112,72 @@
     <Compile Include="Group_chat.Designer.cs">
       <DependentUpon>Group_chat.cs</DependentUpon>
     </Compile>
-    <Compile Include="loading_page.cs">
+    <Compile Include="Loading_page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loading_page.Designer.cs">
-      <DependentUpon>loading_page.cs</DependentUpon>
+    <Compile Include="Loading_page.Designer.cs">
+      <DependentUpon>Loading_page.cs</DependentUpon>
     </Compile>
-    <Compile Include="menu.cs">
+    <Compile Include="Files_menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
+    <Compile Include="Files_menu.Designer.cs">
+      <DependentUpon>Files_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="miniGame.cs">
+    <Compile Include="Mini_game.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="miniGame.Designer.cs">
-      <DependentUpon>miniGame.cs</DependentUpon>
+    <Compile Include="Mini_game.Designer.cs">
+      <DependentUpon>Mini_game.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pomodoro.cs">
+    <Compile Include="Time_controler_app.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pomodoro.Designer.cs">
-      <DependentUpon>Pomodoro.cs</DependentUpon>
+    <Compile Include="Time_controler_app.Designer.cs">
+      <DependentUpon>Time_controler_app.cs</DependentUpon>
     </Compile>
-    <Compile Include="printResult.cs">
+    <Compile Include="Print_result.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="printResult.Designer.cs">
-      <DependentUpon>printResult.cs</DependentUpon>
+    <Compile Include="Print_result.Designer.cs">
+      <DependentUpon>Print_result.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Student_Menu.cs">
+    <Compile Include="Student_menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_Menu.Designer.cs">
-      <DependentUpon>Student_Menu.cs</DependentUpon>
+    <Compile Include="Student_menu.Designer.cs">
+      <DependentUpon>Student_menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Read_Answers.cs">
+    <Compile Include="Add_results.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Read_Answers.Designer.cs">
-      <DependentUpon>Read_Answers.cs</DependentUpon>
+    <Compile Include="Add_results.Designer.cs">
+      <DependentUpon>Add_results.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student_Login.cs">
+    <Compile Include="Student_login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_Login.Designer.cs">
-      <DependentUpon>Student_Login.cs</DependentUpon>
+    <Compile Include="Student_login.Designer.cs">
+      <DependentUpon>Student_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student_Exam.cs">
+    <Compile Include="Students_exam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_Exam.Designer.cs">
-      <DependentUpon>Student_Exam.cs</DependentUpon>
+    <Compile Include="Students_exam.Designer.cs">
+      <DependentUpon>Students_exam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add_Student.cs">
+    <Compile Include="Add_students.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add_Student.Designer.cs">
-      <DependentUpon>Add_Student.cs</DependentUpon>
+    <Compile Include="Add_students.Designer.cs">
+      <DependentUpon>Add_students.cs</DependentUpon>
     </Compile>
     <Compile Include="Student_signUp.cs">
       <SubType>Form</SubType>
@@ -185,85 +185,85 @@
     <Compile Include="Student_signUp.Designer.cs">
       <DependentUpon>Student_signUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teacher_Login.cs">
+    <Compile Include="Teacher_login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teacher_Login.Designer.cs">
-      <DependentUpon>Teacher_Login.cs</DependentUpon>
+    <Compile Include="Teacher_login.Designer.cs">
+      <DependentUpon>Teacher_login.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddNewDirectory.resx">
-      <DependentUpon>AddNewDirectory.cs</DependentUpon>
+    <EmbeddedResource Include="Add_new_directory.resx">
+      <DependentUpon>Add_new_directory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewFile.resx">
-      <DependentUpon>AddNewFile.cs</DependentUpon>
+    <EmbeddedResource Include="Add_new_file.resx">
+      <DependentUpon>Add_new_file.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_announcement.resx">
-      <DependentUpon>Add_announcement.cs</DependentUpon>
+    <EmbeddedResource Include="Add_announcements.resx">
+      <DependentUpon>Add_announcements.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_Exam.resx">
-      <DependentUpon>Add_Exam.cs</DependentUpon>
+    <EmbeddedResource Include="Add_exams.resx">
+      <DependentUpon>Add_exams.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_Teacher.resx">
-      <DependentUpon>Add_Teacher.cs</DependentUpon>
+    <EmbeddedResource Include="Add_teachers.resx">
+      <DependentUpon>Add_teachers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Login.resx">
-      <DependentUpon>Admin_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_login.resx">
+      <DependentUpon>Admin_login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Menu.resx">
-      <DependentUpon>Admin_Menu.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_menu.resx">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Announcements.resx">
-      <DependentUpon>Announcements.cs</DependentUpon>
+    <EmbeddedResource Include="Announcements_list.resx">
+      <DependentUpon>Announcements_list.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="directories.resx">
-      <DependentUpon>directories.cs</DependentUpon>
+    <EmbeddedResource Include="Directories_menu.resx">
+      <DependentUpon>Directories_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Edit_notes.resx">
+      <DependentUpon>Edit_notes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Group_chat.resx">
       <DependentUpon>Group_chat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loading_page.resx">
-      <DependentUpon>loading_page.cs</DependentUpon>
+    <EmbeddedResource Include="Loading_page.resx">
+      <DependentUpon>Loading_page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
+    <EmbeddedResource Include="Files_menu.resx">
+      <DependentUpon>Files_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="miniGame.resx">
-      <DependentUpon>miniGame.cs</DependentUpon>
+    <EmbeddedResource Include="Mini_game.resx">
+      <DependentUpon>Mini_game.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pomodoro.resx">
-      <DependentUpon>Pomodoro.cs</DependentUpon>
+    <EmbeddedResource Include="Time_controler_app.resx">
+      <DependentUpon>Time_controler_app.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="printResult.resx">
-      <DependentUpon>printResult.cs</DependentUpon>
+    <EmbeddedResource Include="Print_result.resx">
+      <DependentUpon>Print_result.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student_Menu.resx">
-      <DependentUpon>Student_Menu.cs</DependentUpon>
+    <EmbeddedResource Include="Student_menu.resx">
+      <DependentUpon>Student_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Read_Answers.resx">
-      <DependentUpon>Read_Answers.cs</DependentUpon>
+    <EmbeddedResource Include="Add_results.resx">
+      <DependentUpon>Add_results.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student_Login.resx">
-      <DependentUpon>Student_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Student_login.resx">
+      <DependentUpon>Student_login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student_Exam.resx">
-      <DependentUpon>Student_Exam.cs</DependentUpon>
+    <EmbeddedResource Include="Students_exam.resx">
+      <DependentUpon>Students_exam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_Student.resx">
-      <DependentUpon>Add_Student.cs</DependentUpon>
+    <EmbeddedResource Include="Add_students.resx">
+      <DependentUpon>Add_students.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student_signUp.resx">
       <DependentUpon>Student_signUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teacher_Login.resx">
-      <DependentUpon>Teacher_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Teacher_login.resx">
+      <DependentUpon>Teacher_login.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
