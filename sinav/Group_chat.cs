@@ -135,7 +135,7 @@ namespace sinav
                             int senderId = Convert.ToInt32(reader["Student_id"]);
                             bool isCurrentStudent = senderId == studentId;
                             bool isAdmin = senderId == -1;
-                            bool isTeacher = senderId == 0; // New condition for Teacher
+                            bool isTeacher = senderId == 0; 
 
                             if (isAdmin)
                             {
@@ -170,7 +170,7 @@ namespace sinav
                             {
                                 Text = $" {studentName}\n\n****************************************************\n\n\n {announcement}\n\n\n****************************************************\n\nDate: {date}\nTime: {time}",
                                 AutoSize = true,
-                                Font = new Font("Arial", 12, FontStyle.Bold),
+                                Font = new Font("Arial", 9, FontStyle.Bold),
                                 BackColor = Color.FromArgb(45, 45, 48),
                                 ForeColor = isAdmin
                                     ? Color.Firebrick
@@ -180,10 +180,19 @@ namespace sinav
                                 BorderStyle = BorderStyle.FixedSingle,
                                 Padding = new Padding(10),
                                 MaximumSize = new Size(flowLayoutPanel.Width - 80, 0),
-                                Location = new Point(40, 5)
-                            };
+                                Location = new Point(40, 5),
 
-                            messagePanel.Controls.Add(messageBubble);
+
+                            };
+                            if (isCurrentStudent)
+                            {
+                                messageBubble.BackColor = Color.FromArgb(36, 0, 8);
+                                messageBubble.Location= new Point(550, 5);
+                                pictureBox.Location = new Point(845, 5);
+                                messageBubble.TextAlign = ContentAlignment.MiddleLeft;
+
+                            }
+                                messagePanel.Controls.Add(messageBubble);
                             flowLayoutPanel.Controls.Add(messagePanel);
                         }
                     }

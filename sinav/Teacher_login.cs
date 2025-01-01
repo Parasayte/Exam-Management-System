@@ -54,7 +54,7 @@ namespace sinav
                         {
 
 
-                            MessageBox.Show(@"Welcome to the system", "succeful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                           
                             Add_results a = new Add_results();
                             a.Show();
                             Hide();
