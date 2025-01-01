@@ -82,9 +82,7 @@ namespace sinav
         private void label2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You have to connect with an Admin ", "STOP", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            Admin_Login a = new Admin_Login();
-            a.Show();
-            Hide();
+          
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -96,6 +94,13 @@ namespace sinav
         private void label1_Click(object sender, EventArgs e)
         {
             Pomodoro a = new Pomodoro(-1);
+            a.Show();
+            Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Admin_Login a = new Admin_Login();
             a.Show();
             Hide();
         }

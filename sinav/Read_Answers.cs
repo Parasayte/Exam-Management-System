@@ -185,6 +185,11 @@ namespace sinav
     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = filterExpression;
         }
 
-
+        private void chatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Group_chat group_Chat = new Group_chat(0);
+            group_Chat.Show();
+            Hide();
+        }
     }
 }

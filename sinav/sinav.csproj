@@ -638,5 +638,14 @@
   <ItemGroup>
     <None Include="Resources\Hopstarter-Soft-Scraps-Button-Warning.16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Office-Girl.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Scrap-Administrator.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Software-Command-Prompt.32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

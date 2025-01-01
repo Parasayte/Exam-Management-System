@@ -4,7 +4,6 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static Org.BouncyCastle.Asn1.Cmp.Challenge;
 
 
 namespace sinav

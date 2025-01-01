@@ -30,14 +30,15 @@
         {
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Login_Button = new System.Windows.Forms.Button();
             this.Password_Textbox = new System.Windows.Forms.TextBox();
             this.ID_Textbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Login_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -59,22 +60,6 @@
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 20;
             this.label3.Text = "Name";
-            // 
-            // Login_Button
-            // 
-            this.Login_Button.BackColor = System.Drawing.Color.Brown;
-            this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_Button.ForeColor = System.Drawing.Color.Black;
-            this.Login_Button.Image = global::sinav.Properties.Resources.enter;
-            this.Login_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Login_Button.Location = new System.Drawing.Point(273, 272);
-            this.Login_Button.Name = "Login_Button";
-            this.Login_Button.Size = new System.Drawing.Size(259, 36);
-            this.Login_Button.TabIndex = 17;
-            this.Login_Button.Text = "Log in";
-            this.Login_Button.UseVisualStyleBackColor = false;
-            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
             // Password_Textbox
             // 
@@ -123,22 +108,16 @@
             this.label2.Text = "Sign in";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button1
+            // label7
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = global::sinav.Properties.Resources.student;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(679, 402);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 35);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Student";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label7.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Silver;
+            this.label7.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Software_Command_Prompt_32;
+            this.label7.Location = new System.Drawing.Point(47, 410);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 35);
+            this.label7.TabIndex = 27;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -156,11 +135,44 @@
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Image = global::sinav.Properties.Resources.Hopstarter_Soft_Scraps_Clock_32;
-            this.label1.Location = new System.Drawing.Point(47, 414);
+            this.label1.Location = new System.Drawing.Point(98, 412);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 33);
             this.label1.TabIndex = 25;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = global::sinav.Properties.Resources.student;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(679, 402);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 35);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Student";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Login_Button
+            // 
+            this.Login_Button.BackColor = System.Drawing.Color.Brown;
+            this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_Button.ForeColor = System.Drawing.Color.Black;
+            this.Login_Button.Image = global::sinav.Properties.Resources.enter;
+            this.Login_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Login_Button.Location = new System.Drawing.Point(273, 272);
+            this.Login_Button.Name = "Login_Button";
+            this.Login_Button.Size = new System.Drawing.Size(259, 36);
+            this.Login_Button.TabIndex = 17;
+            this.Login_Button.Text = "Log in";
+            this.Login_Button.UseVisualStyleBackColor = false;
+            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
             // Teacher_Login
             // 
@@ -168,6 +180,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -202,5 +215,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
     }
 }

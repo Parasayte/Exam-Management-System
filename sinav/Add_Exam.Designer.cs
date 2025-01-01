@@ -58,6 +58,7 @@ namespace sinav
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.chatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -132,6 +133,7 @@ namespace sinav
             this.readNotesToolStripMenuItem,
             this.addStudentToolStripMenuItem,
             this.addAnnouncementsToolStripMenuItem,
+            this.chatToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Applications_Cascade_16;
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
@@ -360,6 +362,14 @@ namespace sinav
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // chatToolStripMenuItem
+            // 
+            this.chatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Text_Bubble_16;
+            this.chatToolStripMenuItem.Name = "chatToolStripMenuItem";
+            this.chatToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.chatToolStripMenuItem.Text = "Chat";
+            this.chatToolStripMenuItem.Click += new System.EventHandler(this.chatToolStripMenuItem_Click);
+            // 
             // Add_Exam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,5 +439,6 @@ namespace sinav
         private DateTimePicker dateTimePicker1;
         private Label label7;
         private Button button4;
+        private ToolStripMenuItem chatToolStripMenuItem;
     }
 }

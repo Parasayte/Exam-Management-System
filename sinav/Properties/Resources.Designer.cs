@@ -423,6 +423,16 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Scrap_Administrator_32 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Scrap-Administrator.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hopstarter_Scrap_Clock_16 {
             get {
                 object obj = ResourceManager.GetObject("Hopstarter-Scrap-Clock.16", resourceCulture);
@@ -723,6 +733,16 @@ namespace sinav.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Office_Girl_32 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Office-Girl.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Ok_16 {
             get {
                 object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Ok.16", resourceCulture);
@@ -786,6 +806,16 @@ namespace sinav.Properties {
         internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Basic_Zoom_16 {
             get {
                 object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Basic-Zoom.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Software_Command_Prompt_32 {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Software-Command-Prompt.32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

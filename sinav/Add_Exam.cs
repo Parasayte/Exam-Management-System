@@ -194,5 +194,13 @@ namespace sinav
             sqlConnection.Close();
             BrigExamsData();
         }
+
+        private void chatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Group_chat group_Chat = new Group_chat(0);
+            group_Chat.Show();
+            Hide();
+        }
     }
 };

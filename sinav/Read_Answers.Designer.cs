@@ -45,6 +45,7 @@ namespace sinav
             this.button1 = new System.Windows.Forms.Button();
             this.searchtextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.chatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -110,6 +111,7 @@ namespace sinav
             this.readNotesToolStripMenuItem,
             this.addStudentToolStripMenuItem,
             this.addAnnouncementsToolStripMenuItem,
+            this.chatToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.operatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Applications_Cascade_16;
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
@@ -198,6 +200,14 @@ namespace sinav
             this.label1.TabIndex = 43;
             this.label1.Text = "Search by exam name , exam id and student id";
             // 
+            // chatToolStripMenuItem
+            // 
+            this.chatToolStripMenuItem.Image = global::sinav.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Text_Bubble1;
+            this.chatToolStripMenuItem.Name = "chatToolStripMenuItem";
+            this.chatToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.chatToolStripMenuItem.Text = "Chat";
+            this.chatToolStripMenuItem.Click += new System.EventHandler(this.chatToolStripMenuItem_Click);
+            // 
             // Read_Answers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,5 +249,6 @@ namespace sinav
         private System.Windows.Forms.ToolStripMenuItem addAnnouncementsToolStripMenuItem;
         private TextBox searchtextbox;
         private Label label1;
+        private ToolStripMenuItem chatToolStripMenuItem;
     }
 }
