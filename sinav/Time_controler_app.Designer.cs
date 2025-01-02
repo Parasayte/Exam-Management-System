@@ -64,7 +64,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 1;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // timer2
@@ -230,7 +230,7 @@
             this.label1.TabIndex = 12;
             this.label1.Click += new System.EventHandler(this.Start_pomodoro);
             // 
-            // Pomodoro
+            // Time_controler_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

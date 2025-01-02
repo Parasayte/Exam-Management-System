@@ -86,8 +86,7 @@ namespace sinav
         {
             string name = textBox1.Text;
             string nickn = textBox2.Text;
-            string birthd = dateTimePicker1.Value.ToString("yyyy-mm-dd");
-            MessageBox.Show(birthd);
+            string birthd = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             string password = textBox5.Text;
             string gmail = textBox6.Text;
 

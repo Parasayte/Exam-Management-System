@@ -445,7 +445,6 @@ namespace sinav
 
         private void fileNameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Path.GetFullPath(path));
         }
 
         private void renameToolStripMenuItem_Click(object sender, EventArgs e)
@@ -537,6 +536,9 @@ namespace sinav
             rcbx.Text += char.ConvertFromUtf32(randomCodePoint);
         }
 
-      
+        private void pathToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Path.GetFullPath(path));
+        }
     }
 }

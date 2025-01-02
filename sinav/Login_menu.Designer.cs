@@ -52,9 +52,8 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button2.Image = global::sinav.Properties.Resources.Google_Noto_Emoji_People_Profession_10225_woman_teacher_light_skin_tone_48;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button2.Location = new System.Drawing.Point(544, 176);
+            this.button2.Location = new System.Drawing.Point(544, 166);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 140);
             this.button2.TabIndex = 42;
@@ -70,7 +69,7 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button1.Location = new System.Drawing.Point(69, 176);
+            this.button1.Location = new System.Drawing.Point(312, 166);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 140);
             this.button1.TabIndex = 41;
@@ -84,9 +83,9 @@
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.Login_Button.Image = global::sinav.Properties.Resources.Google_Noto_Emoji_People_Profession_10466_woman_detective_light_skin_tone_48;
+            this.Login_Button.Image = global::sinav.Properties.Resources.adminphoto;
             this.Login_Button.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Login_Button.Location = new System.Drawing.Point(306, 176);
+            this.Login_Button.Location = new System.Drawing.Point(78, 166);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(156, 140);
             this.Login_Button.TabIndex = 40;
@@ -111,7 +110,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_menu_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

@@ -73,5 +73,19 @@ namespace sinav
             student_Login.Show();
             Hide();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Edit_notes editNotes = new Edit_notes("D:\\Program Files\\-1");
+            editNotes.Show();
+            Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Time_controler_app t = new Time_controler_app(-1);
+            t.Show();
+            Hide();
+        }
     }
 }

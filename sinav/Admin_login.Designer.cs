@@ -102,7 +102,6 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = global::sinav.Properties.Resources.chalkboard_user;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(701, 385);
             this.button2.Name = "button2";
@@ -122,6 +121,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 35);
             this.label6.TabIndex = 38;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label2
             // 
@@ -132,6 +132,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 33);
             this.label2.TabIndex = 37;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -191,7 +192,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Admin_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
