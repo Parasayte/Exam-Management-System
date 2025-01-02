@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{542504C5-279B-406D-9F36-B4D62433FBAB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Exam_management_system</RootNamespace>
+    <AssemblyName>Exam_management_system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_new_directory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_new_directory.Designer.cs">
+      <DependentUpon>Add_new_directory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_new_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_new_file.Designer.cs">
+      <DependentUpon>Add_new_file.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_announcements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_announcements.Designer.cs">
+      <DependentUpon>Add_announcements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_exams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_exams.Designer.cs">
+      <DependentUpon>Add_exams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_teachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_teachers.Designer.cs">
+      <DependentUpon>Add_teachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_login.Designer.cs">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_menu.Designer.cs">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Announcements_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Announcements_list.Designer.cs">
+      <DependentUpon>Announcements_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Directories_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Directories_menu.Designer.cs">
+      <DependentUpon>Directories_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_notes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_notes.Designer.cs">
+      <DependentUpon>Edit_notes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group_chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group_chat.Designer.cs">
+      <DependentUpon>Group_chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading_page.Designer.cs">
+      <DependentUpon>Loading_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Files_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Files_menu.Designer.cs">
+      <DependentUpon>Files_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_menu.Designer.cs">
+      <DependentUpon>Login_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mini_game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mini_game.Designer.cs">
+      <DependentUpon>Mini_game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Time_controler_app.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time_controler_app.Designer.cs">
+      <DependentUpon>Time_controler_app.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_result.Designer.cs">
+      <DependentUpon>Print_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_menu.Designer.cs">
+      <DependentUpon>Student_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Add_results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_results.Designer.cs">
+      <DependentUpon>Add_results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_login.Designer.cs">
+      <DependentUpon>Student_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students_exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students_exam.Designer.cs">
+      <DependentUpon>Students_exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_students.Designer.cs">
+      <DependentUpon>Add_students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_signUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_signUp.Designer.cs">
+      <DependentUpon>Student_signUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_login.Designer.cs">
+      <DependentUpon>Teacher_login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_new_directory.resx">
+      <DependentUpon>Add_new_directory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_new_file.resx">
+      <DependentUpon>Add_new_file.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_announcements.resx">
+      <DependentUpon>Add_announcements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_exams.resx">
+      <DependentUpon>Add_exams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_teachers.resx">
+      <DependentUpon>Add_teachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_login.resx">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_menu.resx">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Announcements_list.resx">
+      <DependentUpon>Announcements_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directories_menu.resx">
+      <DependentUpon>Directories_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_notes.resx">
+      <DependentUpon>Edit_notes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group_chat.resx">
+      <DependentUpon>Group_chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading_page.resx">
+      <DependentUpon>Loading_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Files_menu.resx">
+      <DependentUpon>Files_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_menu.resx">
+      <DependentUpon>Login_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mini_game.resx">
+      <DependentUpon>Mini_game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Time_controler_app.resx">
+      <DependentUpon>Time_controler_app.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_result.resx">
+      <DependentUpon>Print_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_menu.resx">
+      <DependentUpon>Student_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_results.resx">
+      <DependentUpon>Add_results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_login.resx">
+      <DependentUpon>Student_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students_exam.resx">
+      <DependentUpon>Students_exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_students.resx">
+      <DependentUpon>Add_students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_signUp.resx">
+      <DependentUpon>Student_signUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_login.resx">
+      <DependentUpon>Teacher_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chalkboard-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assept-document %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatcow-Farm-Fresh-Folder-link.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_1554455.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Lamp.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-view-highway-city-with-houses_70347-3514.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Pause.72 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Play.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Coin.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Cancel.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Reload.72 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Blank-Blue.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Blank-Red.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Blank-Red.256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Blank-Yellow.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Blank-Green.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Reload.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Stop.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Pause.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yusuke-Kamiyamane-Fugue-Leaf.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yusuke-Kamiyamane-Fugue-Animal.16-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yusuke-Kamiyamane-Fugue-Animal.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Plastic-Mini-Coffee.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Games.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Coin.16 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Administrator.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yusuke-Kamiyamane-Fugue-Flag-black.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Favorite.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Pen.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Bank-Check.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Document-Write.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Led24.de-Led-Color-swatch-2.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Text-Bubble.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Plastic-Mini-Button-Blank-Green.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Image-BMP.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Document-Gant-Chart.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Coin.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Scrap-Folder-Closed-Red.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Blank-Green.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Reload.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Preview.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Save.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Folder-Open.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Folder-Open.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eddede.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Hardware-Light-off.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Document-Blank.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatcow-Farm-Fresh-Font-colors.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bogo-D-Project-Panel-Colors.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bogo-D-Project-Panel-Colors.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-World.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Zoom-Out.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Zoom.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Zoom-In.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Monitor.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Led24.de-Led-Application-view-xp-terminal.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Font-Open-Type.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saki-NuoveXT-2-Actions-appointment-new.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Plastic-Mini-Calendar.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Lamp.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Contract.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Contract.256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Folder-Add.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-File-Delete.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-File-Delete.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-File-New.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-File-New.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Turn-Off.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Add.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Files.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Copy.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-HTML-01.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-HTML-01.256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Plastic-Mini-File-Code-HTML.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-HTML-01.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Download.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Applications-Cascade.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Files.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Files.256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Home.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Ok.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Cancel.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Cancel.256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Text-Bubble.161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Semlabs-Web-Blog-Users-add.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-File-New.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Contract.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Scrap-Clock.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Plastic-Mini-Tool.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-8-Comment-add.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Clock.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Book.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RTS_Crate_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Gaming-Nintendo-SNES-Alternate.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Chat.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-9-Email-send.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-Button-Warning.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Office-Girl.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Scrap-Administrator.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Software-Command-Prompt.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google-Noto-Emoji-People-Profession-10466-woman-detective-light-skin-tone.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google-Noto-Emoji-People-Profession-10225-woman-teacher-light-skin-tone.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\adminphoto.png" />
+    <Content Include="Resources\teacherphoto.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
