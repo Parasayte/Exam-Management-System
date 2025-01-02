@@ -217,6 +217,7 @@ namespace Exam_management_system
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.ForeColor = System.Drawing.Color.Silver;
+            this.MaximizeBox = false;
             this.Name = "Student_signUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student_signUp";

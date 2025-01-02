@@ -57,7 +57,7 @@
             this.label1.Size = new System.Drawing.Size(44, 41);
             this.label1.TabIndex = 0;
             // 
-            // miniGame
+            // Mini_game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,6 +72,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.miniGame_FormClosing);
+            this.Load += new System.EventHandler(this.Mini_game_Load);
             this.ResumeLayout(false);
 
         }

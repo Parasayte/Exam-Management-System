@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sinav
+namespace Exam_management_system
 {
     public partial class Admin_login : Form
     {

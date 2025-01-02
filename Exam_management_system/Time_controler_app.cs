@@ -3,10 +3,9 @@ using System.Drawing;
 using System.Media;
 using System.Reflection.Emit;
 using System.Windows.Forms;
-using sinav.Properties;
-using sinav.Properties;
+using Exam_management_system.Properties;
 
-namespace sinav
+namespace Exam_management_system
 {
     public partial class Time_controler_app : Form
     {
@@ -121,14 +120,14 @@ namespace sinav
             {
                 a.Hide();
                 HideButton();
-                label3.Image =sinav.Properties.Resources.Hopstarter_Button_Button_Pause_72__1_;
+                label3.Image = Exam_management_system.Properties.Resources.Hopstarter_Button_Button_Pause_72__1_;
                 timer1.Stop();
                 isPause = true;
             }
             else
             {
                 ShowButton();
-                label3.Image = Resources.Hopstarter_Button_Button_Play_72;
+                label3.Image = Exam_management_system.Properties.Resources.Hopstarter_Button_Button_Play_72;
                 timer1.Start();
                 isPause = false;
             }

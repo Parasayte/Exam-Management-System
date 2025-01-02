@@ -2,7 +2,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System;
 using System.Data;
-namespace sinav
+namespace Exam_management_system
 {
     public partial class Add_students : Form
     {

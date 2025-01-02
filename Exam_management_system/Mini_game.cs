@@ -108,5 +108,10 @@ namespace Exam_management_system
         {
             Application.Exit();
         }
+
+        private void Mini_game_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

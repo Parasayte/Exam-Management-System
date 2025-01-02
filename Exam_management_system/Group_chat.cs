@@ -289,5 +289,10 @@ namespace Exam_management_system
         {
             Print_group_messages();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
