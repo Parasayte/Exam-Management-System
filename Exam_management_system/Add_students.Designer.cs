@@ -67,11 +67,13 @@ namespace Exam_management_system
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBox1.Location = new System.Drawing.Point(12, 67);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 21);
+            this.textBox1.Size = new System.Drawing.Size(156, 30);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -89,7 +91,7 @@ namespace Exam_management_system
             // 
             this.label2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(9, 100);
+            this.label2.Location = new System.Drawing.Point(9, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 3;
@@ -98,18 +100,20 @@ namespace Exam_management_system
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(12, 126);
+            this.textBox2.Location = new System.Drawing.Point(12, 138);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 21);
+            this.textBox2.Size = new System.Drawing.Size(156, 30);
             this.textBox2.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(11, 218);
+            this.label4.Location = new System.Drawing.Point(9, 336);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 7;
@@ -119,7 +123,7 @@ namespace Exam_management_system
             // 
             this.label5.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(11, 280);
+            this.label5.Location = new System.Drawing.Point(9, 259);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 9;
@@ -128,18 +132,20 @@ namespace Exam_management_system
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox5.Location = new System.Drawing.Point(14, 306);
+            this.textBox5.Location = new System.Drawing.Point(12, 285);
+            this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(156, 21);
+            this.textBox5.Size = new System.Drawing.Size(156, 29);
             this.textBox5.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(10, 159);
+            this.label6.Location = new System.Drawing.Point(10, 183);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 23);
             this.label6.TabIndex = 13;
@@ -148,11 +154,13 @@ namespace Exam_management_system
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox6.Location = new System.Drawing.Point(13, 185);
+            this.textBox6.Location = new System.Drawing.Point(13, 209);
+            this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(156, 21);
+            this.textBox6.Size = new System.Drawing.Size(156, 30);
             this.textBox6.TabIndex = 12;
             // 
             // menuStrip1
@@ -258,7 +266,7 @@ namespace Exam_management_system
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Firebrick;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Image = global::Exam_management_system.Properties.Resources.trash;
@@ -274,7 +282,7 @@ namespace Exam_management_system
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.ForestGreen;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button6.Image = global::Exam_management_system.Properties.Resources.user_add;
@@ -327,6 +335,7 @@ namespace Exam_management_system
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBox3.Location = new System.Drawing.Point(10, 451);
@@ -342,7 +351,7 @@ namespace Exam_management_system
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.WhiteSmoke;
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.WhiteSmoke;
             this.dateTimePicker1.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(14, 244);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 362);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(154, 20);
             this.dateTimePicker1.TabIndex = 45;
@@ -353,9 +362,8 @@ namespace Exam_management_system
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(939, 521);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.menuStrip1);
@@ -368,12 +376,13 @@ namespace Exam_management_system
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTimePicker1);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Add_students";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add student";
+            this.Text = "Add teacher";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Teacher_AddSt_FormClosing);
             this.Load += new System.EventHandler(this.Teacher_AddSt_Load);
             this.menuStrip1.ResumeLayout(false);

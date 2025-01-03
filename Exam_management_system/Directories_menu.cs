@@ -236,9 +236,9 @@ namespace Exam_management_system
             }
             else
             {
-                MessageBox.Show("Unknown path. Please check the directory.");
-                Student_login student_Login = new Student_login();
-                student_Login.Show();
+
+                Login_menu login = new Login_menu();
+                login.Show();
                 Hide();
             }
         }

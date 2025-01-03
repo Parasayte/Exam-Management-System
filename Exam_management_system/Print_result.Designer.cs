@@ -46,9 +46,9 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.Location = new System.Drawing.Point(545, 32);
+            this.textBox4.Location = new System.Drawing.Point(5, 35);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 34);
+            this.textBox4.Size = new System.Drawing.Size(215, 31);
             this.textBox4.TabIndex = 31;
             this.textBox4.Text = "";
             // 
@@ -80,7 +80,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView2.Location = new System.Drawing.Point(5, 70);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -92,20 +92,20 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(527, 440);
+            this.dataGridView2.Size = new System.Drawing.Size(809, 429);
             this.dataGridView2.TabIndex = 32;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.button2.Image = global::Exam_management_system.Properties.Resources.file_download;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(545, 84);
+            this.button2.Location = new System.Drawing.Point(226, 35);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 34);
+            this.button2.Size = new System.Drawing.Size(158, 29);
             this.button2.TabIndex = 33;
             this.button2.Text = "Save as HTML";
             this.button2.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(545, 9);
+            this.label5.Location = new System.Drawing.Point(5, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 23);
             this.label5.TabIndex = 35;
@@ -124,14 +124,14 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.button4.Image = global::Exam_management_system.Properties.Resources.power;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(545, 417);
+            this.button4.Location = new System.Drawing.Point(390, 35);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(215, 35);
+            this.button4.Size = new System.Drawing.Size(126, 30);
             this.button4.TabIndex = 36;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = false;
@@ -142,7 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(772, 464);
+            this.ClientSize = new System.Drawing.Size(817, 504);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);

@@ -69,7 +69,7 @@ namespace Exam_management_system
                         // Create a label for the image
                         Label imageLabel = new Label
                         {
-                            Size = new Size(40, 40),
+                            Size = new Size(30, 40),
                             Image = Resources.Hopstarter_Sleek_Xp_Basic_Chat_32,
                             BackColor = Color.Transparent,
                             Margin = new Padding(5)

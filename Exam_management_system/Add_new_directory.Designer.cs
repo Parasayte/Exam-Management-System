@@ -39,7 +39,10 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.richTextBox1.Location = new System.Drawing.Point(50, 51);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(187, 40);
@@ -48,11 +51,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.ForeColor = System.Drawing.Color.Silver;
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 166);
@@ -69,7 +73,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Soft_Scraps_Folder_Add_48;
             this.label1.Location = new System.Drawing.Point(47, 103);
             this.label1.Name = "label1";
@@ -79,7 +83,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Close_48;
             this.label2.Location = new System.Drawing.Point(172, 103);
@@ -88,7 +92,7 @@
             this.label2.TabIndex = 6;
             this.label2.Click += new System.EventHandler(this.Cancel);
             // 
-            // AddNewDirectory
+            // Add_new_directory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,7 +105,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNewDirectory";
             this.panel1.ResumeLayout(false);
-        
             this.ResumeLayout(false);
 
             }
