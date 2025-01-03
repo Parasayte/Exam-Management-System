@@ -171,7 +171,6 @@
             this.randomEmojiToolStripMenuItem.Name = "randomEmojiToolStripMenuItem";
             this.randomEmojiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.randomEmojiToolStripMenuItem.Text = "Random Emoji";
-            this.randomEmojiToolStripMenuItem.Click += new System.EventHandler(this.randomEmojiToolStripMenuItem_Click);
             // 
             // randomFlagToolStripMenuItem
             // 

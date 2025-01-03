@@ -59,7 +59,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(216, 25);
             this.textBox3.TabIndex = 59;
-            this.textBox3.Text = "Name";
+            this.textBox3.Text = "ID";
             // 
             // button5
             // 
@@ -179,60 +179,47 @@
             this.dateTimePicker1.TabIndex = 60;
             // 
             // dataGridView2
-         // Auto-sizing columns to fill the available width
-this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-
-// Set a dark background color for the DataGridView's general appearance
-this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-
-// Column header styling
-dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(40, 44, 52); // Darker background for header
-dataGridViewCellStyle4.Font = new System.Drawing.Font("Cascadia Code", 9.25F, System.Drawing.FontStyle.Bold); // Use a modern font
-dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLightLight; // Light text color
-dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5, 8, 5, 8);
-dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-
-// Default cell style (body of the DataGridView)
-dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-dataGridViewCellStyle5.Font = new System.Drawing.Font("Cascadia Code", 9F); // Use modern font for content
-dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8); // Add padding for better cell spacing
-dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(73, 140, 217); // Light blue on hover/select
-dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False; // Avoid wrapping text unnecessarily
-this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
-
-// Row header styling
-dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(40, 44, 52); // Dark header for row headers
-dataGridViewCellStyle6.Font = new System.Drawing.Font("Cascadia Code", 8.25F);
-dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlLightLight; // Light text color
-dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5, 8, 5, 8);
-dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-
-// Set location and size of the DataGridView
-this.dataGridView2.Location = new System.Drawing.Point(234, 42);
-this.dataGridView2.Name = "dataGridView2";
-this.dataGridView2.Size = new System.Drawing.Size(554, 403);
-this.dataGridView2.TabIndex = 61;
-
-// Make the DataGridView non-editable
-this.dataGridView2.ReadOnly = true;
-this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-this.dataGridView2.AllowUserToAddRows = false;
-this.dataGridView2.AllowUserToDeleteRows = false;
-
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cascadia Code", 9.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cascadia Code", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(8);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(140)))), ((int)(((byte)(217)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView2.Location = new System.Drawing.Point(234, 42);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Cascadia Code", 8.25F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(664, 403);
+            this.dataGridView2.TabIndex = 61;
             // 
             // menuStrip1
             // 
@@ -242,7 +229,7 @@ this.dataGridView2.AllowUserToDeleteRows = false;
             this.operatToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(909, 25);
             this.menuStrip1.TabIndex = 62;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -259,16 +246,16 @@ this.dataGridView2.AllowUserToDeleteRows = false;
             // 
             this.examsToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Cancel_16;
             this.examsToolStripMenuItem.Name = "examsToolStripMenuItem";
-            this.examsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.examsToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.examsToolStripMenuItem.Text = "Exit";
             this.examsToolStripMenuItem.Click += new System.EventHandler(this.examsToolStripMenuItem_Click);
             // 
-            // Add_Teacher
+            // Add_teachers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(800, 484);
+            this.ClientSize = new System.Drawing.Size(909, 496);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dateTimePicker1);

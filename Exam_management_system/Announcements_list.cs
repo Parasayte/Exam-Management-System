@@ -8,7 +8,8 @@ namespace Exam_management_system
 {
     public partial class Announcements_list : Form
     {
-        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
+        // Connection string to the database
+        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
         int studentId;
 
         FlowLayoutPanel flowLayoutPanel;
@@ -17,6 +18,7 @@ namespace Exam_management_system
         {
             InitializeComponent();
             studentId = id;
+            // Initialize and configure the FlowLayoutPanel
             flowLayoutPanel = new FlowLayoutPanel
             {
                 AutoScroll = true,
@@ -29,19 +31,19 @@ namespace Exam_management_system
                 WrapContents = false
             };
 
-
             Controls.Add(flowLayoutPanel);
         }
 
         private void Announcements_Load(object sender, EventArgs e)
         {
+            // Load and display announcements when the form loads
             Print_announcements();
         }
 
         private void Print_announcements()
         {
             flowLayoutPanel.Controls.Clear();
-            string query = "SELECT announcement, Date FROM announcements1;";
+            string query = "SELECT announcement, Date FROM Announcements;";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -53,6 +55,7 @@ namespace Exam_management_system
                         string announcement = reader["announcement"].ToString();
                         string date = Convert.ToDateTime(reader["Date"]).ToString("yyyy-MM-dd");
 
+                        // Create a panel for each announcement
                         Panel messagePanel = new Panel
                         {
                             AutoSize = true,
@@ -63,6 +66,7 @@ namespace Exam_management_system
                             MaximumSize = new Size(flowLayoutPanel.Width - 40, 0)
                         };
 
+                        // Create a label for the image
                         Label imageLabel = new Label
                         {
                             Size = new Size(40, 40),
@@ -71,12 +75,13 @@ namespace Exam_management_system
                             Margin = new Padding(5)
                         };
 
+                        // Create a label for the announcement text
                         Label messageBubble = new Label
                         {
                             Text = $"{announcement}\n\n\n\nDate: {date}",
                             AutoSize = true,
-                            BackColor = Color.FromArgb(45, 45, 48), 
-                            ForeColor = Color.YellowGreen,              
+                            BackColor = Color.FromArgb(45, 45, 48),
+                            ForeColor = Color.YellowGreen,
                             BorderStyle = BorderStyle.FixedSingle,
                             Padding = new Padding(10),
                             Margin = new Padding(5),
@@ -96,27 +101,41 @@ namespace Exam_management_system
             }
         }
 
-
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Refresh the announcements list
             Print_announcements();
         }
 
         private void Announcements_FormClosing(object sender, FormClosingEventArgs e)
         {
-           Application.Exit();
+            // Exit the application when the form is closing
+            Application.Exit();
         }
 
         private void examsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Navigate to the student menu
             Student_menu student_Menu = new Student_menu(studentId);
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Student_menu student_Menu = new Student_menu(studentId);
-            student_Menu.Show();
-            Hide();
+            if(studentId == -1)
+            {
+                // Log out and show the Admin menu
+                Admin_menu admin_Menu = new Admin_menu();
+                admin_Menu.Show();
+                Hide();
+            }
+            else
+            {
+                // Log out and show the student menu
+                Student_login student_Login = new Student_login();
+                student_Login.Show();
+            }
+          
+      
         }
     }
 }
