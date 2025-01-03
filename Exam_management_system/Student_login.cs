@@ -93,7 +93,7 @@ namespace Exam_management_system
         private void label6_Click(object sender, EventArgs e)
         {
             // Use a user-friendly directory in the user's profile, such as MyDocuments
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Teachers Notes", "-1");
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Public Notes", "-1");
 
             // Check if the directory exists
             if (Directory.Exists(path))

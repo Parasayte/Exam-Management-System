@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace Exam_management_system
 {
     public partial class Admin_login : Form
     {
-        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
+        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
 
         public Admin_login()
         {
@@ -40,7 +41,7 @@ namespace Exam_management_system
         private void Login_Button_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("SELECT COUNT(1) FROM Admins WHERE id = @id AND password = @password", con);
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(1) FROM Admins WHERE admin_id = @id AND password = @password", con);
             cmd.Parameters.AddWithValue("@id", ID_Textbox.Text);
             cmd.Parameters.AddWithValue("@password", Password_Textbox.Text);
             con.Open();
@@ -76,10 +77,47 @@ namespace Exam_management_system
 
         private void label6_Click(object sender, EventArgs e)
         {
-            Directories_menu directories_Menu = new Directories_menu("D:\\Program Files\\-1");
-           
-            directories_Menu.Show();
-            Hide();
+            // Use a user-friendly directory in the user's profile, such as MyDocuments
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Public Notes", "-1");
+
+            // Check if the directory exists
+            if (Directory.Exists(path))
+            {
+                // If it exists, open the menu
+                Directories_menu a = new Directories_menu(path);
+                a.Show();
+                Hide();
+            }
+            else
+            {
+                // Try creating the directory in a safe location (MyDocuments folder)
+                try
+                {
+                    // Ensure the parent directory exists before trying to create a subdirectory
+                    string parentDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Public Notes");
+                    if (!Directory.Exists(parentDirectory))
+                    {
+                        Directory.CreateDirectory(parentDirectory);
+                    }
+
+                    // Now create the target directory
+                    Directory.CreateDirectory(path);
+
+                    Directories_menu a = new Directories_menu(path);
+                    a.Show();
+                    Hide();
+                }
+                catch (UnauthorizedAccessException)
+                {
+                    // Show an error message if access is denied
+                    MessageBox.Show("Access denied. Please ensure the application has proper permissions.");
+                }
+                catch (Exception ex)
+                {
+                    // Show an error message if an exception occurs
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)

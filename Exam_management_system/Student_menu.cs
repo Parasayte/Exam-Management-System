@@ -303,7 +303,7 @@ namespace Exam_management_system
         // Open notes directory
         private void notesToolStripMenuItem_Click(object sender, EventArgs e)
         {  // Use a user-friendly directory in the user's profile, such as MyDocuments
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Teachers Notes", "-1");
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Students Notes", $"{student_id}");
 
             // Check if the directory exists
             if (Directory.Exists(path))
@@ -319,7 +319,7 @@ namespace Exam_management_system
                 try
                 {
                     // Ensure the parent directory exists before trying to create a subdirectory
-                    string parentDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Students Notes");
+                    string parentDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Students Notes",$"{student_id}");
                     if (!Directory.Exists(parentDirectory))
                     {
                         Directory.CreateDirectory(parentDirectory);

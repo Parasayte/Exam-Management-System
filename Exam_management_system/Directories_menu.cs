@@ -183,22 +183,69 @@ namespace Exam_management_system
         }
 
         // Exit menu item click event handler
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (path1 == "D:\\Program Files\\-1")
+            // Define base paths for different note types
+            string baseDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).Trim();
+            string teacherNotesPath = Path.Combine(baseDirectory, "Teachers Notes", "-1").Trim();
+            string adminNotesPath = Path.Combine(baseDirectory, "Admins Notes", "-1").Trim();
+            string studentNotesBasePath = Path.Combine(baseDirectory, "Students Notes").Trim();
+
+            path1 = path1.Trim();
+            if (path1 == teacherNotesPath)
             {
-                Teacher_login teacher_Login = new Teacher_login();
-                teacher_Login.Show();
+                // Open Teacher menu
+                Add_results add_Results = new Add_results();
+                add_Results.Show();
                 Hide();
                 return;
             }
-            string path = Path.GetFileName(path1);
-            id = int.Parse(path);
+            else if (path1 == adminNotesPath)
+            {
+                // Show the Admin menu form
+                Admin_menu admin_Menu = new Admin_menu();
+                admin_Menu.Show();
+                Hide();
+                return;
+            }
+            else if (path1.StartsWith(studentNotesBasePath))
+            {
+                try
+                {
+                    // Extract the directory name (student ID) from the path
+                    string folderName = Path.GetFileName(path1);
 
-            Student_menu student_Menu = new Student_menu(id);
-            student_Menu.Show();
-            Hide();
+                    if (int.TryParse(folderName.Trim(), out int studentId))
+                    {
+                        // Open Student Menu with the ID as a parameter
+                        Student_menu student_Menu = new Student_menu(studentId);
+                        student_Menu.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid directory name format. Unable to parse student ID.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle exceptions and notify the user
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Unknown path. Please check the directory.");
+                Student_login student_Login = new Student_login();
+                student_Login.Show();
+                Hide();
+            }
         }
+
+
+
+
 
         // Delete selected folders
         private void Delete_selected_folders(object sender, EventArgs e)

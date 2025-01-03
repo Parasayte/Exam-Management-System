@@ -102,3 +102,5 @@ C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\ru\Microsoft.
 C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_man.2480462C.Up2Date
+C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\SchoolManagementSystem.mdf
+C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\SchoolManagementSystem_log.ldf

@@ -106,7 +106,7 @@ namespace Exam_management_system
             // 
             this.notesToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.notesToolStripMenuItem.Text = "Notes";
             this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
             // 
@@ -114,8 +114,8 @@ namespace Exam_management_system
             // 
             this.pomodoroToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Scrap_Clock_16;
             this.pomodoroToolStripMenuItem.Name = "pomodoroToolStripMenuItem";
-            this.pomodoroToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.pomodoroToolStripMenuItem.Text = "Pomodoro";
+            this.pomodoroToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.pomodoroToolStripMenuItem.Text = "Time controller";
             this.pomodoroToolStripMenuItem.Click += new System.EventHandler(this.pomodoroToolStripMenuItem_Click);
             // 
             // messagesToolStripMenuItem

@@ -323,7 +323,7 @@ namespace Exam_management_system
             this.notesAppToolStripMenuItem.Name = "notesAppToolStripMenuItem";
             this.notesAppToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.notesAppToolStripMenuItem.Text = "Notes app";
-            this.notesAppToolStripMenuItem.Click += new System.EventHandler(this.notesAppToolStripMenuItem_Click);
+        //    this.notesAppToolStripMenuItem.Click += new System.EventHandler(this.notesAppToolStripMenuItem_Click);
             // 
             // timeControllerToolStripMenuItem
             // 
@@ -331,7 +331,7 @@ namespace Exam_management_system
             this.timeControllerToolStripMenuItem.Name = "timeControllerToolStripMenuItem";
             this.timeControllerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.timeControllerToolStripMenuItem.Text = "Time controller";
-            this.timeControllerToolStripMenuItem.Click += new System.EventHandler(this.timeControllerToolStripMenuItem_Click);
+         //   this.timeControllerToolStripMenuItem.Click += new System.EventHandler(this.timeControllerToolStripMenuItem_Click);
             // 
             // Add_students
             // 

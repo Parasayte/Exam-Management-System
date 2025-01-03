@@ -131,8 +131,9 @@ namespace Exam_management_system
             else
             {
                 // Log out and show the student menu
-                Student_login student_Login = new Student_login();
-                student_Login.Show();
+                Student_menu student_Menu = new Student_menu(studentId);
+                student_Menu.Show();
+                Hide();
             }
           
       

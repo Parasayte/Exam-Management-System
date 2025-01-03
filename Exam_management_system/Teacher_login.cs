@@ -91,7 +91,6 @@ namespace Exam_management_system
         // Method to open public notes
         private void Open_public_notes(object sender, EventArgs e)
         {
-            // Use a user-friendly directory in the user's profile, such as MyDocuments
       
             // Use a user-friendly directory in the user's profile, such as MyDocuments
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Public Notes", "-1");
