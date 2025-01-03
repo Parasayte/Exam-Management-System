@@ -221,8 +221,8 @@ namespace Exam_management_system
 
         private void notesAppToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            // Use a user-friendly directory in the user's profile, such as MyDocuments
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Teachers Notes", "-1");
+// Use a user-friendly directory in the user's profile, such as MyDocuments
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), " Teachers Notes", "-1");
 
             // Check if the directory exists
             if (Directory.Exists(path))
@@ -234,24 +234,15 @@ namespace Exam_management_system
             }
             else
             {
-                // Try creating the directory in a safe location (MyDocuments folder)
+                // Create the directory in a safe location (MyDocuments folder)
                 try
                 {
-                    // Ensure the parent directory exists before trying to create a subdirectory
-                    string parentDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Public Notes");
-                    if (!Directory.Exists(parentDirectory))
-                    {
-                        Directory.CreateDirectory(parentDirectory);
-                    }
-
-                    // Now create the target directory
                     Directory.CreateDirectory(path);
-
                     Directories_menu a = new Directories_menu(path);
                     a.Show();
                     Hide();
                 }
-                catch (UnauthorizedAccessException)
+                catch (UnauthorizedAccessException ex)
                 {
                     // Show an error message if access is denied
                     MessageBox.Show("Access denied. Please ensure the application has proper permissions.");
