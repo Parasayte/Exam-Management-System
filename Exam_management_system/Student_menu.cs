@@ -16,17 +16,18 @@ namespace Exam_management_system
     public partial class Student_menu : Form
     {
         SqlConnection con;
-        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
+        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
         int student_id;
         DateTime nowtime;
+
+        // Constructor
         public Student_menu(int id)
         {
             InitializeComponent();
             student_id = id;
         }
 
-     
-
+        // Log out and show login form
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Student_login a = new Student_login();
@@ -34,48 +35,54 @@ namespace Exam_management_system
             Hide();
         }
 
-     
-
+        // Load exams data
         private void Exams_Load(object sender, EventArgs e)
         {
             nowtime = DateTime.Now;
             con = new SqlConnection(connectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand($"SELECT exam_name,exam_id,finished,Time,lastdate FROM Exam1 Where finished='F' and Student_id={ student_id } AND lastDate > '{nowtime}'", con);
-            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Exam1 Where finished='T' and Student_id=  "+student_id , con);
+
+            // Query for not finished exams
+            SqlCommand cmd = new SqlCommand($"SELECT exam_name,exam_id,finished,Time,lastdate FROM Exam Where finished='F' and Student_id={student_id} AND lastDate > '{nowtime}'", con);
+            // Query for finished exams
+            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Exam Where finished='T' and Student_id=  " + student_id, con);
+
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
             SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(cmd1);
+
             DataTable notfinishedexams = new DataTable();
             DataTable finishedexamstable = new DataTable();
+
             sqlDataAdapter.Fill(notfinishedexams);
             sqlDataAdapter1.Fill(finishedexamstable);
-            dataGridView1.DataSource=notfinishedexams;
-            dataGridView2.DataSource=finishedexamstable;
+
+            dataGridView1.DataSource = notfinishedexams;
+            dataGridView2.DataSource = finishedexamstable;
+
             con.Close();
         }
 
-       
-
+        // Handle form closing event
         private void Exams_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
+        // Enter selected exam
         private void Enter_selected_exam(object sender, EventArgs e)
         {
             try
             {
                 int examid = Int32.Parse(textBox4.Text);
-
                 char finished = 'F';
                 DateTime currentDate = DateTime.Now;
 
                 string cmd = @"
-            SELECT COUNT(1) 
-            FROM Exam1 
-            WHERE finished = @finished 
-              AND exam_id = @exam_id 
-              AND lastDate > @currentDate";
+                    SELECT COUNT(1) 
+                    FROM Exam 
+                    WHERE finished = @finished 
+                      AND exam_id = @exam_id 
+                      AND lastDate > @currentDate";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 using (SqlCommand com = new SqlCommand(cmd, connection))
@@ -109,10 +116,7 @@ namespace Exam_management_system
             }
         }
 
-
-
-
-
+        // Log out button click event
         private void button2_Click(object sender, EventArgs e)
         {
             Student_login a = new Student_login();
@@ -120,11 +124,13 @@ namespace Exam_management_system
             Hide();
         }
 
-
+        // Save exam result as HTML
         private void button2_Click_1(object sender, EventArgs e)
         {
             SaveExamResultAsHtml();
         }
+
+        // Method to save exam result as HTML
         private void SaveExamResultAsHtml()
         {
             try
@@ -156,39 +162,39 @@ namespace Exam_management_system
                     {
                         string currentDate = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
                         string htmlContent = $@"
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {{ font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: #dcdcdc; margin: 0; padding: 20px; line-height: 1.6; }}
-        h1 {{ color: #ffffff; text-align: center; font-size: 2.5em; margin: 30px 0; font-weight: 700; text-shadow: 0 0 10px white; }}
-        .container {{ max-width: 800px; margin: 0 auto; padding: 20px; }}
-        .section {{ margin: 20px 0; padding: 25px; border: 1px solid #2e2e2e; border-radius: 12px; background-color: #252525; box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); }}
-        .section h2 {{ font-size: 1.5em; color: #f0f0f0; margin-bottom: 15px; }}
-        .question {{ font-size: 1.1em; font-family: 'Cascadia Code', monospace; color: #bbbbbb; margin-bottom: 10px; }}
-        .answer {{ font-size: 1em; font-family: 'Cascadia Code', monospace; color: #ffffff; margin-left: 20px; }}
-        .result {{ font-family: 'Roboto Mono', monospace; font-weight: bold; color: #2ecc71; font-size: 1.25em; margin-top: 20px; text-shadow: 0 0 10px white; }}
-        .anti-forgery {{ font-size: 0.9em; color: #888888; text-align: center; margin-top: 40px; }}
-        .footer {{ text-align: center; font-size: 0.85em; color: #888888; margin-top: 60px; }}
-        button {{ background-color: #3b3b3b; color: #ffffff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }}
-        button:hover {{ background-color: #4c4c4c; }}
-        a {{ color: #00aaff; text-decoration: none; transition: color 0.3s ease; }}
-        a:hover {{ color: #66cfff; }}
-    </style>
-</head>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {{ font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: #dcdcdc; margin: 0; padding: 20px; line-height: 1.6; }}
+            h1 {{ color: #ffffff; text-align: center; font-size: 2.5em; margin: 30px 0; font-weight: 700; text-shadow: 0 0 10px white; }}
+            .container {{ max-width: 800px; margin: 0 auto; padding: 20px; }}
+            .section {{ margin: 20px 0; padding: 25px; border: 1px solid #2e2e2e; border-radius: 12px; background-color: #252525; box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); }}
+            .section h2 {{ font-size: 1.5em; color: #f0f0f0; margin-bottom: 15px; }}
+            .question {{ font-size: 1.1em; font-family: 'Cascadia Code', monospace; color: #bbbbbb; margin-bottom: 10px; }}
+            .answer {{ font-size: 1em; font-family: 'Cascadia Code', monospace; color: #ffffff; margin-left: 20px; }}
+            .result {{ font-family: 'Roboto Mono', monospace; font-weight: bold; color: #2ecc71; font-size: 1.25em; margin-top: 20px; text-shadow: 0 0 10px white; }}
+            .anti-forgery {{ font-size: 0.9em; color: #888888; text-align: center; margin-top: 40px; }}
+            .footer {{ text-align: center; font-size: 0.85em; color: #888888; margin-top: 60px; }}
+            button {{ background-color: #3b3b3b; color: #ffffff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }}
+            button:hover {{ background-color: #4c4c4c; }}
+            a {{ color: #00aaff; text-decoration: none; transition: color 0.3s ease; }}
+            a:hover {{ color: #66cfff; }}
+        </style>
+    </head>
 
-</html>
-";
+    </html>
+    ";
 
                         writer.WriteLine(htmlContent);
-
 
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
                             connection.Open();
 
+                            // Query to get exam result
                             SqlCommand resultCmd = new SqlCommand(
-                                "SELECT result, finished FROM Exam1 WHERE exam_id = @exam_id",
+                                "SELECT result, finished FROM Exam WHERE exam_id = @exam_id",
                                 connection
                             );
                             resultCmd.Parameters.AddWithValue("@exam_id", examId);
@@ -206,7 +212,7 @@ namespace Exam_management_system
                                     var resultObj = resultReader["result"];
                                     if (resultObj != DBNull.Value && float.TryParse(resultObj.ToString(), out resultValue))
                                     {
-                          
+                                        // Valid result
                                     }
                                     else
                                     {
@@ -231,10 +237,11 @@ namespace Exam_management_system
 
                             resultReader.Close();
 
+                            // Query to get exam details
                             SqlCommand examDetailsCmd = new SqlCommand(
                                 "SELECT s.name, s.nick_name, e.exam_name, e.q1, e.a1, e.q2, e.a2, e.q3, e.a3, e.q4, e.a4, e.q5, e.a5 " +
-                                "FROM Exam1 e " +
-                                "INNER JOIN Students s ON e.student_id = s.id " +
+                                "FROM Exam e " +
+                                "INNER JOIN Students s ON e.student_id = s.student_id " +
                                 "WHERE e.exam_id = @exam_id", connection);
                             examDetailsCmd.Parameters.AddWithValue("@exam_id", examId);
 
@@ -247,7 +254,6 @@ namespace Exam_management_system
                                 string examName = examDetailsReader["exam_name"].ToString();
                                 string tex = $" <h1>Exam Result</h1>\r\n    <div class='section'>\r\n        <p><strong>Date:</strong> {currentDate}</p>\r\n        <p><strong>Result:</strong> <span class='result'>{resultValue}</span></p>\r\n        <p><strong>Student Name:</strong> {studentName} {studentNickname}</p>\r\n        <p><strong>Exam Name:</strong> {examName}</p>\r\n    </div>";
                                 writer.WriteLine(tex);
-                              
 
                                 writer.WriteLine("<div class='section'>");
                                 writer.WriteLine("<h2>Questions & Answers</h2>");
@@ -294,17 +300,52 @@ namespace Exam_management_system
             }
         }
 
-     
-
+        // Open notes directory
         private void notesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {  // Use a user-friendly directory in the user's profile, such as MyDocuments
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Teachers Notes", "-1");
 
-            Directories_menu a = new Directories_menu($"D:\\Program Files\\{student_id}");
+            // Check if the directory exists
+            if (Directory.Exists(path))
+            {
+                // If it exists, open the menu
+                Directories_menu a = new Directories_menu(path);
+                a.Show();
+                Hide();
+            }
+            else
+            {
+                // Try creating the directory in a safe location (MyDocuments folder)
+                try
+                {
+                    // Ensure the parent directory exists before trying to create a subdirectory
+                    string parentDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Students Notes");
+                    if (!Directory.Exists(parentDirectory))
+                    {
+                        Directory.CreateDirectory(parentDirectory);
+                    }
 
-            a.Show();
-            Hide();
+                    // Now create the target directory
+                    Directory.CreateDirectory(path);
+
+                    Directories_menu a = new Directories_menu(path);
+                    a.Show();
+                    Hide();
+                }
+                catch (UnauthorizedAccessException)
+                {
+                    // Show an error message if access is denied
+                    MessageBox.Show("Access denied. Please ensure the application has proper permissions.");
+                }
+                catch (Exception ex)
+                {
+                    // Show an error message if an exception occurs
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
         }
 
+        // Open pomodoro timer
         private void pomodoroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Time_controler_app pomodoro = new Time_controler_app(student_id);
@@ -312,6 +353,7 @@ namespace Exam_management_system
             Hide();
         }
 
+        // Open messages
         private void messagesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Announcements_list a = new Announcements_list(student_id);
@@ -319,6 +361,7 @@ namespace Exam_management_system
             Hide();
         }
 
+        // Open group chat
         private void groupChatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Group_chat group_Chat = new Group_chat(student_id);

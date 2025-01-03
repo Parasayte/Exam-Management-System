@@ -13,21 +13,24 @@ namespace Exam_management_system
 {
     public partial class Directories_menu : Form
     {
+        // Fields
         bool selected;
         List<string> SelectedlabelList = new List<string>();
         List<Label> LabelLis = new List<Label>();
-        string path1 ;
+        string path1;
         int id;
+
+        // Constructor
         public Directories_menu(string path)
         {
             InitializeComponent();
             path1 = path;
-
         }
 
+        // Load event handler
         private void directories_Load(object sender, EventArgs e)
         {
-
+            // Check if directory exists
             if (!Directory.Exists(path1))
             {
                 MessageBox.Show(@"The Folder Not Found,The Folder Will Create", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -35,12 +38,12 @@ namespace Exam_management_system
                 Showfilesonmenu(path1);
             }
             textBox1.Text = Path.GetFullPath(path1);
-
             Showfilesonmenu(path1);
             string path = Path.GetFileName(path1);
-
             id = int.Parse(path);
         }
+
+        // Show files on menu
         public void Showfilesonmenu(string path)
         {
             int x = 10, y = 120;
@@ -49,7 +52,10 @@ namespace Exam_management_system
             foreach (var file in files)
             {
                 if (x % 810 == 0)
-                { x = 10; y += 100; }
+                {
+                    x = 10;
+                    y += 100;
+                }
                 Label label = new Label();
                 label.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
                 label.Location = new System.Drawing.Point(x, y);
@@ -64,21 +70,19 @@ namespace Exam_management_system
                 LabelLis.Add(label);
                 x += 100;
 
-
-
+                // Add event handlers
                 label.DoubleClick += new System.EventHandler(this.label_DoubleClick);
                 label.Click += new System.EventHandler(this.label_Click);
-
-
             }
         }
+
         private bool isDoubleClick = false;
 
+        // Single click event handler
         private void label_Click(object sender, EventArgs e)
         {
             if (!isDoubleClick)
             {
-
                 Task.Delay(100).ContinueWith(_ =>
                 {
                     if (!isDoubleClick)
@@ -90,12 +94,14 @@ namespace Exam_management_system
             }
         }
 
+        // Double click event handler
         private void label_DoubleClick(object sender, EventArgs e)
         {
             isDoubleClick = true;
             DoubleClickHandler(sender, e);
         }
 
+        // Handle single click
         private void SingleClickHandler(Object sender, EventArgs e)
         {
             Label clickedButton = sender as Label;
@@ -113,16 +119,10 @@ namespace Exam_management_system
                 clickedButton.BackColor = Color.MediumPurple;
             }
 
-            if (SelectedlabelList.Count == 0)
-            {
-                label2.Enabled = false;
-            }
-            else
-            {
-                label2.Enabled = true;
-            }
+            label2.Enabled = SelectedlabelList.Count > 0;
         }
 
+        // Handle double click
         private void DoubleClickHandler(Object sender, EventArgs e)
         {
             Label clickedButton = sender as Label;
@@ -135,6 +135,7 @@ namespace Exam_management_system
             }
         }
 
+        // Button click event handler
         private void button_Click(Object sender, EventArgs e)
         {
             Label clickedButton = sender as Label;
@@ -145,18 +146,17 @@ namespace Exam_management_system
 
                 Files_menu menu = new Files_menu(path);
                 menu.Show();
-
                 Hide();
             }
         }
 
-
-
+        // Form closing event handler
         private void directories_FormClosing(object sender, FormClosingEventArgs e)
         {
-           Application.Exit();
+            Application.Exit();
         }
 
+        // Add new directory
         private void Add_new_directory(object sender, EventArgs e)
         {
             Add_new_directory addNewDirectory = new Add_new_directory(id);
@@ -164,10 +164,10 @@ namespace Exam_management_system
             Hide();
             Showfilesonmenu(path1);
         }
+
+        // Create new file
         public void CreatnewFile(string name)
         {
-
-
             if (Directory.Exists($"{path1}\\{name}"))
             {
                 MessageBox.Show(@"The name is taken ,Try Another One!", "Rejected", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -177,17 +177,15 @@ namespace Exam_management_system
             {
                 Directory.CreateDirectory($"{path1}\\{name}");
                 MessageBox.Show(@"The Folder Created Succefuly", "Succeful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 Hide();
                 Show();
-
             }
         }
 
+        // Exit menu item click event handler
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            if(path1 == "D:\\Program Files\\-1")
+            if (path1 == "D:\\Program Files\\-1")
             {
                 Teacher_login teacher_Login = new Teacher_login();
                 teacher_Login.Show();
@@ -195,60 +193,51 @@ namespace Exam_management_system
                 return;
             }
             string path = Path.GetFileName(path1);
-           
-            id=int.Parse(path);
+            id = int.Parse(path);
 
             Student_menu student_Menu = new Student_menu(id);
-            
             student_Menu.Show();
             Hide();
         }
 
+        // Delete selected folders
         private void Delete_selected_folders(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(@"The Folder Will Delete,
- Are You Sure ?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            DialogResult result = MessageBox.Show(@"The Folder Will Delete, Are You Sure ?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
 
             if (result == DialogResult.Cancel)
             {
                 return;
             }
 
-
             foreach (string a in SelectedlabelList)
             {
                 if (Directory.Exists(a))
                 {
-
                     foreach (string file in Directory.GetFiles(a))
                     {
                         File.Delete(file);
                     }
-
 
                     foreach (string dir in Directory.GetDirectories(a))
                     {
                         Directory.Delete(dir, true);
                     }
 
-
                     Directory.Delete(a);
                 }
             }
 
             MessageBox.Show(@"The Folders Deleted Succefuly", "Succeful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             Hide();
             Directories_menu directories = new Directories_menu(path1);
             directories.Show();
         }
 
+        // Select all folders
         private void Selectall_folders(object sender, EventArgs e)
         {
-
             label2.Enabled = true;
-
-
 
             if (selected)
             {
@@ -258,9 +247,7 @@ namespace Exam_management_system
                 foreach (Label a in LabelLis)
                 {
                     SelectedlabelList.Remove(a.Tag.ToString());
-
                     a.BackColor = SystemColors.Control;
-
                 }
             }
             else
@@ -274,15 +261,10 @@ namespace Exam_management_system
                 }
             }
 
-
-            if (SelectedlabelList.Count == 0)
-            {
-                label2.Enabled = false;
-            }
+            label2.Enabled = SelectedlabelList.Count > 0;
         }
 
-
-
+        // Label click event handler
         private void label4_Click(object sender, EventArgs e)
         {
             path1 = textBox1.Text;

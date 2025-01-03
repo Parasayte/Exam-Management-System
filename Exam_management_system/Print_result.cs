@@ -15,33 +15,40 @@ namespace Exam_management_system
 {
     public partial class Print_result : Form
     {
-        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
+        // Connection string to the database
+        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
 
         public Print_result()
         {
             InitializeComponent();
         }
 
+        // Event handler for button click to save exam result as HTML
         private void button2_Click(object sender, EventArgs e)
         {
             SaveExamResultAsHtml();
         }
+
+        // Method to save exam result as HTML
         private void SaveExamResultAsHtml()
         {
             try
             {
+                // Check if Exam ID is provided
                 if (string.IsNullOrWhiteSpace(textBox4.Text))
                 {
                     MessageBox.Show(@"Please enter an Exam ID in the textbox.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
+                // Validate Exam ID
                 if (!int.TryParse(textBox4.Text, out int examId))
                 {
                     MessageBox.Show(@"Invalid Exam ID. Please enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
+                // Configure SaveFileDialog
                 SaveFileDialog saveFileDialog = new SaveFileDialog
                 {
                     Filter = "HTML Files (*.html)|*.html",
@@ -49,6 +56,7 @@ namespace Exam_management_system
                     FileName = "ExamResult.html"
                 };
 
+                // Show SaveFileDialog and save file if user clicks OK
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     string filePath = saveFileDialog.FileName;
@@ -86,8 +94,9 @@ namespace Exam_management_system
                         {
                             connection.Open();
 
+                            // Query to get exam result
                             SqlCommand resultCmd = new SqlCommand(
-                                "SELECT result, finished FROM Exam1 WHERE exam_id = @exam_id",
+                                "SELECT result, finished FROM Exam WHERE exam_id = @exam_id",
                                 connection
                             );
                             resultCmd.Parameters.AddWithValue("@exam_id", examId);
@@ -130,9 +139,10 @@ namespace Exam_management_system
 
                             resultReader.Close();
 
+                            // Query to get exam details
                             SqlCommand examDetailsCmd = new SqlCommand(
                                 "SELECT s.name, s.nick_name, e.exam_name, e.q1, e.a1, e.q2, e.a2, e.q3, e.a3, e.q4, e.a4, e.q5, e.a5 " +
-                                "FROM Exam1 e " +
+                                "FROM Exam e " +
                                 "INNER JOIN Students s ON e.student_id = s.id " +
                                 "WHERE e.exam_id = @exam_id", connection);
                             examDetailsCmd.Parameters.AddWithValue("@exam_id", examId);
@@ -153,6 +163,7 @@ namespace Exam_management_system
                                 writer.WriteLine("<div class='section'>");
                                 writer.WriteLine("<h2>Questions & Answers</h2>");
 
+                                // Loop through questions and answers
                                 for (int i = 1; i <= 5; i++)
                                 {
                                     string question = examDetailsReader[$"q{i}"].ToString();
@@ -195,10 +206,12 @@ namespace Exam_management_system
             }
         }
 
+        // Event handler for form load
         private void printResult_Load(object sender, EventArgs e)
         {
-          SqlConnection  con = new SqlConnection(connectionString);
+            SqlConnection con = new SqlConnection(connectionString);
             con.Open();
+            // Query to get finished exams
             SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,Student_id,finished,result FROM Exam1 Where finished='T' ;", con);
             SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(cmd);
             DataTable finishedexamstable = new DataTable();
@@ -207,11 +220,13 @@ namespace Exam_management_system
             con.Close();
         }
 
+        // Event handler for form closing
         private void printResult_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
+        // Event handler for exit button click
         private void Exit(object sender, EventArgs e)
         {
             Admin_menu admin_Menu = new Admin_menu();

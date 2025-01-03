@@ -14,39 +14,43 @@ namespace Exam_management_system
 {
     public partial class Students_exam : Form
     {
-        int Studenid;
-        int examid;
-        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
-         int totalTime ; 
-         int timeRemaining;
-        public Students_exam(int examId,int studentId)
+        int Studenid; // Student ID
+        int examid; // Exam ID
+        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;"; // Connection string
+        int totalTime; // Total time for the exam
+        int timeRemaining; // Time remaining for the exam
+
+        public Students_exam(int examId, int studentId)
         {
             InitializeComponent();
             examid = examId;
             Studenid = studentId;
-            PrintQuestions();
+            PrintQuestions(); // Print exam questions
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            // Handle panel paint event
         }
 
         private void examsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Student_menu a =new Student_menu(0);
+            // Navigate to student menu
+            Student_menu a = new Student_menu(0);
             a.Show();
             Hide();
         }
 
         private void reuslutsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            // Handle results menu item click
         }
+
         private void PrintQuestions()
         {
-            string query = "SELECT q1, q2, q3, q4, q5 FROM Exam1 WHERE exam_id="+examid; 
-            Label[] labels = { label1, label2, label3, label4, label5 }; 
+            // Query to get exam questions
+            string query = "SELECT q1, q2, q3, q4, q5 FROM Exam WHERE exam_id=" + examid;
+            Label[] labels = { label1, label2, label3, label4, label5 }; // Labels to display questions
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -57,18 +61,19 @@ namespace Exam_management_system
                     connection.Open();
                     using (SqlDataReader reader = sqlCommand.ExecuteReader())
                     {
-                        if (reader.Read()) 
+                        if (reader.Read())
                         {
+                            // Set questions to labels
                             for (int i = 0; i < labels.Length; i++)
                             {
-                                labels[i].Text = reader[i].ToString(); 
+                                labels[i].Text = reader[i].ToString();
                             }
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                  
+                    // Show error message
                     MessageBox.Show($"Error: {ex.Message}");
                 }
             }
@@ -76,13 +81,15 @@ namespace Exam_management_system
 
         private void FillAnswers()
         {
+            // Get answers from text boxes
             string a1 = richTextBox1.Text,
                    a2 = richTextBox2.Text,
                    a3 = richTextBox3.Text,
                    a4 = richTextBox4.Text,
                    a5 = richTextBox5.Text;
 
-            string query = "UPDATE Exam1 SET finished = @finished, a1 = @a1, a2 = @a2, a3 = @a3, a4 = @a4, a5 = @a5 WHERE student_id = @student_id AND exam_id = @exam_id";
+            // Query to update exam answers
+            string query = "UPDATE Exam SET finished = @finished, a1 = @a1, a2 = @a2, a3 = @a3, a4 = @a4, a5 = @a5 WHERE student_id = @student_id AND exam_id = @exam_id";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -100,6 +107,7 @@ namespace Exam_management_system
                 {
                     con.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
+                    // Show success message
                     MessageBox.Show(@"Exam finished! Please wait for the result.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Student_menu exams = new Student_menu(Studenid);
                     exams.Show();
@@ -107,30 +115,36 @@ namespace Exam_management_system
                 }
                 catch (Exception ex)
                 {
+                    // Show error message
                     MessageBox.Show($@"Error: {ex.Message}", @"Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
+
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Student_login a =new Student_login();
+            // Log out and navigate to login form
+            Student_login a = new Student_login();
             a.Show();
             Hide();
         }
 
         private void Student_Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
+            // Exit application on form closing
             Application.Exit();
         }
 
         private void Finish_exam(object sender, EventArgs e)
         {
+            // Finish exam and save answers
             FillAnswers();
         }
 
         private void Student_Exam_Load(object sender, EventArgs e)
         {
-            string query = "SELECT Time FROM Exam1 WHERE exam_id = @examid";
+            // Query to get exam time
+            string query = "SELECT Time FROM Exam WHERE exam_id = @examid";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -145,18 +159,20 @@ namespace Exam_management_system
                     if (result != DBNull.Value)
                     {
                         totalTime = Convert.ToInt32(result);
-                        timeRemaining = totalTime * 60; 
+                        timeRemaining = totalTime * 60; // Convert minutes to seconds
                         MessageBox.Show($"Total Exam Time: {totalTime} minutes");
-                        timer1.Start(); 
+                        timer1.Start(); // Start timer
                     }
                     else
                     {
+                        // Show error message if no time found
                         MessageBox.Show(@"Error: No time found for the exam", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         Close();
                     }
                 }
                 catch (Exception ex)
                 {
+                    // Show error message
                     MessageBox.Show($@"Error: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 label18.Text += $" {totalTime} minutes";
@@ -167,12 +183,14 @@ namespace Exam_management_system
         {
             if (timeRemaining <= 0)
             {
+                // Stop timer and submit exam when time is up
                 timer1.Stop();
                 MessageBox.Show(@"Time is up! The exam will now be submitted.", "Time Up", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FillAnswers();
                 return;
             }
 
+            // Update timer label
             int minutes = timeRemaining / 60;
             int seconds = timeRemaining % 60;
 
@@ -186,8 +204,5 @@ namespace Exam_management_system
 
             timeRemaining--;
         }
-
-
-
     }
 }
