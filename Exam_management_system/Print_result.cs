@@ -212,7 +212,7 @@ namespace Exam_management_system
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             // Query to get finished exams
-            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,Student_id,finished,result FROM Exam1 Where finished='T' ;", con);
+            SqlCommand cmd = new SqlCommand("SELECT exam_name,exam_id,Student_id,finished,result FROM Exam Where finished='T' ;", con);
             SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(cmd);
             DataTable finishedexamstable = new DataTable();
             sqlDataAdapter1.Fill(finishedexamstable);

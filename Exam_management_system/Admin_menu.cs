@@ -15,7 +15,7 @@ namespace Exam_management_system
     public partial class Admin_menu : Form
     {
         // Connection string to the database
-        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
+        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
 
         public Admin_menu()
         {

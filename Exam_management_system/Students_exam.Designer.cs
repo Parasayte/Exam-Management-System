@@ -62,7 +62,7 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label16);
@@ -97,11 +97,11 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Gray;
-            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label18.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.LightGray;
-            this.label18.Location = new System.Drawing.Point(1, 157);
+            this.label18.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label18.Location = new System.Drawing.Point(4, 147);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(64, 17);
             this.label18.TabIndex = 39;
@@ -111,9 +111,9 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Gray;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.label17.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label17.Location = new System.Drawing.Point(108, 2612);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(111, 25);
@@ -123,10 +123,10 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label16.Font = new System.Drawing.Font("Cascadia Code", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.ForeColor = System.Drawing.Color.Firebrick;
             this.label16.Location = new System.Drawing.Point(16, 2607);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(86, 34);
@@ -135,9 +135,9 @@
             // 
             // label15
             // 
-            this.label15.BackColor = System.Drawing.Color.Gray;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.label15.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label15.ForeColor = System.Drawing.Color.YellowGreen;
             this.label15.Location = new System.Drawing.Point(222, 87);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(430, 63);
@@ -149,9 +149,9 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Gray;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.label14.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label14.ForeColor = System.Drawing.Color.Teal;
             this.label14.Location = new System.Drawing.Point(4, 59);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(378, 16);
@@ -160,7 +160,7 @@
             // 
             // label13
             // 
-            this.label13.BackColor = System.Drawing.Color.Gray;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.label13.Location = new System.Drawing.Point(1, 2);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(882, 173);
@@ -169,9 +169,9 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Gray;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.label12.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label12.ForeColor = System.Drawing.Color.ForestGreen;
             this.label12.Location = new System.Drawing.Point(12, 2644);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(442, 42);
@@ -180,10 +180,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Image = global::Exam_management_system.Properties.Resources.assept_document__1_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(750, 2634);
@@ -197,7 +197,7 @@
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.Gray;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.label11.Location = new System.Drawing.Point(-3, 2592);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(885, 109);
@@ -207,6 +207,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label6.Location = new System.Drawing.Point(12, 619);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 21);
@@ -217,6 +218,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Location = new System.Drawing.Point(12, 1121);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(28, 21);
@@ -225,8 +227,9 @@
             // 
             // richTextBox5
             // 
-            this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.richTextBox5.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.richTextBox5.Location = new System.Drawing.Point(375, 2137);
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.Size = new System.Drawing.Size(467, 436);
@@ -237,6 +240,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label8.Location = new System.Drawing.Point(12, 1615);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 21);
@@ -246,6 +250,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Location = new System.Drawing.Point(13, 2137);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(356, 436);
@@ -258,6 +263,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label9.Location = new System.Drawing.Point(12, 2116);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(28, 21);
@@ -266,8 +272,9 @@
             // 
             // richTextBox4
             // 
-            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.richTextBox4.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.richTextBox4.Location = new System.Drawing.Point(375, 1636);
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.Size = new System.Drawing.Size(467, 436);
@@ -278,6 +285,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label10.Location = new System.Drawing.Point(4, 174);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(28, 21);
@@ -287,6 +295,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(13, 1636);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(356, 439);
@@ -297,8 +306,9 @@
             // 
             // richTextBox3
             // 
-            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.richTextBox3.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.richTextBox3.Location = new System.Drawing.Point(375, 1142);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(467, 436);
@@ -308,6 +318,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(13, 1142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(356, 439);
@@ -318,8 +329,9 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.richTextBox2.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.richTextBox2.Location = new System.Drawing.Point(375, 639);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(467, 436);
@@ -329,6 +341,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(13, 640);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(356, 439);
@@ -338,8 +351,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.richTextBox1.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.richTextBox1.Location = new System.Drawing.Point(375, 195);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(467, 380);
@@ -349,6 +363,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(13, 195);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(356, 385);

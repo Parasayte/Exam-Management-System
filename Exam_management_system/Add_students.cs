@@ -7,7 +7,7 @@ namespace Exam_management_system
     public partial class Add_students : Form
     {
 
-        string connectionString = "Server=.; Database=dddd; Integrated Security=True;";
+        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
 
         public Add_students()
         {
@@ -91,9 +91,8 @@ namespace Exam_management_system
             string gmail = textBox6.Text;
 
 
-            string constr = "Server=.; Database=dddd; Integrated Security=True;";
 
-            using (SqlConnection con = new SqlConnection(constr))
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
 
                 con.Open();
