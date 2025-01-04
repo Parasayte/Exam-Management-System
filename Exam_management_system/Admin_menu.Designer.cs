@@ -41,15 +41,16 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(24)))));
-            this.label1.Location = new System.Drawing.Point(-20, -14);
+            this.label1.Location = new System.Drawing.Point(-10, -5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(853, 516);
+            this.label1.Size = new System.Drawing.Size(848, 516);
             this.label1.TabIndex = 37;
             this.label1.Text = "🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️" +
     "🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠" +
@@ -68,15 +69,15 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button8.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Chat_32;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(110, 211);
+            this.button8.Location = new System.Drawing.Point(88, 211);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(101, 91);
+            this.button8.Size = new System.Drawing.Size(144, 91);
             this.button8.TabIndex = 40;
             this.button8.Text = "Students Chat";
             this.button8.UseVisualStyleBackColor = false;
@@ -84,15 +85,15 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button7.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Lamp_16;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(258, 211);
+            this.button7.Location = new System.Drawing.Point(251, 211);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(101, 91);
+            this.button7.Size = new System.Drawing.Size(144, 91);
             this.button7.TabIndex = 38;
             this.button7.Text = "Add announcements";
             this.button7.UseVisualStyleBackColor = false;
@@ -100,15 +101,15 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button6.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Adobe_Cs4_File_Adobe_Dreamweaver_HTML_01_16;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(549, 87);
+            this.button6.Location = new System.Drawing.Point(568, 87);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(101, 91);
+            this.button6.Size = new System.Drawing.Size(144, 91);
             this.button6.TabIndex = 34;
             this.button6.Text = "student exam file";
             this.button6.UseVisualStyleBackColor = false;
@@ -116,15 +117,15 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button5.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(549, 211);
+            this.button5.Location = new System.Drawing.Point(568, 211);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 91);
+            this.button5.Size = new System.Drawing.Size(144, 91);
             this.button5.TabIndex = 33;
             this.button5.Text = "Add results";
             this.button5.UseVisualStyleBackColor = false;
@@ -138,7 +139,7 @@
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Image = global::Exam_management_system.Properties.Resources.power;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(12, 388);
+            this.button4.Location = new System.Drawing.Point(12, 448);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(98, 28);
             this.button4.TabIndex = 32;
@@ -148,15 +149,15 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button3.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Soft_Scraps_File_New_16;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(258, 87);
+            this.button3.Location = new System.Drawing.Point(251, 87);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 91);
+            this.button3.Size = new System.Drawing.Size(144, 91);
             this.button3.TabIndex = 31;
             this.button3.Text = "Add exams";
             this.button3.UseVisualStyleBackColor = false;
@@ -164,15 +165,15 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button2.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Office_Girl_32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(401, 87);
+            this.button2.Location = new System.Drawing.Point(410, 87);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 91);
+            this.button2.Size = new System.Drawing.Size(144, 91);
             this.button2.TabIndex = 30;
             this.button2.Text = "Add teacher";
             this.button2.UseVisualStyleBackColor = false;
@@ -180,15 +181,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button1.Image = global::Exam_management_system.Properties.Resources.Semlabs_Web_Blog_Users_add_16;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(110, 87);
+            this.button1.Location = new System.Drawing.Point(88, 87);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 91);
+            this.button1.Size = new System.Drawing.Size(144, 91);
             this.button1.TabIndex = 29;
             this.button1.Text = "Add student";
             this.button1.UseVisualStyleBackColor = false;
@@ -196,15 +197,15 @@
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button9.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Close_24;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(401, 211);
+            this.button9.Location = new System.Drawing.Point(410, 211);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(101, 91);
+            this.button9.Size = new System.Drawing.Size(144, 91);
             this.button9.TabIndex = 41;
             this.button9.Text = "Delete Chats";
             this.button9.UseVisualStyleBackColor = false;
@@ -212,15 +213,15 @@
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button10.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(258, 325);
+            this.button10.Location = new System.Drawing.Point(159, 326);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(101, 91);
+            this.button10.Size = new System.Drawing.Size(144, 91);
             this.button10.TabIndex = 42;
             this.button10.Text = "Note app";
             this.button10.UseVisualStyleBackColor = false;
@@ -228,26 +229,43 @@
             // 
             // button11
             // 
-            this.button11.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button11.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(401, 325);
+            this.button11.Location = new System.Drawing.Point(329, 326);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(101, 91);
+            this.button11.Size = new System.Drawing.Size(144, 91);
             this.button11.TabIndex = 43;
             this.button11.Text = "Announcements";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.button12.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Administrator_16;
+            this.button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button12.Location = new System.Drawing.Point(502, 326);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(144, 91);
+            this.button12.TabIndex = 44;
+            this.button12.Text = "Users list";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Admin_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(12)))));
-            this.ClientSize = new System.Drawing.Size(796, 428);
+            this.ClientSize = new System.Drawing.Size(830, 488);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -288,5 +306,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }

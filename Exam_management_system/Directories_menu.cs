@@ -159,7 +159,7 @@ namespace Exam_management_system
         // Add new directory
         private void Add_new_directory(object sender, EventArgs e)
         {
-            Add_new_directory addNewDirectory = new Add_new_directory(id);
+            Add_new_directory addNewDirectory = new Add_new_directory(id,path1);
             addNewDirectory.Show();
             Hide();
             Showfilesonmenu(path1);

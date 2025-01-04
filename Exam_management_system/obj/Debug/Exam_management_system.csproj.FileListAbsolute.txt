@@ -105,3 +105,4 @@ C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_man.2480
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Admin_signup.resources
 C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\ProjectModels\SchoolManagementSystem.mdf
 C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\ProjectModels\SchoolManagementSystem_log.ldf
+C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Users_list.resources

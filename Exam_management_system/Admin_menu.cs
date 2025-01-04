@@ -159,5 +159,12 @@ namespace Exam_management_system
         {
 
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Users_list a = new Users_list();
+            a.Show();
+            Hide();
+        }
     }
 }

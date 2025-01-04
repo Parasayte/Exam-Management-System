@@ -324,6 +324,12 @@
     <Compile Include="Teacher_login.Designer.cs">
       <DependentUpon>Teacher_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users_list.Designer.cs">
+      <DependentUpon>Users_list.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_new_directory.resx">
       <DependentUpon>Add_new_directory.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +409,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher_login.resx">
       <DependentUpon>Teacher_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users_list.resx">
+      <DependentUpon>Users_list.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -801,6 +810,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\adminphoto.png" />
+    <None Include="Resources\Google-Noto-Emoji-People-Profession-10213-woman-student-light-skin-tone.48.png" />
     <Content Include="Resources\teacherphoto.png" />
   </ItemGroup>
   <ItemGroup>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,11 +14,12 @@ namespace Exam_management_system
     public partial class Add_new_directory : Form
     {
         int student_id;
-        public Add_new_directory(int id)
+        string path;
+        public Add_new_directory(int id,string path1)
         {
             InitializeComponent();
             student_id = id;
-          
+            path = path1;
         }
 
         private void AddNewDirectory_FormClosing(object sender, FormClosingEventArgs e)
@@ -27,7 +29,8 @@ namespace Exam_management_system
 
         private void Add_newDirectory(object sender, EventArgs e)
         {
-            Directories_menu directories = new Directories_menu($"D:\\Program Files\\{student_id}");
+
+            Directories_menu directories = new Directories_menu(path);
             directories.CreatnewFile(richTextBox1.Text);
             Hide();
         }
