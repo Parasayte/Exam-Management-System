@@ -267,6 +267,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminMenu_FormClosing);
+            this.Load += new System.EventHandler(this.Admin_menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

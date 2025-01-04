@@ -26,22 +26,11 @@ namespace Exam_management_system.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-2GLLSQJ;Initial Catalog=dddd;Integrated Security=True;Encrypt" +
-            "=True;TrustServerCertificate=True")]
-        public string ddddConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\ProjectModels" +
+            "\\SchoolManagementSystem.mdf;Integrated Security=True")]
+        public string EXAMSYSTEMLOCALDB {
             get {
-                return ((string)(this["ddddConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=SchoolManagementSystem;Integrated Security=True;Tru" +
-            "stServerCertificate=True")]
-        public string connectionstring {
-            get {
-                return ((string)(this["connectionstring"]));
+                return ((string)(this["EXAMSYSTEMLOCALDB"]));
             }
         }
     }

@@ -16,7 +16,7 @@ namespace Exam_management_system
     {
         int Studenid; // Student ID
         int examid; // Exam ID
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;"; // Connection string
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
         int totalTime; // Total time for the exam
         int timeRemaining; // Time remaining for the exam
 

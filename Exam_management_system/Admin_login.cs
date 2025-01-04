@@ -14,7 +14,7 @@ namespace Exam_management_system
 {
     public partial class Admin_login : Form
     {
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
 
         public Admin_login()
         {
@@ -41,8 +41,8 @@ namespace Exam_management_system
         private void Login_Button_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("SELECT COUNT(1) FROM Admins WHERE admin_id = @id AND password = @password", con);
-            cmd.Parameters.AddWithValue("@id", ID_Textbox.Text);
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(1) FROM Admins WHERE name = @name AND password = @password", con);
+            cmd.Parameters.AddWithValue("@name", ID_Textbox.Text);
             cmd.Parameters.AddWithValue("@password", Password_Textbox.Text);
             con.Open();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
@@ -124,6 +124,13 @@ namespace Exam_management_system
         {
             Time_controler_app t = new Time_controler_app(-1);
             t.Show();
+            Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Admin_signup a = new Admin_signup();
+            a.Show();
             Hide();
         }
     }

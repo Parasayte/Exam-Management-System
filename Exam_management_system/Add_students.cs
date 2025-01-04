@@ -7,7 +7,7 @@ namespace Exam_management_system
     public partial class Add_students : Form
     {
 
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
 
         public Add_students()
         {
@@ -132,14 +132,56 @@ namespace Exam_management_system
 
         private void Delete_student(object sender, EventArgs e)
         {
-            string id=textBox3.Text;
-            string com = "DELETE FROM Students WHERE id = "+id;
-            SqlConnection connection = new SqlConnection(connectionString);
+            string id = textBox3.Text;
 
-            SqlCommand cmd = new SqlCommand(com,connection);
-            connection.Open();
-            cmd.ExecuteNonQuery();
-            connection.Close();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlTransaction transaction = connection.BeginTransaction();
+
+                try
+                {
+                    // First, delete related records in the Exam table
+                    string deleteExamQuery = "DELETE FROM Exam WHERE student_id = @id";
+                    using (SqlCommand deleteExamCmd = new SqlCommand(deleteExamQuery, connection, transaction))
+                    {
+                        deleteExamCmd.Parameters.AddWithValue("@id", id);
+                        deleteExamCmd.ExecuteNonQuery();
+                    }
+
+                    // Second, delete related records in the Chat table
+                    string deleteChatQuery = "DELETE FROM Chat WHERE student_id = @id";
+                    using (SqlCommand deleteChatCmd = new SqlCommand(deleteChatQuery, connection, transaction))
+                    {
+                        deleteChatCmd.Parameters.AddWithValue("@id", id);
+                        deleteChatCmd.ExecuteNonQuery();
+                    }
+
+                    // Finally, delete the student from the Students table
+                    string deleteStudentQuery = "DELETE FROM Students WHERE Student_id = @id";
+                    using (SqlCommand deleteStudentCmd = new SqlCommand(deleteStudentQuery, connection, transaction))
+                    {
+                        deleteStudentCmd.Parameters.AddWithValue("@id", id);
+                        deleteStudentCmd.ExecuteNonQuery();
+                    }
+
+                    // Commit the transaction if all deletions are successful
+                    transaction.Commit();
+                    MessageBox.Show("Student and related records deleted successfully.");
+                }
+                catch (Exception ex)
+                {
+                    // Rollback the transaction in case of an error
+                    transaction.Rollback();
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+
+            // Refresh the data grid view to reflect the changes
             BrigStudentData();
         }
 

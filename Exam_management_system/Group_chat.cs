@@ -8,7 +8,7 @@ namespace Exam_management_system
 {
     public partial class Group_chat : Form
     {
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
         int studentId;
 
         FlowLayoutPanel flowLayoutPanel;

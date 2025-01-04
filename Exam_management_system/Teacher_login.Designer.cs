@@ -60,6 +60,7 @@
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 20;
             this.label3.Text = "Name";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Password_Textbox
             // 
@@ -174,7 +175,7 @@
             this.Login_Button.UseVisualStyleBackColor = false;
             this.Login_Button.Click += new System.EventHandler(this.Login);
             // 
-            // Teacher_Login
+            // Teacher_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

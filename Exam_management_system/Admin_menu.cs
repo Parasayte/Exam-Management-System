@@ -15,7 +15,7 @@ namespace Exam_management_system
     public partial class Admin_menu : Form
     {
         // Connection string to the database
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
 
         public Admin_menu()
         {
@@ -153,6 +153,11 @@ namespace Exam_management_system
             Announcements_list a = new Announcements_list(-1);
             a.Show();
             Hide();
+        }
+
+        private void Admin_menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

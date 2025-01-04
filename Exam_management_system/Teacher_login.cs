@@ -15,7 +15,7 @@ namespace Exam_management_system
     public partial class Teacher_login : Form
     {
         // Connection string to the database
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
 
         public Teacher_login()
         {
@@ -151,6 +151,11 @@ namespace Exam_management_system
             Admin_login a = new Admin_login();
             a.Show();
             Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

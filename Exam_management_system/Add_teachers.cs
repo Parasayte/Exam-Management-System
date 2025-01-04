@@ -10,7 +10,7 @@ namespace Exam_management_system
     public partial class Add_teachers : Form
     {
         // Connection string to the database
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
 
         public Add_teachers()
         {

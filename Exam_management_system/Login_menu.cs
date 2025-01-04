@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Exam_management_system
 {
     public partial class Login_menu : Form
     {
+
+
         public Login_menu()
         {
             InitializeComponent();
@@ -19,6 +22,7 @@ namespace Exam_management_system
 
         private void button1_Click(object sender, EventArgs e)
         {
+          
             Student_login student_Login = new Student_login();
             student_Login.Show();
             Hide();

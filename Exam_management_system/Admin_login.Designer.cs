@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Login_Button = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -67,9 +68,9 @@
             this.label3.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(275, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 17);
+            this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 34;
-            this.label3.Text = "ID";
+            this.label3.Text = "Name";
             // 
             // Password_Textbox
             // 
@@ -167,12 +168,24 @@
             this.Login_Button.UseVisualStyleBackColor = false;
             this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(364, 337);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 17);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Sign up";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // Admin_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(818, 467);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
@@ -192,6 +205,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Admin_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -205,5 +219,6 @@
         private System.Windows.Forms.TextBox Password_Textbox;
         private System.Windows.Forms.TextBox ID_Textbox;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label5;
     }
 }

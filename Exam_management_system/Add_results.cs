@@ -15,7 +15,8 @@ namespace Exam_management_system
     public partial class Add_results : Form
     {
         // Connection string to the database
-        string con = "Server=.; Database=SchoolManagementSystem; Integrated Security=True";
+        string con =  @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
+
         SqlDataAdapter sqlDataAdapter;
 
         public Add_results()

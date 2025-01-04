@@ -16,7 +16,7 @@ namespace Exam_management_system
     public partial class Student_menu : Form
     {
         SqlConnection con;
-        string connectionString = "Server=.; Database=SchoolManagementSystem; Integrated Security=True;";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
         int student_id;
         DateTime nowtime;
 

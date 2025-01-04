@@ -209,16 +209,17 @@
     <Compile Include="Admin_menu.Designer.cs">
       <DependentUpon>Admin_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_signup.Designer.cs">
+      <DependentUpon>Admin_signup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Announcements_list.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Announcements_list.Designer.cs">
       <DependentUpon>Announcements_list.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB.xsd</DependentUpon>
     </Compile>
     <Compile Include="Directories_menu.cs">
       <SubType>Form</SubType>
@@ -344,6 +345,9 @@
     <EmbeddedResource Include="Admin_menu.resx">
       <DependentUpon>Admin_menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin_signup.resx">
+      <DependentUpon>Admin_signup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Announcements_list.resx">
       <DependentUpon>Announcements_list.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,17 +404,6 @@
     <EmbeddedResource Include="Teacher_login.resx">
       <DependentUpon>Teacher_login.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DB.xsc">
-      <DependentUpon>DB.xsd</DependentUpon>
-    </None>
-    <None Include="DB.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB.xss">
-      <DependentUpon>DB.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -802,11 +795,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ProjectModels\SchoolManagementSystem.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ProjectModels\SchoolManagementSystem_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>SchoolManagementSystem.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\adminphoto.png" />
     <Content Include="Resources\teacherphoto.png" />
@@ -823,6 +815,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
