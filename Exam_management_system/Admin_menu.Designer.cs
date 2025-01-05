@@ -79,7 +79,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(144, 91);
             this.button8.TabIndex = 40;
-            this.button8.Text = "Students Chat";
+            this.button8.Text = "Chat";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.Open_Group_Chat);
             // 

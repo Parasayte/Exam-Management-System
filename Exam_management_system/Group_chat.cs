@@ -14,21 +14,15 @@ namespace Exam_management_system
         FlowLayoutPanel flowLayoutPanel;
         Label studentNameLabel;
         RichTextBox richTextBox1;
-
         Timer timer2;
 
-        public Group_chat(int id)
+        public Group_chat(int id) // Removed the `role` parameter
         {
             InitializeComponent();
             studentId = id;
 
             // Initialize and start timer
-            timer1 = new Timer
-            {
-                Interval = 5000
-            };
-            timer1.Tick += timer1_Tick;
-            timer1.Start();
+          
 
             // Initialize student name label
             studentNameLabel = new Label
@@ -83,21 +77,32 @@ namespace Exam_management_system
         // Show student name
         private void ShowStudentName()
         {
-            string query = "SELECT Name FROM Students WHERE student_Id = @Id;";
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            if (studentId == -1)
             {
-                try
+                studentNameLabel.Text = "Admin";
+            }
+            else if (studentId == 0)
+            {
+                studentNameLabel.Text = "Teacher";
+            }
+            else
+            {
+                string query = "SELECT Name FROM Students WHERE student_Id = @Id;";
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Id", studentId);
-                    conn.Open();
-                    object result = cmd.ExecuteScalar();
+                    try
+                    {
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@Id", studentId);
+                        conn.Open();
+                        object result = cmd.ExecuteScalar();
 
-                    studentNameLabel.Text = result?.ToString() ?? "";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error loading student name: " + ex.Message);
+                        studentNameLabel.Text = result?.ToString() ?? "Student";
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error loading student name: " + ex.Message);
+                    }
                 }
             }
         }
@@ -126,9 +131,24 @@ namespace Exam_management_system
                         while (reader.Read())
                         {
                             string announcement = reader["Message"].ToString();
-                            string studentName = reader["Name"] != DBNull.Value
-                                ? reader["Name"].ToString()
-                                : "------------";
+                            int senderId = Convert.ToInt32(reader["Student_id"]);
+                            string studentName = "";
+
+                            if (senderId == -1)
+                            {
+                                studentName = "Admin";
+                            }
+                            else if (senderId == 0)
+                            {
+                                studentName = "Teacher";
+                            }
+                            else
+                            {
+                                studentName = reader["Name"] != DBNull.Value
+                                    ? reader["Name"].ToString()
+                                    : "Student";
+                            }
+
                             string date = reader["Date"] != DBNull.Value
                                 ? Convert.ToDateTime(reader["Date"]).ToString("yyyy-MM-dd")
                                 : "No Date";
@@ -136,19 +156,7 @@ namespace Exam_management_system
                                 ? TimeSpan.Parse(reader["Time"].ToString()).ToString(@"hh\:mm\:ss")
                                 : "No Time";
 
-                            int senderId = Convert.ToInt32(reader["Student_id"]);
                             bool isCurrentStudent = senderId == studentId;
-                            bool isAdmin = senderId == 1;
-                            bool isTeacher = senderId == 2;
-
-                            if (isAdmin)
-                            {
-                                studentName = "\nAdmin";
-                            }
-                            else if (isTeacher)
-                            {
-                                studentName = "\nTeacher";
-                            }
 
                             Panel messagePanel = new Panel
                             {
@@ -162,9 +170,9 @@ namespace Exam_management_system
                                 Size = new Size(30, 30),
                                 SizeMode = PictureBoxSizeMode.Zoom,
                                 Location = new Point(5, 5),
-                                Image = isAdmin
+                                Image = senderId == -1
                                     ? Resources.Hopstarter_Scrap_Administrator_32
-                                    : isTeacher
+                                    : senderId == 0
                                         ? Resources.Hopstarter_Sleek_Xp_Basic_Office_Girl_32
                                         : Resources.Hopstarter_Sleek_Xp_Basic_Chat_32
                             };
@@ -176,9 +184,9 @@ namespace Exam_management_system
                                 AutoSize = true,
                                 Font = new Font("Arial", 9, FontStyle.Bold),
                                 BackColor = Color.FromArgb(45, 45, 48),
-                                ForeColor = isAdmin
+                                ForeColor = senderId == -1
                                     ? Color.Firebrick
-                                    : isTeacher
+                                    : senderId == 0
                                         ? Color.Olive
                                         : (isCurrentStudent ? Color.LightGreen : Color.LightGreen),
                                 BorderStyle = BorderStyle.FixedSingle,
@@ -218,10 +226,6 @@ namespace Exam_management_system
             {
                 TimeSpan currentTime = DateTime.Now.TimeOfDay;
                 string query = "INSERT INTO Chat (Message, Student_id, Date, Time) VALUES (@Message, @StudentId, @Date, @Time);";
-                if (studentId == -1)
-                {
-                    query = "INSERT INTO Chat (Message, Student_id, Date, Time) VALUES (@Message, 1, @Date, @Time);";
-                }
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
@@ -263,13 +267,13 @@ namespace Exam_management_system
         // Log out
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (studentId == 1)
+            if (studentId == -1)
             {
                 Admin_menu adminMenu = new Admin_menu();
                 adminMenu.Show();
                 Hide();
             }
-            else if (studentId == 2)
+            else if (studentId == 0)
             {
                 Add_results teacherMenu = new Add_results();
                 teacherMenu.Show();

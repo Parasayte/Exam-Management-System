@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Exam_management_system.exe" version="1.0.0.1" publicKeyToken="58da194e6b2aecff" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Hopstarter-Sleek-Xp-Basic-Paste.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Exam_management_system" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Exam_management_system.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exam_management_system.exe" size="1861600">
+      <assemblyIdentity name="Exam_management_system" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8ix0kZmEPvO6ClPlgAFiWLZ4tC6UwH8QeAc8TQxw4yw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Exam_management_system.exe.config" size="3451">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FFqc2Vc+xw6qlSyQt7q6lG2RrL35rXvGYwn0J5ukyp8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Hopstarter-Sleek-Xp-Basic-Paste.ico" size="311069">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dcuznNL15cQq2wOfGjlfxTzYoYJK37vyoXulaoX8ojU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ProjectModels\SchoolManagementSystem.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RiaL79vMlnEqGGEOrfKFBlzm42ohI09u/pYYuYCj0uA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ProjectModels\SchoolManagementSystem_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PUOHWdjpfVllwRu/sJuZNwZlzsJ42NXq0TXTdxVIgCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\adminphoto.png" size="2489">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MshgskofaM57Sd6syVR6FZc744D3nXpHwY1wchvLTO0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\teacherphoto.png" size="2574">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fS/gnq1UB1CPIYaSZz2WEAfLi4h7Zi8elIgNc+AWmj4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-2GLLSQJ\hougj" issuerKeyHash="65b4b2eb5b99b818da2019405df3b869586410ac" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NasGq62fAwghHhFcgqIhI0q8USAKZWTHQ72lqk+kQZE=</DigestValue></Reference></SignedInfo><SignatureValue>sanN+gcOue8AAHoW+KPbOf/dPEPsvvHdXS2rkCZT0iRKh5ZPmuDP/j6cgJdwBXv//E8itNk15aNxz++dTt2ySgvk1KzmryCeV49msiyZKWiycSpO180rKIixxZhBSEu8PXPtpbhFE8oFSc5LyCLjJ1ISX4fA78Y+V80HbAtenpY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>07cg1OP34PvDNl2/1HLOKDi0QyfZKPbkoSIeZAUGzMl1aGkMtHW1D/xHH5ey0cdtVDlCg550JX9EfI94ewUcWYfQGdGdbYBl1IM34xF1/3gypIiijnhILSy4jmKqhznsg0NdmMYLd0FxAsbrIqpx6HNhRt+OjQZqIRUiYINokek=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9141a44faaa5bd43c764650a2051bc4a2321a2825c111e2108039fadab06ab35" Description="" Url=""><as:assemblyIdentity name="Exam_management_system.exe" version="1.0.0.1" publicKeyToken="58da194e6b2aecff" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-2GLLSQJ\hougj</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fv3BhX0Enx2dZbCFh4WGw4V2St+G7g36euKEHrvUsg8=</DigestValue></Reference></SignedInfo><SignatureValue>bNYXwbademT/TsVf/GSsuXImi9K5XRJX1BmsReU2ajuPDa3OcJNIK3EPNHe5ycFLQn/lG5v6A3ddmBhD1Dus0hB3a79EgLJZSxWw7UdPy4TYVG1oDFp2BQNd5gIV9axgL32zO9lSvpRXVhlo6KEgCDZuSkaipGAW5YbTAHZxXns=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>07cg1OP34PvDNl2/1HLOKDi0QyfZKPbkoSIeZAUGzMl1aGkMtHW1D/xHH5ey0cdtVDlCg550JX9EfI94ewUcWYfQGdGdbYBl1IM34xF1/3gypIiijnhILSy4jmKqhznsg0NdmMYLd0FxAsbrIqpx6HNhRt+OjQZqIRUiYINokek=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQOp+ICUh0t7pIy0+qbg3g2TANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADIARwBMAEwAUwBRAEoAXABoAG8AdQBnAGowHhcNMjUwMTA0MjIwNzE2WhcNMjYwMTA1MDQwNzE2WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADIARwBMAEwAUwBRAEoAXABoAG8AdQBnAGowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANO3INTj9+D7wzZdv9Ryzig4tEMn2Sj25KEiHmQFBszJdWhpDLR1tQ/8Rx+XstHHbVQ5QoOedCV/RHyPeHsFHFmH0BnRnW2AZdSDN+MRdf94MqSIoo54SC0suI5iqoc57INDXZjGC3dBcQLG6yKqcehzYUbfjo0GaiEVImCDaJHpAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAA2NvKr7+4Dm0VRkAbyHC5FxxWPFRP3gVCUtY6x4OdJXariB0nYkkhGEJ2Mn51f4xllCnOCXC4rqRD6V3uGbY52BcwohJtQ5PIyqp/7BzyUGjkDZWWNXVJyxf8fy5yK3uGz1UA5xsVJ+aWS0qW4xrKIwLikB3w/Kk7lCqPvarigE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

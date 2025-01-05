@@ -87,7 +87,7 @@ namespace Exam_management_system
         // Open Group Chat form
         private void Open_Group_Chat(object sender, EventArgs e)
         {
-            Group_chat group_Chat = new Group_chat(1);
+            Group_chat group_Chat = new Group_chat(-1);
             group_Chat.Show();
             Hide();
         }

@@ -35,3 +35,8 @@ C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_manageme
 C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\ProjectModels\SchoolManagementSystem.mdf
 C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\ProjectModels\SchoolManagementSystem_log.ldf
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Users_list.resources
+C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\Exam_management_system.exe.manifest
+C:\Users\hougj\source\repos\sinav\Exam_management_system\bin\Debug\Exam_management_system.application
+C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.TrustInfo.xml
+C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.exe.manifest
+C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.application

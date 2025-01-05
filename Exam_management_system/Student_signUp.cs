@@ -102,12 +102,20 @@ namespace Exam_management_system
                 con.Close();
                 Go_back_to_loginPage(sender, e);
             }
+            Student_signUp_Load(sender, e);
         }
 
         // Event handler for form load (currently empty)
         private void Student_signUp_Load(object sender, EventArgs e)
         {
-
+            SqlConnection conn = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand("SELECT name ,nick_name, Student_id FROM Students", conn);
+            conn.Open();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            dataGridView1.DataSource = dt;
         }
 
         // Navigate back to login page

@@ -33,5 +33,27 @@ namespace Exam_management_system.Properties {
                 return ((string)(this["EXAMSYSTEMLOCALDB"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-2GLLSQJ;Initial Catalog=dddd;Integrated Security=True;Encrypt" +
+            "=True;TrustServerCertificate=True")]
+        public string ddddConnectionString {
+            get {
+                return ((string)(this["ddddConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=SchoolManagementSystem;Integrated Security=True;Tru" +
+            "stServerCertificate=True")]
+        public string connectionstring {
+            get {
+                return ((string)(this["connectionstring"]));
+            }
+        }
     }
 }

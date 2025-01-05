@@ -15,7 +15,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\hougj\3D Objects\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,9 +25,17 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <SupportUrl>https://github.com/Parasayte</SupportUrl>
+    <ErrorReportUrl>https://github.com/Parasayte/Exam-Management-System</ErrorReportUrl>
+    <ProductName>Exam management system</ProductName>
+    <PublisherName>Selam</PublisherName>
+    <SuiteName>Systems</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -48,6 +56,27 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hopstarter-Sleek-Xp-Basic-Paste.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D1F24D30E1EDDE07A4AE725455664ADBF6C62A49</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Exam_management_system_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -167,6 +196,16 @@
     </Compile>
     <Compile Include="Mini_game.Designer.cs">
       <DependentUpon>Mini_game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolManagementSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolManagementSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolManagementSystemDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Time_controler_app.cs">
       <SubType>Form</SubType>
@@ -318,6 +357,8 @@
     <EmbeddedResource Include="Users_list.resx">
       <DependentUpon>Users_list.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Exam_management_system_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -327,6 +368,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SchoolManagementSystemDataSet.xsc">
+      <DependentUpon>SchoolManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolManagementSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolManagementSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolManagementSystemDataSet.xss">
+      <DependentUpon>SchoolManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolManagementSystemDataSet1.xsc">
+      <DependentUpon>SchoolManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolManagementSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolManagementSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolManagementSystemDataSet1.xss">
+      <DependentUpon>SchoolManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -707,6 +770,7 @@
     <None Include="Resources\Google-Noto-Emoji-People-Profession-10225-woman-teacher-light-skin-tone.48.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Hopstarter-Sleek-Xp-Basic-Paste.ico" />
     <Content Include="ProjectModels\SchoolManagementSystem.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

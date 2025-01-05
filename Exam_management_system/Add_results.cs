@@ -187,7 +187,7 @@ namespace Exam_management_system
         // Event handler for chat
         private void chatToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Group_chat group_Chat = new Group_chat(2);
+            Group_chat group_Chat = new Group_chat(0);
             group_Chat.Show();
             Hide();
         }
