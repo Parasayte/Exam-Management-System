@@ -41,6 +41,7 @@ namespace Exam_management_system
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.operatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addExamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -172,6 +173,7 @@ namespace Exam_management_system
             // operatToolStripMenuItem
             // 
             this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem,
             this.addExamToolStripMenuItem,
             this.readNotesToolStripMenuItem,
             this.addStudentToolStripMenuItem,
@@ -182,11 +184,19 @@ namespace Exam_management_system
             this.operatToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.operatToolStripMenuItem.Text = "Operat";
             // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.AAHouse;
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
+            // 
             // addExamToolStripMenuItem
             // 
             this.addExamToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Soft_Scraps_File_New_16;
             this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
-            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addExamToolStripMenuItem.Text = "Add Exam";
             this.addExamToolStripMenuItem.Click += new System.EventHandler(this.addExamToolStripMenuItem_Click);
             // 
@@ -194,7 +204,7 @@ namespace Exam_management_system
             // 
             this.readNotesToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
-            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.readNotesToolStripMenuItem.Text = "Read Notes";
             this.readNotesToolStripMenuItem.Click += new System.EventHandler(this.readNotesToolStripMenuItem_Click);
             // 
@@ -202,7 +212,7 @@ namespace Exam_management_system
             // 
             this.addStudentToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Semlabs_Web_Blog_Users_add_16;
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
@@ -210,7 +220,7 @@ namespace Exam_management_system
             // 
             this.chatToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Text_Bubble1;
             this.chatToolStripMenuItem.Name = "chatToolStripMenuItem";
-            this.chatToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.chatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.chatToolStripMenuItem.Text = "Chat";
             this.chatToolStripMenuItem.Click += new System.EventHandler(this.chatToolStripMenuItem_Click);
             // 
@@ -218,7 +228,7 @@ namespace Exam_management_system
             // 
             this.logOutToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Cancel_16;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -282,5 +292,6 @@ namespace Exam_management_system
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private Button button4;
         private ToolStripMenuItem chatToolStripMenuItem;
+        private ToolStripMenuItem menuToolStripMenuItem;
     }
 }

@@ -30,43 +30,9 @@ namespace Exam_management_system
             Hide();
         }
 
-        // Event handler for adding exam
-        private void addExamToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            Add_exams addExam = new Add_exams();
-            addExam.Show();
-            Hide();
-        }
-
-        // Event handler for reading notes
-        private void readNotesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Add_results readStudentsNotes = new Add_results();
-            readStudentsNotes.Show();
-            Hide();
-        }
-
-        // Event handler for adding student
-        private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Add_students addSt = new Add_students();
-            addSt.Show();
-            Hide();
-        }
-
-        // Event handler for logging out
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Teacher_login teacher_Login = new Teacher_login();
-            teacher_Login.Show();
-            Hide();
-        }
-
+       
         // Event handler for button3 click (currently empty)
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         // Event handler for sign up button click
         private void Sign_up(object sender, EventArgs e)

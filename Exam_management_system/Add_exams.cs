@@ -15,13 +15,15 @@ namespace Exam_management_system
 {
     public partial class Add_exams : Form
     {
+        string Role;
         // Connection string to the database
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
         DateTime date;
 
-        public Add_exams()
+        public Add_exams(string role)
         {
             InitializeComponent();
+            Role = role;
         }
 
         // Event handler for form closing
@@ -33,7 +35,7 @@ namespace Exam_management_system
         // Event handler for reading notes
         private void readNotesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_results readStudentsNotes = new Add_results();
+            Add_results readStudentsNotes = new Add_results(Role);
             readStudentsNotes.Show();
             Hide();
         }
@@ -41,7 +43,7 @@ namespace Exam_management_system
         // Event handler for adding a student
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_students addSt = new Add_students();
+            Add_students addSt = new Add_students(Role);
             addSt.Show();
             Hide();
         }
@@ -78,7 +80,7 @@ namespace Exam_management_system
                 return;
             }
 
-            int time = Int32.Parse(numericUpDown1.Value.ToString());
+            int time = Int32.Parse(numericUpDown1.Value.ToString(Role));
 
             // Check if the time is greater than 1 minute
             if (time < 1)
@@ -186,7 +188,7 @@ namespace Exam_management_system
         // Event handler for adding announcements
         private void addAnnouncementsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_announcements addAnnouncements = new Add_announcements();
+            Add_announcements addAnnouncements = new Add_announcements(Role);
             addAnnouncements.Show();
             Hide();
         }
@@ -260,6 +262,22 @@ namespace Exam_management_system
             Time_controler_app a = new Time_controler_app(-1);
             a.Show();
             Hide();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Role == "admin")
+            {
+                Admin_menu admin_Menu = new Admin_menu();
+                admin_Menu.Show();
+                Hide();
+            }
+            else
+            {
+                Teacher_menu teacher_Menu = new Teacher_menu();
+                teacher_Menu.Show();
+                Hide();
+            }
         }
     }
 };

@@ -13,14 +13,17 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Exam_management_system
 {
-    public partial class Print_result : Form
+
+    public partial class Print_result : Form 
     {
+        string Role;
         // Connection string to the database
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
 
-        public Print_result()
+        public Print_result(string role)
         {
             InitializeComponent();
+            Role = role;
         }
 
         // Event handler for button click to save exam result as HTML
@@ -229,9 +232,18 @@ namespace Exam_management_system
         // Event handler for exit button click
         private void Exit(object sender, EventArgs e)
         {
-            Admin_menu admin_Menu = new Admin_menu();
-            admin_Menu.Show();
-            Hide();
+            if (Role == "admin")
+            {
+                Admin_menu admin_Menu = new Admin_menu();
+                admin_Menu.Show();
+                Hide();
+            }
+            else
+            {
+                Teacher_menu teacher_Menu = new Teacher_menu();
+                teacher_Menu.Show();
+                Hide();
+            }
         }
     }
 }

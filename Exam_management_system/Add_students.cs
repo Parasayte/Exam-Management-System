@@ -8,10 +8,11 @@ namespace Exam_management_system
     {
 
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
-
-        public Add_students()
+        string Role;
+        public Add_students(string role)
         {
             InitializeComponent();
+            Role = role;
         }
 
         private void textBox1_TextChanged(object sender, System.EventArgs e)
@@ -52,20 +53,20 @@ namespace Exam_management_system
 
         private void addExamToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            Add_exams addExam = new Add_exams();
+            Add_exams addExam = new Add_exams(Role);
             addExam.Show();
             Hide();
         }
         private void readNotesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_results readStudentsNotes = new Add_results();
+            Add_results readStudentsNotes = new Add_results(Role);
             readStudentsNotes.Show();
             Hide();
         }
 
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_students addSt = new Add_students();
+            Add_students addSt = new Add_students(Role);
             addSt.Show();
             Hide();
         }
@@ -195,7 +196,7 @@ namespace Exam_management_system
 
         private void readNotesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Add_results readStudentsNotes = new Add_results();
+            Add_results readStudentsNotes = new Add_results(Role);
             readStudentsNotes.Show();
             Hide();
         }
@@ -207,7 +208,7 @@ namespace Exam_management_system
 
         private void addAnnouncementsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_announcements addAnnouncements = new Add_announcements();
+            Add_announcements addAnnouncements = new Add_announcements(Role);
             addAnnouncements.Show();
             Hide();
         }
@@ -218,6 +219,22 @@ namespace Exam_management_system
             Group_chat group_Chat = new Group_chat(0);
             group_Chat.Show();
             Hide();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Role == "admin")
+            {
+                Admin_menu admin_Menu = new Admin_menu();
+                admin_Menu.Show();
+                Hide();
+            }
+            else
+            {
+                Teacher_menu teacher_Menu = new Teacher_menu();
+                teacher_Menu.Show();
+                Hide();
+            }
         }
     }
 }

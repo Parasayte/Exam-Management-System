@@ -14,10 +14,12 @@ namespace Exam_management_system
     {
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
         DateTime date;
+        string Role;
 
-        public Add_announcements()
+        public Add_announcements(string role)
         {
             InitializeComponent();
+            Role = role;
         }
 
         // Add new announcement
@@ -208,7 +210,7 @@ namespace Exam_management_system
         // Open Add_exams form
         private void addExamToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_exams addExam = new Add_exams();
+            Add_exams addExam = new Add_exams(Role);
             addExam.Show();
             Hide();
         }
@@ -216,7 +218,7 @@ namespace Exam_management_system
         // Open Add_results form
         private void readNotesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_results readStudentsNotes = new Add_results();
+            Add_results readStudentsNotes = new Add_results(Role);
             readStudentsNotes.Show();
             Hide();
         }
@@ -224,7 +226,7 @@ namespace Exam_management_system
         // Open Add_students form
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_students addSt = new Add_students();
+            Add_students addSt = new Add_students(Role);
             addSt.Show();
             Hide();
         }
@@ -262,6 +264,22 @@ namespace Exam_management_system
             Group_chat group_Chat = new Group_chat(0);
             group_Chat.Show();
             Hide();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(Role == "admin")
+            {
+                Admin_menu admin_Menu = new Admin_menu();
+                admin_Menu.Show();
+                Hide();
+            }
+            else
+            {
+                Teacher_menu teacher_Menu = new Teacher_menu();
+                teacher_Menu.Show();
+                Hide();
+            }
         }
     }
 }

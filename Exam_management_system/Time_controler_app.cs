@@ -174,8 +174,14 @@ namespace Exam_management_system
         {
             if (student_id == -1)
             {
-                Student_login student = new Student_login();
-                student.Show();
+                Admin_menu a = new Admin_menu();
+                a.Show();
+                Hide();
+            }
+            else if (student_id == 0)
+            {
+                Teacher_menu a = new Teacher_menu();
+                a.Show();
                 Hide();
             }
             else

@@ -36,6 +36,7 @@ namespace Exam_management_system
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.operatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addExamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,6 +112,7 @@ namespace Exam_management_system
             // operatToolStripMenuItem
             // 
             this.operatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem,
             this.addExamToolStripMenuItem,
             this.readNotesToolStripMenuItem,
             this.addStudentToolStripMenuItem,
@@ -122,6 +124,14 @@ namespace Exam_management_system
             this.operatToolStripMenuItem.Name = "operatToolStripMenuItem";
             this.operatToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.operatToolStripMenuItem.Text = "Operat";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.AAHouse;
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // addExamToolStripMenuItem
             // 
@@ -290,5 +300,6 @@ namespace Exam_management_system
         private ToolStripMenuItem toolsToolStripMenuItem;
         private ToolStripMenuItem notesAppToolStripMenuItem;
         private ToolStripMenuItem timeControlerToolStripMenuItem;
+        private ToolStripMenuItem menuToolStripMenuItem;
     }
 }

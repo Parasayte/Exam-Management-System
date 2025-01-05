@@ -116,7 +116,7 @@ namespace Exam_management_system
         private void examsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Navigate to the student menu
-            Student_menu student_Menu = new Student_menu(studentId);
+            Student_exams_menu student_Menu = new Student_exams_menu(studentId);
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,6 +126,13 @@ namespace Exam_management_system
                 // Log out and show the Admin menu
                 Admin_menu admin_Menu = new Admin_menu();
                 admin_Menu.Show();
+                Hide();
+            }
+            else if (studentId == 0)
+            {
+                // Log out and show the Teacher menu
+                Teacher_menu teacher_Menu = new Teacher_menu();
+                teacher_Menu.Show();
                 Hide();
             }
             else

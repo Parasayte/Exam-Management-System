@@ -63,6 +63,16 @@ namespace Exam_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AAHouse {
+            get {
+                object obj = ResourceManager.GetObject("AAHouse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_document {
             get {
                 object obj = ResourceManager.GetObject("add-document", resourceCulture);
@@ -163,6 +173,16 @@ namespace Exam_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Custom_Icon_Design_Flatastic_11_Megaphone_32 {
+            get {
+                object obj = ResourceManager.GetObject("Custom-Icon-Design-Flatastic-11-Megaphone.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Custom_Icon_Design_Pretty_Office_8_Comment_add_16 {
             get {
                 object obj = ResourceManager.GetObject("Custom-Icon-Design-Pretty-Office-8-Comment-add.16", resourceCulture);
@@ -186,6 +206,26 @@ namespace Exam_management_system.Properties {
         internal static System.Drawing.Bitmap D {
             get {
                 object obj = ResourceManager.GetObject("D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delacro_Once_Again_Chat_32 {
+            get {
+                object obj = ResourceManager.GetObject("Delacro-Once-Again-Chat.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Double_J_Design_Ravenna_3d_Export_To_File_32 {
+            get {
+                object obj = ResourceManager.GetObject("Double-J-Design-Ravenna-3d-Export-To-File.32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,6 +283,16 @@ namespace Exam_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fatcow_Farm_Fresh_Chart_bar_add_32 {
+            get {
+                object obj = ResourceManager.GetObject("Fatcow-Farm-Fresh-Chart-bar-add.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fatcow_Farm_Fresh_Folder_link_16 {
             get {
                 object obj = ResourceManager.GetObject("Fatcow-Farm-Fresh-Folder-link.16", resourceCulture);
@@ -256,6 +306,16 @@ namespace Exam_management_system.Properties {
         internal static System.Drawing.Bitmap Fatcow_Farm_Fresh_Font_colors_32 {
             get {
                 object obj = ResourceManager.GetObject("Fatcow-Farm-Fresh-Font-colors.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fatcow_Farm_Fresh_Wishlist_add_32 {
+            get {
+                object obj = ResourceManager.GetObject("Fatcow-Farm-Fresh-Wishlist-add.32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1123,6 +1183,16 @@ namespace Exam_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Janik_Baumgartner_Woocons_News_Add_32 {
+            get {
+                object obj = ResourceManager.GetObject("Janik-Baumgartner-Woocons-News-Add.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Led24_de_Led_Application_view_xp_terminal_16 {
             get {
                 object obj = ResourceManager.GetObject("Led24.de-Led-Application-view-xp-terminal.16", resourceCulture);
@@ -1196,6 +1266,16 @@ namespace Exam_management_system.Properties {
         internal static System.Drawing.Bitmap right {
             get {
                 object obj = ResourceManager.GetObject("right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Robsonbillponte_IRob_Drives_Time_Machine_HD_32 {
+            get {
+                object obj = ResourceManager.GetObject("Robsonbillponte-IRob-Drives-Time-Machine-HD.32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

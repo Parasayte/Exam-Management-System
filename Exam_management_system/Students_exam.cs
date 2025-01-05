@@ -36,7 +36,7 @@ namespace Exam_management_system
         private void examsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Navigate to student menu
-            Student_menu a = new Student_menu(0);
+            Student_exams_menu a = new Student_exams_menu(0);
             a.Show();
             Hide();
         }
@@ -150,7 +150,7 @@ namespace Exam_management_system
         {
             // Finish exam and save answers
             SaveAnswers();
-            Student_menu exams = new Student_menu(Studenid);
+            Student_exams_menu exams = new Student_exams_menu(Studenid);
             exams.Show();
             Hide();
         }

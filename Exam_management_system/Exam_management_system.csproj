@@ -32,7 +32,7 @@
     <PublisherName>Selam</PublisherName>
     <SuiteName>Systems</SuiteName>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -203,6 +203,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolManagementSystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Student_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_menu.Designer.cs">
+      <DependentUpon>Student_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_menu.Designer.cs">
+      <DependentUpon>Teacher_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Time_controler_app.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,11 +232,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Student_menu.cs">
+    <Compile Include="Student_exams_menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_menu.Designer.cs">
-      <DependentUpon>Student_menu.cs</DependentUpon>
+    <Compile Include="Student_exams_menu.Designer.cs">
+      <DependentUpon>Student_exams_menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -318,14 +330,20 @@
     <EmbeddedResource Include="Mini_game.resx">
       <DependentUpon>Mini_game.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student_menu.resx">
+      <DependentUpon>Student_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_menu.resx">
+      <DependentUpon>Teacher_menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Time_controler_app.resx">
       <DependentUpon>Time_controler_app.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Print_result.resx">
       <DependentUpon>Print_result.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student_menu.resx">
-      <DependentUpon>Student_menu.cs</DependentUpon>
+    <EmbeddedResource Include="Student_exams_menu.resx">
+      <DependentUpon>Student_exams_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -762,8 +780,16 @@
     <Content Include="ProjectModels\SchoolManagementSystem_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\AAHouse.png" />
     <Content Include="Resources\adminphoto.png" />
     <None Include="Resources\Google-Noto-Emoji-People-Profession-10213-woman-student-light-skin-tone.48.png" />
+    <None Include="Resources\Custom-Icon-Design-Flatastic-11-Megaphone.32.png" />
+    <None Include="Resources\Delacro-Once-Again-Chat.32.png" />
+    <None Include="Resources\Fatcow-Farm-Fresh-Chart-bar-add.32.png" />
+    <None Include="Resources\Fatcow-Farm-Fresh-Wishlist-add.32.png" />
+    <None Include="Resources\Janik-Baumgartner-Woocons-News-Add.32.png" />
+    <None Include="Resources\Double-J-Design-Ravenna-3d-Export-To-File.32.png" />
+    <None Include="Resources\Robsonbillponte-IRob-Drives-Time-Machine-HD.32.png" />
     <Content Include="Resources\teacherphoto.png" />
   </ItemGroup>
   <ItemGroup>

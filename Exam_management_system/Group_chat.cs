@@ -275,8 +275,8 @@ namespace Exam_management_system
             }
             else if (studentId == 0)
             {
-                Add_results teacherMenu = new Add_results();
-                teacherMenu.Show();
+               Teacher_menu teacher_Menu = new Teacher_menu();
+                teacher_Menu.Show();
                 Hide();
             }
             else

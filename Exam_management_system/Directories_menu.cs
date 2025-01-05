@@ -196,8 +196,8 @@ namespace Exam_management_system
             if (path1 == teacherNotesPath)
             {
                 // Open Teacher menu
-                Add_results add_Results = new Add_results();
-                add_Results.Show();
+              Teacher_menu teacher_Menu = new Teacher_menu();
+                teacher_Menu.Show();
                 Hide();
                 return;
             }

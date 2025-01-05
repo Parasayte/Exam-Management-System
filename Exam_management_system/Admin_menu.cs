@@ -16,7 +16,7 @@ namespace Exam_management_system
     {
         // Connection string to the database
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
-
+        string Role = "admin";
         public Admin_menu()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace Exam_management_system
         // Open Add Student form
         private void Open_Add_student(object sender, EventArgs e)
         {
-            Add_students teacher_AddSt = new Add_students();
+            Add_students teacher_AddSt = new Add_students(Role);
             teacher_AddSt.Show();
             Hide();
         }
@@ -41,7 +41,7 @@ namespace Exam_management_system
         // Open Add Exam form
         private void Open_Add_exam(object sender, EventArgs e)
         {
-            Add_exams addExam = new Add_exams();
+            Add_exams addExam = new Add_exams(Role);
             addExam.Show();
             Hide();
         }
@@ -63,7 +63,7 @@ namespace Exam_management_system
         // Open Add Result form
         private void Open_Add_result(object sender, EventArgs e)
         {
-            Add_results read_Answers = new Add_results();
+            Add_results read_Answers = new Add_results(Role);
             read_Answers.Show();
             Hide();
         }
@@ -71,7 +71,7 @@ namespace Exam_management_system
         // Open Print Student Exam Paper form
         private void Open_print_student_exam_paper(object sender, EventArgs e)
         {
-            Print_result printResult = new Print_result();
+            Print_result printResult = new Print_result(Role);
             printResult.Show();
             Hide();
         }
@@ -79,7 +79,7 @@ namespace Exam_management_system
         // Open Add Announcements form
         private void Open_Add_announcements(object sender, EventArgs e)
         {
-            Add_announcements add_Announcement = new Add_announcements();
+            Add_announcements add_Announcement = new Add_announcements(Role);
             add_Announcement.Show();
             Hide();
         }
@@ -164,6 +164,20 @@ namespace Exam_management_system
         {
             Users_list a = new Users_list();
             a.Show();
+            Hide();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Time_controler_app a = new Time_controler_app(-1);
+            a.Show();
+            Hide();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Login_menu login_Menu = new Login_menu();
+            login_Menu.Show();
             Hide();
         }
     }

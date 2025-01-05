@@ -55,11 +55,12 @@ namespace Exam_management_system
 
                         if (count == 1)
                         {
+                            con.Close();
+
                             // If login is successful, open the Add_results form
-                            Add_results a = new Add_results();
+                            Teacher_menu a = new Teacher_menu();
                             a.Show();
                             Hide();
-                            con.Close();
                         }
                         else
                         {
