@@ -1,7 +1,34 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\hougj\\source\\repos\\sinav\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Exam_management_system||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|C:\\Users\\hougj\\source\\repos\\sinav\\exam_management_system\\schoolmanagementsystemdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|solutionrelative:exam_management_system\\schoolmanagementsystemdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|C:\\Users\\hougj\\source\\repos\\sinav\\exam_management_system\\admin_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|solutionrelative:exam_management_system\\admin_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|C:\\Users\\hougj\\source\\repos\\sinav\\exam_management_system\\admin_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|solutionrelative:exam_management_system\\admin_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|C:\\Users\\hougj\\source\\repos\\sinav\\exam_management_system\\add_announcements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|solutionrelative:exam_management_system\\add_announcements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|C:\\Users\\hougj\\source\\repos\\sinav\\exam_management_system\\add_announcements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|solutionrelative:exam_management_system\\add_announcements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542504C5-279B-406D-9F36-B4D62433FBAB}|Exam_management_system\\Exam_management_system.csproj|c:\\users\\hougj\\source\\repos\\sinav\\exam_management_system\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +65,75 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Exam_management_system",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Exam_management_system.csproj",
+              "RelativeDocumentMoniker": "Exam_management_system\\Exam_management_system.csproj",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Exam_management_system.csproj",
+              "RelativeToolTip": "Exam_management_system\\Exam_management_system.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-05T10:38:55.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SchoolManagementSystemDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\SchoolManagementSystemDataSet.xsd",
+              "RelativeDocumentMoniker": "Exam_management_system\\SchoolManagementSystemDataSet.xsd",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\SchoolManagementSystemDataSet.xsd",
+              "RelativeToolTip": "Exam_management_system\\SchoolManagementSystemDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-01-05T10:38:39.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin_login.cs",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Admin_login.cs",
+              "RelativeDocumentMoniker": "Exam_management_system\\Admin_login.cs",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Admin_login.cs",
+              "RelativeToolTip": "Exam_management_system\\Admin_login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T10:27:57.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Admin_login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Admin_login.cs",
+              "RelativeDocumentMoniker": "Exam_management_system\\Admin_login.cs",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Admin_login.cs [Design]",
+              "RelativeToolTip": "Exam_management_system\\Admin_login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T10:27:56.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Add_announcements.cs",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Add_announcements.cs",
+              "RelativeDocumentMoniker": "Exam_management_system\\Add_announcements.cs",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Add_announcements.cs",
+              "RelativeToolTip": "Exam_management_system\\Add_announcements.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T10:25:26.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Add_announcements.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Add_announcements.cs",
+              "RelativeDocumentMoniker": "Exam_management_system\\Add_announcements.cs",
+              "ToolTip": "C:\\Users\\hougj\\source\\repos\\sinav\\Exam_management_system\\Add_announcements.cs [Design]",
+              "RelativeToolTip": "Exam_management_system\\Add_announcements.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T10:25:24.478Z"
             }
           ]
         }

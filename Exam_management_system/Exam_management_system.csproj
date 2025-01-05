@@ -27,11 +27,12 @@
     <MapFileExtensions>true</MapFileExtensions>
     <SupportUrl>https://github.com/Parasayte</SupportUrl>
     <ErrorReportUrl>https://github.com/Parasayte/Exam-Management-System</ErrorReportUrl>
+    <TargetCulture>en-US</TargetCulture>
     <ProductName>Exam management system</ProductName>
     <PublisherName>Selam</PublisherName>
     <SuiteName>Systems</SuiteName>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -201,11 +202,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolManagementSystemDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SchoolManagementSystemDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SchoolManagementSystemDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Time_controler_app.cs">
       <SubType>Form</SubType>
@@ -378,17 +374,6 @@
     </None>
     <None Include="SchoolManagementSystemDataSet.xss">
       <DependentUpon>SchoolManagementSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SchoolManagementSystemDataSet1.xsc">
-      <DependentUpon>SchoolManagementSystemDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="SchoolManagementSystemDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SchoolManagementSystemDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SchoolManagementSystemDataSet1.xss">
-      <DependentUpon>SchoolManagementSystemDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
