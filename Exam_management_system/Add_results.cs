@@ -120,7 +120,7 @@ namespace Exam_management_system
                     return;
                 }
 
-                string updateQuery = "UPDATE Exam SET finished = 'T', result = @Result WHERE exam_id = @Exam_id";
+                string updateQuery = "UPDATE Exam SET finished = 'Yes', result = @Result WHERE exam_id = @Exam_id";
 
                 using (SqlConnection conn = new SqlConnection(con))
                 {

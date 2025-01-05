@@ -198,7 +198,7 @@ namespace Exam_management_system
                             if (isCurrentStudent)
                             {
                                 messageBubble.BackColor = Color.FromArgb(36, 0, 8);
-                                messageBubble.Location = new Point(550, 5);
+                                messageBubble.Location = new Point(530, 5);
                                 pictureBox.Location = new Point(845, 5);
                                 messageBubble.TextAlign = ContentAlignment.MiddleRight;
                             }

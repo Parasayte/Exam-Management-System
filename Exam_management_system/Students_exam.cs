@@ -79,16 +79,14 @@ namespace Exam_management_system
             }
         }
 
-        private void FillAnswers()
+        private void SaveAnswers()
         {
-            // Get answers from text boxes
             string a1 = richTextBox1.Text,
                    a2 = richTextBox2.Text,
                    a3 = richTextBox3.Text,
                    a4 = richTextBox4.Text,
                    a5 = richTextBox5.Text;
 
-            // Query to update exam answers
             string query = "UPDATE Exam SET finished = @finished, a1 = @a1, a2 = @a2, a3 = @a3, a4 = @a4, a5 = @a5 WHERE student_id = @student_id AND exam_id = @exam_id";
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -99,7 +97,7 @@ namespace Exam_management_system
                 cmd.Parameters.AddWithValue("@a3", a3);
                 cmd.Parameters.AddWithValue("@a4", a4);
                 cmd.Parameters.AddWithValue("@a5", a5);
-                cmd.Parameters.AddWithValue("@finished", "T");
+                cmd.Parameters.AddWithValue("@finished", "Yes");
                 cmd.Parameters.AddWithValue("@student_id", Studenid);
                 cmd.Parameters.AddWithValue("@exam_id", examid);
 
@@ -107,15 +105,11 @@ namespace Exam_management_system
                 {
                     con.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    // Show success message
                     MessageBox.Show(@"Exam finished! Please wait for the result.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Student_menu exams = new Student_menu(Studenid);
-                    exams.Show();
-                    Hide();
+                  con.Close();
                 }
                 catch (Exception ex)
                 {
-                    // Show error message
                     MessageBox.Show($@"Error: {ex.Message}", @"Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -131,14 +125,34 @@ namespace Exam_management_system
 
         private void Student_Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Exit application on form closing
-            Application.Exit();
+            // Ask the user for confirmation
+            DialogResult dialog = MessageBox.Show(
+                @"Are you sure you want to exit? Your answers will be saved, and the exam will be marked as finished.",
+                @"Exit",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Exclamation
+            );
+
+            if (dialog == DialogResult.Yes)
+            {
+                // Save answers and mark the exam as finished
+                SaveAnswers();
+                Application.Exit();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                // Cancel the form closing event
+                e.Cancel = true;
+            }
         }
 
         private void Finish_exam(object sender, EventArgs e)
         {
             // Finish exam and save answers
-            FillAnswers();
+            SaveAnswers();
+            Student_menu exams = new Student_menu(Studenid);
+            exams.Show();
+            Hide();
         }
 
         private void Student_Exam_Load(object sender, EventArgs e)
@@ -186,7 +200,7 @@ namespace Exam_management_system
                 // Stop timer and submit exam when time is up
                 timer1.Stop();
                 MessageBox.Show(@"Time is up! The exam will now be submitted.", "Time Up", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                FillAnswers();
+                SaveAnswers();
                 return;
             }
 

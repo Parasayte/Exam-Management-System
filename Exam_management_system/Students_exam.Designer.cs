@@ -235,6 +235,7 @@
             this.richTextBox5.Size = new System.Drawing.Size(467, 436);
             this.richTextBox5.TabIndex = 9;
             this.richTextBox5.Text = "";
+            this.richTextBox5.ZoomFactor = 2.3F;
             // 
             // label8
             // 
@@ -280,6 +281,7 @@
             this.richTextBox4.Size = new System.Drawing.Size(467, 436);
             this.richTextBox4.TabIndex = 7;
             this.richTextBox4.Text = "";
+            this.richTextBox4.ZoomFactor = 2.3F;
             // 
             // label10
             // 
@@ -314,6 +316,7 @@
             this.richTextBox3.Size = new System.Drawing.Size(467, 436);
             this.richTextBox3.TabIndex = 5;
             this.richTextBox3.Text = "";
+            this.richTextBox3.ZoomFactor = 2.3F;
             // 
             // label3
             // 
@@ -337,6 +340,7 @@
             this.richTextBox2.Size = new System.Drawing.Size(467, 436);
             this.richTextBox2.TabIndex = 3;
             this.richTextBox2.Text = "";
+            this.richTextBox2.ZoomFactor = 2.3F;
             // 
             // label2
             // 
@@ -359,6 +363,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(467, 380);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
+            this.richTextBox1.ZoomFactor = 2.3F;
             // 
             // label1
             // 

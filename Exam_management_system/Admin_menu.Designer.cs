@@ -75,7 +75,7 @@
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button8.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Chat_32;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(88, 211);
+            this.button8.Location = new System.Drawing.Point(88, 202);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(144, 91);
             this.button8.TabIndex = 40;
@@ -91,7 +91,7 @@
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button7.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Lamp_16;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(251, 211);
+            this.button7.Location = new System.Drawing.Point(251, 202);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(144, 91);
             this.button7.TabIndex = 38;
@@ -123,7 +123,7 @@
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button5.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(568, 211);
+            this.button5.Location = new System.Drawing.Point(568, 202);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(144, 91);
             this.button5.TabIndex = 33;
@@ -203,7 +203,7 @@
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button9.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Close_24;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(410, 211);
+            this.button9.Location = new System.Drawing.Point(410, 202);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(144, 91);
             this.button9.TabIndex = 41;
@@ -219,7 +219,7 @@
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button10.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(159, 326);
+            this.button10.Location = new System.Drawing.Point(88, 317);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(144, 91);
             this.button10.TabIndex = 42;
@@ -235,7 +235,7 @@
             this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button11.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(329, 326);
+            this.button11.Location = new System.Drawing.Point(251, 317);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(144, 91);
             this.button11.TabIndex = 43;
@@ -251,7 +251,7 @@
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.button12.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Administrator_16;
             this.button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button12.Location = new System.Drawing.Point(502, 326);
+            this.button12.Location = new System.Drawing.Point(410, 317);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(144, 91);
             this.button12.TabIndex = 44;

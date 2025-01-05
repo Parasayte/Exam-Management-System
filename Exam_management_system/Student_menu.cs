@@ -43,9 +43,9 @@ namespace Exam_management_system
             con.Open();
 
             // Query for not finished exams
-            SqlCommand cmd = new SqlCommand($"SELECT exam_name,exam_id,finished,Time,lastdate FROM Exam Where finished='F' and Student_id={student_id} AND lastDate > '{nowtime}'", con);
+            SqlCommand cmd = new SqlCommand($"SELECT exam_name,exam_id,finished,Time,lastdate FROM Exam Where finished='No' and Student_id={student_id} AND lastDate > '{nowtime}'", con);
             // Query for finished exams
-            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Exam Where finished='T' and Student_id=  " + student_id, con);
+            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Exam Where finished='Yes' and Student_id=  " + student_id, con);
 
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
             SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(cmd1);
@@ -74,7 +74,7 @@ namespace Exam_management_system
             try
             {
                 int examid = Int32.Parse(textBox4.Text);
-                char finished = 'F';
+                string finished ="No";
                 DateTime currentDate = DateTime.Now;
 
                 string cmd = @"
