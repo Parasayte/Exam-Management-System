@@ -38,7 +38,7 @@ namespace Exam_management_system
             Application.Exit();
         }
 
-        private void Login_Button_Click(object sender, EventArgs e)
+        private void Try_login(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand("SELECT COUNT(1) FROM Admins WHERE name = @name AND password = @password", con);
@@ -122,7 +122,7 @@ namespace Exam_management_system
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Time_controler_app t = new Time_controler_app(-1);
+            Time_controler_app t = new Time_controler_app(-2);
             t.Show();
             Hide();
         }

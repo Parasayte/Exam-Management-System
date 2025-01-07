@@ -63,7 +63,8 @@ namespace Exam_management_system
 
                     // Execute the query
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show($@"Welcome to the system {name}", "Congrat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($@"Welcome to the system {name} , The login is by ID and password , check your ID from the table and login ", "Congrat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
                 }
                 con.Close();
                 Go_back_to_loginPage(sender, e);

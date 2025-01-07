@@ -1,5 +1,5 @@
-0,255,128
+245,245,245
 28,28,28
-Cascadia Code Light,15.75
+Cascadia Code SemiBold,24
 50,50,50
 245,245,245

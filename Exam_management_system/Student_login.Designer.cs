@@ -164,7 +164,7 @@ namespace Exam_management_system
             this.Login_Button.TabIndex = 17;
             this.Login_Button.Text = "Log in";
             this.Login_Button.UseVisualStyleBackColor = false;
-            this.Login_Button.Click += new System.EventHandler(this.Log_in);
+            this.Login_Button.Click += new System.EventHandler(this.Try_Login);
             // 
             // Student_Login
             // 

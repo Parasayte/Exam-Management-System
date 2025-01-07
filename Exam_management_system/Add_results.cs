@@ -42,7 +42,7 @@ namespace Exam_management_system
         // Event handler for form load
         private void ReadStudentsNotes_Load(object sender, EventArgs e)
         {
-            BrigExamsData();
+            BringExamsData();
         }
 
         // Event handler for adding exam
@@ -70,7 +70,7 @@ namespace Exam_management_system
         }
 
         // Method to bring exam data
-        private void BrigExamsData()
+        private void BringExamsData()
         {
             string com = "SELECT * FROM Exam;";
             sqlDataAdapter = new SqlDataAdapter(com, con);
@@ -150,7 +150,7 @@ namespace Exam_management_system
                 MessageBox.Show("Error saving changes to the database: " + ex.Message);
             }
 
-            BrigExamsData();
+            BringExamsData();
         }
 
         // Event handler for adding announcements

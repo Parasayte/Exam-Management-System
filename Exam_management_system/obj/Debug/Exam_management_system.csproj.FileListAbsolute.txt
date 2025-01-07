@@ -17,7 +17,6 @@ C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_manageme
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Properties.Resources.resources
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Add_results.resources
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Student_login.resources
-C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Students_exam.resources
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Student_signUp.resources
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.csproj.GenerateResource.cache
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.csproj.CoreCompileInputs.cache
@@ -42,3 +41,4 @@ C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_manageme
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.application
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Teacher_menu.resources
 C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Student_exams_menu.resources
+C:\Users\hougj\source\repos\sinav\Exam_management_system\obj\Debug\Exam_management_system.Students_exam_paper.resources

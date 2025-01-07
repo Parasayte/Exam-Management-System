@@ -14,6 +14,7 @@ namespace Exam_management_system
 {
     public partial class Admin_signup : Form
     {
+        string systemPassword = "selam";
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFileName=|DataDirectory|\ProjectModels\SchoolManagementSystem.mdf;Integrated Security=True;";
 
         public Admin_signup()
@@ -21,7 +22,7 @@ namespace Exam_management_system
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void Sign_up(object sender, EventArgs e)
         {
             string name = textBox1.Text;
             string password = textBox5.Text;
@@ -30,7 +31,7 @@ namespace Exam_management_system
                 MessageBox.Show("Please fill all the fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return;
             }
-            if (textBox2.Text == "selam")
+            if (textBox2.Text == systemPassword)
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {

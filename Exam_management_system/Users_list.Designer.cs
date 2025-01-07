@@ -111,7 +111,7 @@
             this.button3.Text = "Admins";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Print_admins_data);
             // 
             // button2
             // 
@@ -128,7 +128,7 @@
             this.button2.Text = "Teachers";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Print_teachers_data);
             // 
             // button1
             // 
@@ -145,7 +145,7 @@
             this.button1.Text = "Students";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Print_students_data);
             // 
             // Users_list
             // 

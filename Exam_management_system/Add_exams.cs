@@ -80,7 +80,7 @@ namespace Exam_management_system
                 return;
             }
 
-            int time = Int32.Parse(numericUpDown1.Value.ToString(Role));
+            int time = Int32.Parse(numericUpDown1.Value.ToString());
 
             // Check if the time is greater than 1 minute
             if (time < 1)
@@ -97,6 +97,7 @@ namespace Exam_management_system
                 string q4 = richTextBox4.Text.Trim();
                 string q5 = richTextBox5.Text.Trim();
                 string name = richTextBox7.Text.Trim();
+
 
                 try
                 {
@@ -147,7 +148,34 @@ namespace Exam_management_system
         // Method to bring exam data
         private void BrigExamsData()
         {
-            string com = "SELECT * FROM Exam;";
+            string com = @"
+WITH RankedExams AS (
+    SELECT 
+        exam_name, 
+        time, 
+        lastDate, 
+        q1, 
+        q2, 
+        q3, 
+        q4, 
+        ROW_NUMBER() OVER (PARTITION BY exam_name ORDER BY exam_id) AS RowNum
+    FROM 
+        Exam
+)
+SELECT 
+    exam_name, 
+    time, 
+    lastDate, 
+    q1, 
+    q2, 
+    q3, 
+    q4
+FROM 
+    RankedExams
+WHERE 
+    RowNum = 1;
+";
+
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(com, connectionString);
             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(sqlDataAdapter);
             DataTable dataTable = new DataTable();

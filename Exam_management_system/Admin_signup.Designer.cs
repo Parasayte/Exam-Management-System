@@ -92,7 +92,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(323, 133);
+            this.label2.Location = new System.Drawing.Point(324, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(175, 23);
             this.label2.TabIndex = 70;
@@ -104,7 +104,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.Silver;
-            this.textBox2.Location = new System.Drawing.Point(275, 159);
+            this.textBox2.Location = new System.Drawing.Point(276, 172);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(240, 25);
             this.textBox2.TabIndex = 69;
@@ -139,7 +139,7 @@
             this.button6.TabIndex = 66;
             this.button6.Text = "Sign Up";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Sign_up);
             // 
             // Admin_signup
             // 

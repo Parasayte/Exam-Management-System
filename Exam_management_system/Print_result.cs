@@ -146,7 +146,7 @@ namespace Exam_management_system
                             SqlCommand examDetailsCmd = new SqlCommand(
                                 "SELECT s.name, s.nick_name, e.exam_name, e.q1, e.a1, e.q2, e.a2, e.q3, e.a3, e.q4, e.a4, e.q5, e.a5 " +
                                 "FROM Exam e " +
-                                "INNER JOIN Students s ON e.student_id = s.id " +
+                                "INNER JOIN Students s ON e.student_id = s.student_id " +
                                 "WHERE e.exam_id = @exam_id", connection);
                             examDetailsCmd.Parameters.AddWithValue("@exam_id", examId);
 

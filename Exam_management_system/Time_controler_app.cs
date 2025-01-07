@@ -184,9 +184,15 @@ namespace Exam_management_system
                 a.Show();
                 Hide();
             }
-            else
+            else if(student_id > 0)
             {
                 Student_menu a = new Student_menu(student_id);
+                a.Show();
+                Hide();
+            }
+            else if(student_id == -2)
+            {
+                Student_login a = new Student_login();
                 a.Show();
                 Hide();
             }

@@ -15,11 +15,11 @@ namespace Exam_management_system
         public Add_teachers()
         {
             InitializeComponent();
-            BrigStudentData();
+            BrigTeachersData();
         }
 
         // Method to fetch and display teacher data
-        private void BrigStudentData()
+        private void BrigTeachersData()
         {
             string com = "SELECT*FROM Teacher;";
             SqlDataAdapter dt = new SqlDataAdapter(com, connectionString);
@@ -60,8 +60,8 @@ namespace Exam_management_system
                 con.Close();
                 ClearTextbox();
             }
-            BrigStudentData();
-            BrigStudentData();
+            
+            BrigTeachersData();
         }
 
         // Method to clear textboxes
@@ -91,13 +91,23 @@ namespace Exam_management_system
         private void Delete_teacher(object sender, EventArgs e)
         {
             string id = textBox3.Text;
+            string com3 = $@"UPDATE Students
+SET teacher_id = {1}
+WHERE teacher_id= {id};
+";
+            string com2 = "DELETE FROM Announcements WHERE teacher_id = '" + id + "'";
             string com = "DELETE FROM Teacher WHERE teacher_id = '" + id + "'";
             SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd2 = new SqlCommand(com2, connection);
+            SqlCommand cmd3 = new SqlCommand(com3, connection);
             SqlCommand cmd = new SqlCommand(com, connection);
+
             connection.Open();
+            cmd3.ExecuteNonQuery();
+            cmd2.ExecuteNonQuery();
             cmd.ExecuteNonQuery();
             connection.Close();
-            BrigStudentData();
+            BrigTeachersData();
         }
     }
 }

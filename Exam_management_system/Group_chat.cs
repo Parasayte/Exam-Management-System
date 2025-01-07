@@ -75,7 +75,7 @@ namespace Exam_management_system
         }
 
         // Show student name
-        private void ShowStudentName()
+        private void ShowUserName()
         {
             if (studentId == -1)
             {
@@ -254,7 +254,7 @@ namespace Exam_management_system
         // Load group chat
         private void Group_chat_Load(object sender, EventArgs e)
         {
-            ShowStudentName();
+            ShowUserName();
             Print_group_messages();
         }
 

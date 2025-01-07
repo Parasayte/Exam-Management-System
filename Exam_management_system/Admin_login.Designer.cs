@@ -166,7 +166,7 @@
             this.Login_Button.TabIndex = 33;
             this.Login_Button.Text = "Log in";
             this.Login_Button.UseVisualStyleBackColor = false;
-            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
+            this.Login_Button.Click += new System.EventHandler(this.Try_login);
             // 
             // label5
             // 

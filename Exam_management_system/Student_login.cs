@@ -25,7 +25,7 @@ namespace Exam_management_system
         }
 
         // Method to handle student login
-        private void Log_in(object sender, EventArgs e)
+        private void Try_Login(object sender, EventArgs e)
         {
             string id = ID_Textbox.Text;
             string password = Password_Textbox.Text;
@@ -138,7 +138,7 @@ namespace Exam_management_system
         // Method to handle label click event
         private void label5_Click(object sender, EventArgs e)
         {
-            Time_controler_app a = new Time_controler_app(-1);
+            Time_controler_app a = new Time_controler_app(-2);
             a.Show();
             Hide();
         }

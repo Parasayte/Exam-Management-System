@@ -32,7 +32,7 @@ namespace Exam_management_system
             Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Print_admins_data(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand("SELECT * FROM Admins", conn);
@@ -44,7 +44,7 @@ namespace Exam_management_system
             dataGridView1.DataSource = dt;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Print_teachers_data(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand("SELECT * FROM Teacher", conn);
@@ -56,7 +56,7 @@ namespace Exam_management_system
             dataGridView1.DataSource = dt;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Print_students_data(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand("SELECT * FROM Students", conn);

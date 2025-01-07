@@ -252,11 +252,11 @@
     <Compile Include="Student_login.Designer.cs">
       <DependentUpon>Student_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Students_exam.cs">
+    <Compile Include="Students_exam_paper.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Students_exam.Designer.cs">
-      <DependentUpon>Students_exam.cs</DependentUpon>
+    <Compile Include="Students_exam_paper.Designer.cs">
+      <DependentUpon>Students_exam_paper.cs</DependentUpon>
     </Compile>
     <Compile Include="Add_students.cs">
       <SubType>Form</SubType>
@@ -356,8 +356,8 @@
     <EmbeddedResource Include="Student_login.resx">
       <DependentUpon>Student_login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Students_exam.resx">
-      <DependentUpon>Students_exam.cs</DependentUpon>
+    <EmbeddedResource Include="Students_exam_paper.resx">
+      <DependentUpon>Students_exam_paper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_students.resx">
       <DependentUpon>Add_students.cs</DependentUpon>

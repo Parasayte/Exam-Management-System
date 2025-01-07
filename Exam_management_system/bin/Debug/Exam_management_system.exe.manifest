@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Exam_management_system.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Exam_management_system.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Hopstarter-Sleek-Xp-Basic-Paste.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exam_management_system.exe" size="2024928">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exam_management_system.exe" size="2026464">
       <assemblyIdentity name="Exam_management_system" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CBvlpQ7Nae4fXn4t2g1zUzUYZvdTadQz6P5w6HHNUcg=</dsig:DigestValue>
+        <dsig:DigestValue>pMzV0QODgCHjAYOzvhZ1sh4nZa2XEIFC5sKq4UYbAeU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,7 +78,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ASOWnJXc67Hsd5KyHU0U5xzsYcC0cyNVjm3XrXu8R/A=</dsig:DigestValue>
+      <dsig:DigestValue>dvlmRjQT4Hw/6qcWNHA9jXsK7X2jx/HQ4Iomx8HGEp0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ProjectModels\SchoolManagementSystem_log.ldf" size="8388608" writeableType="applicationData">
@@ -87,7 +87,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YTCD1yE8udz9d7lEE4G9lievCmwzvTt7P8wKk7cPKTg=</dsig:DigestValue>
+      <dsig:DigestValue>dOvGLO5+6JGXmbdqhpAI3ubT3PrdLsoH0X8ZjS6z+SM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\adminphoto.png" size="2489">

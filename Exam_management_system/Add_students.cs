@@ -98,7 +98,7 @@ namespace Exam_management_system
 
                 con.Open();
 
-
+                    
                 string query = "INSERT INTO Students (name, nick_name, birth_date, password, gmail) " +
                                "VALUES (@name, @nick_name, @birth_date, @password, @gmail)";
 

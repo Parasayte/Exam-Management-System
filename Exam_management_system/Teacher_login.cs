@@ -141,7 +141,7 @@ namespace Exam_management_system
         // Method to open the pomodoro app
         private void open_pomodoro_app(object sender, EventArgs e)
         {
-            Time_controler_app a = new Time_controler_app(-1);
+            Time_controler_app a = new Time_controler_app(-2);
             a.Show();
             Hide();
         }

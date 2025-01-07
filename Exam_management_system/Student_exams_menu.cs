@@ -97,7 +97,7 @@ namespace Exam_management_system
 
                     if (count > 0)
                     {
-                        Students_exam student_Menu = new Students_exam(examid, student_id);
+                        Students_exam_paper student_Menu = new Students_exam_paper(examid, student_id);
                         student_Menu.Show();
                         Hide();
                     }
