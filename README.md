@@ -197,12 +197,12 @@ CREATE TABLE Teacher (
 # YouTube Demo
 
 
-[![YouTube Video](https://i.imgur.com/AnfgbZR.jpeg)](https://www.youtube.com/watch?v=h5ZQ0mctH98)
+[![YouTube Video](https://i.imgur.com/AnfgbZR.jpeg)](https://youtu.be/iHiyZTYp_f4)
 
 
 
 ## Setup File
-[![ Setup file](https://icons.iconarchive.com/icons/arkangl300/zero-folders/128/download-icon.png)](https://drive.google.com/file/d/1GsZ906Y-sKHLXB7GKz4u_blZEGG1aL8g/view?usp=sharing)
+[![ Setup file](https://icons.iconarchive.com/icons/arkangl300/zero-folders/128/download-icon.png)](https://drive.google.com/file/d/1PQ3VGkt76tPLeRzam_HGvQCd1plM9IZc/view?usp=sharing)
 
 > Click the images to do the operat
 
