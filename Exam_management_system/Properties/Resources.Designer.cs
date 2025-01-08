@@ -1183,6 +1183,16 @@ namespace Exam_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icons8_Ios7_Users_Administrator_24 {
+            get {
+                object obj = ResourceManager.GetObject("Icons8-Ios7-Users-Administrator.24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Janik_Baumgartner_Woocons_News_Add_32 {
             get {
                 object obj = ResourceManager.GetObject("Janik-Baumgartner-Woocons-News-Add.32", resourceCulture);

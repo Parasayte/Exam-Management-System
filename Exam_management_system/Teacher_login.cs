@@ -147,16 +147,18 @@ namespace Exam_management_system
         }
 
         // Method to open the admin login page
-        private void Open_admin_login(object sender, EventArgs e)
-        {
-            Admin_login a = new Admin_login();
-            a.Show();
-            Hide();
-        }
+      
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Admin_login a = new Admin_login();
+            a.Show();
+            Hide();
         }
     }
 }

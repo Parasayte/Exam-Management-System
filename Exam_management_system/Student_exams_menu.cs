@@ -162,29 +162,109 @@ namespace Exam_management_system
                     {
                         string currentDate = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
                         string htmlContent = $@"
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <style>
-            body {{ font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: #dcdcdc; margin: 0; padding: 20px; line-height: 1.6; }}
-            h1 {{ color: #ffffff; text-align: center; font-size: 2.5em; margin: 30px 0; font-weight: 700; text-shadow: 0 0 10px white; }}
-            .container {{ max-width: 800px; margin: 0 auto; padding: 20px; }}
-            .section {{ margin: 20px 0; padding: 25px; border: 1px solid #2e2e2e; border-radius: 12px; background-color: #252525; box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); }}
-            .section h2 {{ font-size: 1.5em; color: #f0f0f0; margin-bottom: 15px; }}
-            .question {{ font-size: 1.1em; font-family: 'Cascadia Code', monospace; color: #bbbbbb; margin-bottom: 10px; }}
-            .answer {{ font-size: 1em; font-family: 'Cascadia Code', monospace; color: #ffffff; margin-left: 20px; }}
-            .result {{ font-family: 'Roboto Mono', monospace; font-weight: bold; color: #2ecc71; font-size: 1.25em; margin-top: 20px; text-shadow: 0 0 10px white; }}
-            .anti-forgery {{ font-size: 0.9em; color: #888888; text-align: center; margin-top: 40px; }}
-            .footer {{ text-align: center; font-size: 0.85em; color: #888888; margin-top: 60px; }}
-            button {{ background-color: #3b3b3b; color: #ffffff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }}
-            button:hover {{ background-color: #4c4c4c; }}
-            a {{ color: #00aaff; text-decoration: none; transition: color 0.3s ease; }}
-            a:hover {{ color: #66cfff; }}
-        </style>
-    </head>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Genel Stil */
+        body {{
+            font-family: 'Cascadia Mono', monospace;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.8;
+        }}
 
-    </html>
-    ";
+        /* Başlık */
+        h1 {{
+            color: #1a1a1a;
+            text-align: center;
+            font-size: 2.5em;
+            margin: 30px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid #1a1a1a;
+            padding-bottom: 15px;
+        }}
+
+        /* Konteyner */
+        .container {{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }}
+
+        /* Bölümler */
+        .section {{
+            margin: 30px 0;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            background-color: #fafafa;
+            border-radius: 8px;
+        }}
+
+        .section h2 {{
+            font-size: 1.6em;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }}
+
+        /* Soru ve Cevaplar */
+        .question {{
+            font-size: 1.1em;
+            color: #444;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }}
+
+        .answer {{
+            font-size: 1em;
+            color: #555;
+            margin-left: 25px;
+            margin-bottom: 18px;
+            line-height: 1.6;
+        }}
+
+        /* Sonuç */
+        .result {{
+            font-size: 1.3em;
+            color: #d9534f; /* Kırmızı renk */
+            font-weight: bold;
+            margin-top: 25px;
+            text-align: center;
+        }}
+
+        /* Alt Bilgi */
+        .footer {{
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 50px;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }}
+
+        /* Anti-Forgery Notu */
+        .anti-forgery {{
+            font-size: 0.85em;
+            color: #888;
+            text-align: center;
+            margin-top: 40px;
+            font-style: italic;
+        }}
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <h1>Exam Result</h1>";
 
                         writer.WriteLine(htmlContent);
 
@@ -252,7 +332,13 @@ namespace Exam_management_system
                                 string studentName = examDetailsReader["name"].ToString();
                                 string studentNickname = examDetailsReader["nick_name"].ToString();
                                 string examName = examDetailsReader["exam_name"].ToString();
-                                string tex = $" <h1>Exam Result</h1>\r\n    <div class='section'>\r\n        <p><strong>Date:</strong> {currentDate}</p>\r\n        <p><strong>Result:</strong> <span class='result'>{resultValue}</span></p>\r\n        <p><strong>Student Name:</strong> {studentName} {studentNickname}</p>\r\n        <p><strong>Exam Name:</strong> {examName}</p>\r\n    </div>";
+                                string tex = $@"
+        <div class='section'>
+            <p><strong>Date:</strong> {currentDate}</p>
+            <p><strong>Result:</strong> <span class='result'>{resultValue}</span></p>
+            <p><strong>Student Name:</strong> {studentName} {studentNickname}</p>
+            <p><strong>Exam Name:</strong> {examName}</p>
+        </div>";
                                 writer.WriteLine(tex);
 
                                 writer.WriteLine("<div class='section'>");
@@ -279,16 +365,17 @@ namespace Exam_management_system
                             examDetailsReader.Close();
                         }
 
-                        writer.WriteLine("<div class='anti-forgery'>");
-                        writer.WriteLine("<p>This document is generated and secured. Unauthorized alterations are prohibited.</p>");
-                        writer.WriteLine("</div>");
+                        writer.WriteLine(@"
+        <div class='anti-forgery'>
+            <p></p>
+        </div>
 
-                        writer.WriteLine("<div class='footer'>");
-                        writer.WriteLine("<p>End of Report</p>");
-                        writer.WriteLine("</div>");
-
-                        writer.WriteLine("</body>");
-                        writer.WriteLine("</html>");
+        <div class='footer'>
+            <p>End of Report</p>
+        </div>
+    </div>
+</body>
+</html>");
                     }
 
                     MessageBox.Show(@"HTML file with exam result and details has been saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

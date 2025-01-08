@@ -188,9 +188,20 @@ namespace Exam_management_system
         // Event handler for chat
         private void chatToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Group_chat group_Chat = new Group_chat(0);
-            group_Chat.Show();
-            Hide();
+            if(Role == "admin")
+            {
+                Group_chat group_Chat = new Group_chat(-1);
+                group_Chat.Show();
+                Hide();
+            }
+            else if (Role == "teacher")
+            {
+                Group_chat group_Chat = new Group_chat(0);
+                group_Chat.Show();
+                Hide();
+            }
+           
+            
         }
 
         private void notesAppToolStripMenuItem_Click(object sender, EventArgs e)

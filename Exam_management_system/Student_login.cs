@@ -142,5 +142,12 @@ namespace Exam_management_system
             a.Show();
             Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Admin_login a = new Admin_login();
+            a.Show();
+            Hide();
+        }
     }
 }

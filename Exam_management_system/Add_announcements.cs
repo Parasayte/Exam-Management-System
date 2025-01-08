@@ -261,9 +261,18 @@ namespace Exam_management_system
         // Open Group_chat form
         private void chatToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Group_chat group_Chat = new Group_chat(0);
-            group_Chat.Show();
-            Hide();
+            if (Role == "admin")
+            {
+                Group_chat group_Chat = new Group_chat(-1);
+                group_Chat.Show();
+                Hide();
+            }
+            else if (Role == "teacher")
+            {
+                Group_chat group_Chat = new Group_chat(0);
+                group_Chat.Show();
+                Hide();
+            }
         }
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -280,6 +289,13 @@ namespace Exam_management_system
                 teacher_Menu.Show();
                 Hide();
             }
+        }
+
+        private void addAnnouncementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_announcements add_Announcement = new Add_announcements(Role);
+            add_Announcement.Show();
+            Hide();
         }
     }
 }

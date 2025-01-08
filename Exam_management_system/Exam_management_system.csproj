@@ -90,6 +90,7 @@
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -790,6 +791,7 @@
     <None Include="Resources\Janik-Baumgartner-Woocons-News-Add.32.png" />
     <None Include="Resources\Double-J-Design-Ravenna-3d-Export-To-File.32.png" />
     <None Include="Resources\Robsonbillponte-IRob-Drives-Time-Machine-HD.32.png" />
+    <None Include="Resources\Icons8-Ios7-Users-Administrator.24.png" />
     <Content Include="Resources\teacherphoto.png" />
   </ItemGroup>
   <ItemGroup>

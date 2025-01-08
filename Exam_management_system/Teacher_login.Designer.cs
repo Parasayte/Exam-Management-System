@@ -34,11 +34,11 @@
             this.ID_Textbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Login_Button = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -109,17 +109,6 @@
             this.label2.Text = "Sign in";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Software_Command_Prompt_32;
-            this.label7.Location = new System.Drawing.Point(47, 410);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 35);
-            this.label7.TabIndex = 27;
-            this.label7.Click += new System.EventHandler(this.Open_admin_login);
-            // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,7 +125,7 @@
             this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Soft_Scraps_Clock_32;
-            this.label1.Location = new System.Drawing.Point(98, 412);
+            this.label1.Location = new System.Drawing.Point(47, 414);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 33);
             this.label1.TabIndex = 25;
@@ -175,13 +164,29 @@
             this.Login_Button.UseVisualStyleBackColor = false;
             this.Login_Button.Click += new System.EventHandler(this.Login);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Indigo;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Image = global::Exam_management_system.Properties.Resources.Icons8_Ios7_Users_Administrator_24;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(679, 361);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 35);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "Admin";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Teacher_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -216,6 +221,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button2;
     }
 }

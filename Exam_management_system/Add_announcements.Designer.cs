@@ -48,6 +48,7 @@ namespace Exam_management_system
             this.chatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button4 = new System.Windows.Forms.Button();
+            this.addAnnouncementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -177,6 +178,7 @@ namespace Exam_management_system
             this.addExamToolStripMenuItem,
             this.readNotesToolStripMenuItem,
             this.addStudentToolStripMenuItem,
+            this.addAnnouncementToolStripMenuItem,
             this.chatToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.operatToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Applications_Cascade_16;
@@ -188,7 +190,7 @@ namespace Exam_management_system
             // 
             this.menuToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.AAHouse;
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.menuToolStripMenuItem.Text = "Menu";
             this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
@@ -196,7 +198,7 @@ namespace Exam_management_system
             // 
             this.addExamToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Soft_Scraps_File_New_16;
             this.addExamToolStripMenuItem.Name = "addExamToolStripMenuItem";
-            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addExamToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.addExamToolStripMenuItem.Text = "Add Exam";
             this.addExamToolStripMenuItem.Click += new System.EventHandler(this.addExamToolStripMenuItem_Click);
             // 
@@ -204,7 +206,7 @@ namespace Exam_management_system
             // 
             this.readNotesToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Document_Write_16;
             this.readNotesToolStripMenuItem.Name = "readNotesToolStripMenuItem";
-            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.readNotesToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.readNotesToolStripMenuItem.Text = "Read Notes";
             this.readNotesToolStripMenuItem.Click += new System.EventHandler(this.readNotesToolStripMenuItem_Click);
             // 
@@ -212,7 +214,7 @@ namespace Exam_management_system
             // 
             this.addStudentToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Semlabs_Web_Blog_Users_add_16;
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
@@ -220,7 +222,7 @@ namespace Exam_management_system
             // 
             this.chatToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Text_Bubble1;
             this.chatToolStripMenuItem.Name = "chatToolStripMenuItem";
-            this.chatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chatToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.chatToolStripMenuItem.Text = "Chat";
             this.chatToolStripMenuItem.Click += new System.EventHandler(this.chatToolStripMenuItem_Click);
             // 
@@ -228,7 +230,7 @@ namespace Exam_management_system
             // 
             this.logOutToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Cancel_16;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -248,6 +250,14 @@ namespace Exam_management_system
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Delete_time_passed_annoucement);
+            // 
+            // addAnnouncementToolStripMenuItem
+            // 
+            this.addAnnouncementToolStripMenuItem.Image = global::Exam_management_system.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Comment_add_16;
+            this.addAnnouncementToolStripMenuItem.Name = "addAnnouncementToolStripMenuItem";
+            this.addAnnouncementToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.addAnnouncementToolStripMenuItem.Text = "Add announcement";
+            this.addAnnouncementToolStripMenuItem.Click += new System.EventHandler(this.addAnnouncementToolStripMenuItem_Click);
             // 
             // Add_announcements
             // 
@@ -293,5 +303,6 @@ namespace Exam_management_system
         private Button button4;
         private ToolStripMenuItem chatToolStripMenuItem;
         private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem addAnnouncementToolStripMenuItem;
     }
 }
