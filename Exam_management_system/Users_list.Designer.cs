@@ -36,6 +36,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Print = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,12 +148,29 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Print_students_data);
             // 
+            // Print
+            // 
+            this.Print.BackColor = System.Drawing.Color.Goldenrod;
+            this.Print.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Print.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Print.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Print.Image = global::Exam_management_system.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Contract_16;
+            this.Print.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Print.Location = new System.Drawing.Point(602, 30);
+            this.Print.Name = "Print";
+            this.Print.Size = new System.Drawing.Size(125, 27);
+            this.Print.TabIndex = 38;
+            this.Print.Text = "Print";
+            this.Print.UseVisualStyleBackColor = false;
+            this.Print.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Users_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(880, 549);
+            this.Controls.Add(this.Print);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -176,5 +194,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Print;
     }
 }

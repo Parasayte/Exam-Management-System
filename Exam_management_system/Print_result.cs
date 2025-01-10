@@ -290,12 +290,26 @@ namespace Exam_management_system
                 MessageBox.Show("Error saving HTML file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void chartview()
+        {
+            // Assuming schoolManagementSystemDataSet.Exam is a DataTable
+            chart1.DataSource = schoolManagementSystemDataSet.Exam;
+
+            // Set the X and Y value members to the appropriate column names
+            chart1.Series["Result"].AxisLabel = "student_id";  // Assuming "exam_id" is the X-axis
+            chart1.Series["Result"].YValueMembers = "result";  // Assuming "result" is the Y-axis
+
+            // Set the chart type (e.g., Column, Line, Bar, etc.)
+            chart1.Series["Result"].ChartType = SeriesChartType.Column;
+
+            // Bind the data to the chart
+            chart1.DataBind();
+        }
 
         // Event handler for form load
         private void printResult_Load(object sender, EventArgs e)
         {
-// TODO: This line of code loads data into the 'schoolManagementSystemDataSet.Exam' table. You can move, or remove it, as needed.
-this.examTableAdapter.Fill(this.schoolManagementSystemDataSet.Exam);
+         this.examTableAdapter.Fill(this.schoolManagementSystemDataSet.Exam);
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             // Query to get finished exams
@@ -304,7 +318,9 @@ this.examTableAdapter.Fill(this.schoolManagementSystemDataSet.Exam);
             DataTable finishedexamstable = new DataTable();
             sqlDataAdapter1.Fill(finishedexamstable);
             dataGridView2.DataSource = finishedexamstable;
+           chartview(); 
             con.Close();
+           
         }
 
         // Event handler for form closing
