@@ -97,50 +97,49 @@ namespace Exam_management_system
         {
             try
             {
-                if (dataGridView1.CurrentCell == null)
-                {
-                    MessageBox.Show("Please select the result in the DataGridView.");
-                    return;
-                }
-
-                int rowIndex = dataGridView1.CurrentCell.RowIndex;
-                DataGridViewRow selectedRow = dataGridView1.Rows[rowIndex];
-
-                string examId = selectedRow.Cells["Exam_id"].Value?.ToString();
-                string result = selectedRow.Cells["Result"].Value?.ToString();
-
-                if (string.IsNullOrEmpty(examId))
-                {
-                    MessageBox.Show("No Exam ID found in the selected row.");
-                    return;
-                }
-
-                if (string.IsNullOrEmpty(result))
-                {
-                    MessageBox.Show("No result found in the selected row.");
-                    return;
-                }
-
-                string updateQuery = "UPDATE Exam SET finished = 'Yes', result = @Result WHERE exam_id = @Exam_id";
+                DataTable dataTable = (DataTable)dataGridView1.DataSource;
 
                 using (SqlConnection conn = new SqlConnection(con))
                 {
-                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                    conn.Open();
+
+                    foreach (DataRow row in dataTable.Rows)
                     {
-                        cmd.Parameters.AddWithValue("@Exam_id", examId);
-                        cmd.Parameters.AddWithValue("@Result", result);
-
-                        conn.Open();
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-
-                        if (rowsAffected > 0)
+                        if (row.RowState == DataRowState.Modified)
                         {
-                            MessageBox.Show("Finished column and result updated successfully.");
-                        }
-                        else
-                        {
-                            MessageBox.Show("No matching exam found to update in the database.");
+                            string examId = row["Exam_id"].ToString();
+                            string result = row["Result"].ToString();
+
+                            if (string.IsNullOrEmpty(examId))
+                            {
+                                MessageBox.Show("No Exam ID found in the row.");
+                                continue;
+                            }
+
+                            if (string.IsNullOrEmpty(result))
+                            {
+                                MessageBox.Show("No result found in the row.");
+                                continue;
+                            }
+
+                            string updateQuery = "UPDATE Exam SET finished = 'Yes', result = @Result WHERE exam_id = @Exam_id";
+
+                            using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@Exam_id", examId);
+                                cmd.Parameters.AddWithValue("@Result", result);
+
+                                int rowsAffected = cmd.ExecuteNonQuery();
+
+                                if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show($"Finished column and result updated successfully for Exam ID: {examId}.");
+                                }
+                                else
+                                {
+                                    MessageBox.Show($"No matching exam found to update in the database for Exam ID: {examId}.");
+                                }
+                            }
                         }
                     }
                 }
