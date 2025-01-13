@@ -79,7 +79,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 49);
             this.label1.TabIndex = 5;
-            this.label1.Click += new System.EventHandler(this.Add_newDirectory);
+            this.label1.Click += new System.EventHandler(this.BtnCreateDirectory_Click);
             // 
             // label2
             // 
@@ -90,7 +90,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 49);
             this.label2.TabIndex = 6;
-            this.label2.Click += new System.EventHandler(this.Cancel);
+            this.label2.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // Add_new_directory
             // 

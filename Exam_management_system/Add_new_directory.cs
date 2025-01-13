@@ -1,25 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Exam_management_system
 {
     public partial class Add_new_directory : Form
     {
-        int student_id;
-        string path1;
-        public Add_new_directory(int id,string path)
+        private readonly int _studentId;
+        private readonly string _directoryPath;
+
+        public Add_new_directory(int studentId, string directoryPath)
         {
             InitializeComponent();
-            student_id = id;
-            path1 = path;
+            _studentId = studentId;
+            _directoryPath = directoryPath?.Trim() ?? string.Empty;
         }
 
         private void AddNewDirectory_FormClosing(object sender, FormClosingEventArgs e)
@@ -27,125 +21,69 @@ namespace Exam_management_system
             Application.Exit();
         }
 
-        private void Add_newDirectory(object sender, EventArgs e)
+        private void BtnCreateDirectory_Click(object sender, EventArgs e)
         {
+            CreateNewDirectory();
+        }
 
-            // Define base paths for different note types
-            string baseDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).Trim();
-            string teacherNotesPath = Path.Combine(baseDirectory, "Teachers Notes", "-1").Trim();
-            string adminNotesPath = Path.Combine(baseDirectory, "Admins Notes", "-1").Trim();
-            string studentNotesBasePath = Path.Combine(baseDirectory, "Students Notes").Trim();
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            NavigateToMenu();
+        }
 
-            path1 = path1.Trim();
-            if (path1 == teacherNotesPath)
+        private void NavigateToMenu()
+        {
+            try
             {
-                // Open Teacher menu
-                Teacher_menu teacher_Menu = new Teacher_menu();
-                teacher_Menu.Show();
-                Hide();
-                return;
-            }
-            else if (path1 == adminNotesPath)
-            {
-                // Show the Admin menu form
-                Admin_menu admin_Menu = new Admin_menu();
-                admin_Menu.Show();
-                Hide();
-                return;
-            }
-            else if (path1.StartsWith(studentNotesBasePath))
-            {
-                try
+                string baseDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Public Notes", "-1");
+                string teacherNotesPath = Path.Combine(baseDirectory, "Teachers Notes", "-1");
+                string adminNotesPath = Path.Combine(baseDirectory, "Admins Notes", "-1");
+                string studentNotesBasePath = Path.Combine(baseDirectory, "Students Notes");
+
+                // Normalize paths for comparison
+                string normalizedDirectoryPath = Path.GetFullPath(_directoryPath);
+                string normalizedTeacherNotesPath = Path.GetFullPath(teacherNotesPath);
+                string normalizedAdminNotesPath = Path.GetFullPath(adminNotesPath);
+                string normalizedStudentNotesBasePath = Path.GetFullPath(studentNotesBasePath);
+
+                if (normalizedDirectoryPath.Equals(normalizedTeacherNotesPath, StringComparison.OrdinalIgnoreCase) ||
+                    normalizedDirectoryPath.Equals(normalizedAdminNotesPath, StringComparison.OrdinalIgnoreCase) ||
+                    normalizedDirectoryPath.StartsWith(normalizedStudentNotesBasePath, StringComparison.OrdinalIgnoreCase))
                 {
-                    // Extract the directory name (student ID) from the path
-                    string folderName = Path.GetFileName(path1);
-
-                    if (int.TryParse(folderName.Trim(), out int studentId))
-                    {
-                        // Open Student Menu with the ID as a parameter
-                        Student_menu student_Menu = new Student_menu(studentId);
-                        student_Menu.Show();
-                        Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid directory name format. Unable to parse student ID.");
-                    }
+                    OpenDirectoriesMenu(normalizedDirectoryPath);
                 }
-                catch (Exception ex)
+                else
                 {
-                    // Handle exceptions and notify the user
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("Invalid path. Cannot determine user type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
+            catch (Exception ex)
             {
-
-                Login_menu login = new Login_menu();
-                login.Show();
-                Hide();
+                MessageBox.Show($"An error occurred while navigating: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-      
-
-        private void Cancel(object sender, EventArgs e)
+        private void OpenDirectoriesMenu(string path)
         {
-            // Define base paths for different note types
-            string baseDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).Trim();
-            string teacherNotesPath = Path.Combine(baseDirectory, "Teachers Notes", "-1").Trim();
-            string adminNotesPath = Path.Combine(baseDirectory, "Admins Notes", "-1").Trim();
-            string studentNotesBasePath = Path.Combine(baseDirectory, "Students Notes").Trim();
+            try
+            {
+                var menuForm = new Directories_menu(path);
+                menuForm.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while opening the menu: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-            path1 = path1.Trim();
-            if (path1 == teacherNotesPath)
-            {
-                // Open Teacher menu
-                Teacher_menu teacher_Menu = new Teacher_menu();
-                teacher_Menu.Show();
-                Hide();
-                return;
-            }
-            else if (path1 == adminNotesPath)
-            {
-                // Show the Admin menu form
-                Admin_menu admin_Menu = new Admin_menu();
-                admin_Menu.Show();
-                Hide();
-                return;
-            }
-            else if (path1.StartsWith(studentNotesBasePath))
-            {
-                try
-                {
-                    // Extract the directory name (student ID) from the path
-                    string folderName = Path.GetFileName(path1);
-
-                    if (int.TryParse(folderName.Trim(), out int studentId))
-                    {
-                        // Open Student Menu with the ID as a parameter
-                        Student_menu student_Menu = new Student_menu(studentId);
-                        student_Menu.Show();
-                        Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid directory name format. Unable to parse student ID.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    // Handle exceptions and notify the user
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
-            }
-            else
-            {
-
-                Login_menu login = new Login_menu();
-                login.Show();
-                Hide();
-            }
+        private void CreateNewDirectory()
+        {
+                  Directory.CreateDirectory(_directoryPath+$"\\{richTextBox1.Text}");
+                    MessageBox.Show("Directory created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    OpenDirectoriesMenu(_directoryPath);
+                               
+            
         }
     }
 }

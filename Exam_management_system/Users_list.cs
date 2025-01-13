@@ -113,16 +113,30 @@ namespace Exam_management_system
                     sw.WriteLine("<head>");
                     sw.WriteLine("<title>" + role + " List</title>");
                     sw.WriteLine("<style>");
-                    sw.WriteLine("body { font-family: Arial, sans-serif; }");
-                    sw.WriteLine("h1 { color: #3053ff; text-align: center; }");
-                    sw.WriteLine("table { width: 100%; border-collapse: collapse; margin: 20px 0; }");
-                    sw.WriteLine("th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }");
-                    sw.WriteLine("th { background-color: #3053ff; color: white; }");
+                    sw.WriteLine("body { font-family: 'Times New Roman', serif; background-color: #f9f9f9; margin: 0; padding: 20px; }");
+                    sw.WriteLine("h1 { color: #000; text-align: center; font-size: 24px; margin-bottom: 20px; }");
+                    sw.WriteLine("table { width: 100%; border-collapse: collapse; margin: 20px 0; background-color: #fff; border: 1px solid #000; }");
+                    sw.WriteLine("th, td { padding: 12px; text-align: left; border-bottom: 1px solid #000; }");
+                    sw.WriteLine("th { background-color: #f0f0f0; color: #000; font-weight: bold; }");
                     sw.WriteLine("tr:hover { background-color: #f5f5f5; }");
+                    sw.WriteLine(".header { text-align: center; margin-bottom: 20px; }");
+                    sw.WriteLine(".header img { width: 80px; height: 80px; }");
+                    sw.WriteLine(".muhur { text-align: center; margin-top: 20px; }");
+                    sw.WriteLine(".muhur img { width: 100px; height: 100px; opacity: 0.8; }");
+                    sw.WriteLine(".signature { text-align: right; margin-top: 40px; font-style: italic; }");
                     sw.WriteLine("</style>");
                     sw.WriteLine("</head>");
                     sw.WriteLine("<body>");
+
+                    // Add a random icon or logo at the top
+                    sw.WriteLine("<div class='header'>");
+                    sw.WriteLine("<img src='https://w7.pngwing.com/pngs/1009/824/png-transparent-seal-document-rubber-stamp-technical-standard-seal-animals-photography-technical-standard.png' alt='Official Icon'>");
+                    sw.WriteLine("</div>");
+
+                    // Add the title
                     sw.WriteLine("<h1>" + role + " List</h1>");
+
+                    // Write the table
                     sw.WriteLine("<table>");
 
                     // Write the header row
@@ -145,6 +159,18 @@ namespace Exam_management_system
                     }
 
                     sw.WriteLine("</table>");
+
+                    // Add a mühür (official seal)
+                    sw.WriteLine("<div class='muhur'>");
+                    sw.WriteLine("<img src='https://w7.pngwing.com/pngs/1009/824/png-transparent-seal-document-rubber-stamp-technical-standard-seal-animals-photography-technical-standard.png' alt='Mühür'>");
+                    sw.WriteLine("</div>");
+
+                    // Add a signature section
+                    sw.WriteLine("<div class='signature'>");
+                    sw.WriteLine("<p>Signature: ________________________</p>");
+                    sw.WriteLine("<p>Date: ________________________</p>");
+                    sw.WriteLine("</div>");
+
                     sw.WriteLine("</body>");
                     sw.WriteLine("</html>");
                 }

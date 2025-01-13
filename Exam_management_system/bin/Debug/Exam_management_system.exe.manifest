@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exam_management_system.exe" size="2031584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exam_management_system.exe" size="2033632">
       <assemblyIdentity name="Exam_management_system" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ifIevgT68yXmt11Fq9zOp81fe9pVlNGUn0An5nvrPX0=</dsig:DigestValue>
+        <dsig:DigestValue>TGUIgncXB/Tiwd8or4pN2XxoIkiLFREekXKRAOZ9KzI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
