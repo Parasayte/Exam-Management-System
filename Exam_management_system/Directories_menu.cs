@@ -110,7 +110,7 @@ namespace Exam_management_system
 
             if (SelectedlabelList.Contains(clickedButton.Tag.ToString()))
             {
-                clickedButton.BackColor = SystemColors.Control;
+                clickedButton.BackColor = Color.FromArgb(36, 30, 30);
                 SelectedlabelList.Remove(clickedButton.Tag.ToString());
             }
             else
@@ -294,7 +294,7 @@ namespace Exam_management_system
                 foreach (Label a in LabelLis)
                 {
                     SelectedlabelList.Remove(a.Tag.ToString());
-                    a.BackColor = SystemColors.Control;
+                    a.BackColor = Color.FromArgb(36,30,30);
                 }
             }
             else
